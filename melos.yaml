@@ -1,0 +1,11 @@
+name: fit_web_app_workspace
+
+packages:
+  - apps/**
+  - packages/**
+
+command:
+  bootstrap:
+    hooks:
+      post:
+        melos exec -- "flutter pub get"

@@ -1,0 +1,58 @@
+{
+  "0": {
+    "$type": "number",
+    "$value": 0
+  },
+  "1": {
+    "$type": "number",
+    "$value": 1
+  },
+  "2": {
+    "$type": "number",
+    "$value": 2
+  },
+  "3": {
+    "$type": "number",
+    "$value": 3
+  },
+  "4": {
+    "$type": "number",
+    "$value": 4
+  },
+  "6": {
+    "$type": "number",
+    "$value": 6
+  },
+  "8": {
+    "$type": "number",
+    "$value": 8
+  },
+  "10": {
+    "$type": "number",
+    "$value": 10
+  },
+  "12": {
+    "$type": "number",
+    "$value": 12
+  },
+  "16": {
+    "$type": "number",
+    "$value": 16
+  },
+  "18": {
+    "$type": "number",
+    "$value": 18
+  },
+  "28": {
+    "$type": "number",
+    "$value": 28
+  },
+  "32": {
+    "$type": "number",
+    "$value": 32
+  },
+  "99": {
+    "$type": "number",
+    "$value": 99
+  }
+}

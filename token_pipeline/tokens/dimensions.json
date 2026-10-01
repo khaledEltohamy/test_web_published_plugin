@@ -1,0 +1,1878 @@
+{
+  "width": {
+    "4": {
+      "$type": "number",
+      "$value": 4
+    },
+    "6": {
+      "$type": "number",
+      "$value": 6
+    },
+    "7": {
+      "$type": "number",
+      "$value": 7
+    },
+    "8": {
+      "$type": "number",
+      "$value": 8,
+      "167600631713867": {
+        "$type": "number",
+        "$value": 8.167600631713867
+      }
+    },
+    "9": {
+      "$type": "number",
+      "$value": 9
+    },
+    "10": {
+      "5": {
+        "$type": "number",
+        "$value": 10.5
+      },
+      "$type": "number",
+      "$value": 10,
+      "500091552734375": {
+        "$type": "number",
+        "$value": 10.500091552734375
+      }
+    },
+    "11": {
+      "998800277709961": {
+        "$type": "number",
+        "$value": 11.998800277709961
+      },
+      "66759967803955": {
+        "$type": "number",
+        "$value": 11.66759967803955
+      }
+    },
+    "13": {
+      "5": {
+        "$type": "number",
+        "$value": 13.5
+      },
+      "50360107421875": {
+        "$type": "number",
+        "$value": 13.50360107421875
+      },
+      "499999046325684": {
+        "$type": "number",
+        "$value": 13.499999046325684
+      },
+      "4399995803833": {
+        "$type": "number",
+        "$value": 13.4399995803833
+      }
+    },
+    "14": {
+      "$type": "number",
+      "$value": 14
+    },
+    "15": {
+      "001199722290039": {
+        "$type": "number",
+        "$value": 15.001199722290039
+      },
+      "105600357055664": {
+        "$type": "number",
+        "$value": 15.105600357055664
+      },
+      "119999885559082": {
+        "$type": "number",
+        "$value": 15.119999885559082
+      }
+    },
+    "16": {
+      "$type": "number",
+      "$value": 16
+    },
+    "17": {
+      "$type": "number",
+      "$value": 17,
+      "459999084472656": {
+        "$type": "number",
+        "$value": 17.459999084472656
+      }
+    },
+    "18": {
+      "$type": "number",
+      "$value": 18
+    },
+    "19": {
+      "$type": "number",
+      "$value": 19,
+      "420000076293945": {
+        "$type": "number",
+        "$value": 19.420000076293945
+      }
+    },
+    "20": {
+      "$type": "number",
+      "$value": 20
+    },
+    "21": {
+      "$type": "number",
+      "$value": 21
+    },
+    "22": {
+      "$type": "number",
+      "$value": 22
+    },
+    "23": {
+      "$type": "number",
+      "$value": 23
+    },
+    "24": {
+      "$type": "number",
+      "$value": 24
+    },
+    "25": {
+      "$type": "number",
+      "$value": 25
+    },
+    "26": {
+      "$type": "number",
+      "$value": 26
+    },
+    "28": {
+      "$type": "number",
+      "$value": 28
+    },
+    "29": {
+      "$type": "number",
+      "$value": 29
+    },
+    "30": {
+      "$type": "number",
+      "$value": 30
+    },
+    "31": {
+      "$type": "number",
+      "$value": 31
+    },
+    "32": {
+      "$type": "number",
+      "$value": 32
+    },
+    "33": {
+      "$type": "number",
+      "$value": 33
+    },
+    "34": {
+      "$type": "number",
+      "$value": 34
+    },
+    "35": {
+      "$type": "number",
+      "$value": 35
+    },
+    "36": {
+      "$type": "number",
+      "$value": 36
+    },
+    "37": {
+      "$type": "number",
+      "$value": 37
+    },
+    "39": {
+      "$type": "number",
+      "$value": 39
+    },
+    "40": {
+      "$type": "number",
+      "$value": 40
+    },
+    "42": {
+      "$type": "number",
+      "$value": 42
+    },
+    "43": {
+      "$type": "number",
+      "$value": 43
+    },
+    "44": {
+      "$type": "number",
+      "$value": 44
+    },
+    "45": {
+      "$type": "number",
+      "$value": 45
+    },
+    "46": {
+      "$type": "number",
+      "$value": 46
+    },
+    "47": {
+      "$type": "number",
+      "$value": 47
+    },
+    "48": {
+      "$type": "number",
+      "$value": 48
+    },
+    "49": {
+      "$type": "number",
+      "$value": 49
+    },
+    "50": {
+      "$type": "number",
+      "$value": 50
+    },
+    "51": {
+      "$type": "number",
+      "$value": 51
+    },
+    "52": {
+      "$type": "number",
+      "$value": 52
+    },
+    "53": {
+      "$type": "number",
+      "$value": 53
+    },
+    "54": {
+      "$type": "number",
+      "$value": 54
+    },
+    "55": {
+      "$type": "number",
+      "$value": 55
+    },
+    "56": {
+      "$type": "number",
+      "$value": 56,
+      "08000183105469": {
+        "$type": "number",
+        "$value": 56.08000183105469
+      },
+      "44000244140625": {
+        "$type": "number",
+        "$value": 56.44000244140625
+      }
+    },
+    "57": {
+      "$type": "number",
+      "$value": 57
+    },
+    "58": {
+      "939998626708984": {
+        "$type": "number",
+        "$value": 58.939998626708984
+      },
+      "2400016784668": {
+        "$type": "number",
+        "$value": 58.2400016784668
+      }
+    },
+    "59": {
+      "$type": "number",
+      "$value": 59
+    },
+    "60": {
+      "$type": "number",
+      "$value": 60
+    },
+    "61": {
+      "$type": "number",
+      "$value": 61
+    },
+    "62": {
+      "$type": "number",
+      "$value": 62
+    },
+    "63": {
+      "$type": "number",
+      "$value": 63,
+      "06999969482422": {
+        "$type": "number",
+        "$value": 63.06999969482422
+      }
+    },
+    "64": {
+      "$type": "number",
+      "$value": 64
+    },
+    "65": {
+      "$type": "number",
+      "$value": 65
+    },
+    "66": {
+      "$type": "number",
+      "$value": 66
+    },
+    "67": {
+      "$type": "number",
+      "$value": 67
+    },
+    "68": {
+      "$type": "number",
+      "$value": 68
+    },
+    "69": {
+      "$type": "number",
+      "$value": 69
+    },
+    "70": {
+      "$type": "number",
+      "$value": 70
+    },
+    "71": {
+      "$type": "number",
+      "$value": 71
+    },
+    "72": {
+      "$type": "number",
+      "$value": 72
+    },
+    "73": {
+      "$type": "number",
+      "$value": 73
+    },
+    "74": {
+      "$type": "number",
+      "$value": 74
+    },
+    "75": {
+      "$type": "number",
+      "$value": 75
+    },
+    "76": {
+      "$type": "number",
+      "$value": 76
+    },
+    "77": {
+      "$type": "number",
+      "$value": 77
+    },
+    "78": {
+      "$type": "number",
+      "$value": 78
+    },
+    "79": {
+      "$type": "number",
+      "$value": 79
+    },
+    "80": {
+      "$type": "number",
+      "$value": 80
+    },
+    "81": {
+      "$type": "number",
+      "$value": 81
+    },
+    "82": {
+      "$type": "number",
+      "$value": 82
+    },
+    "83": {
+      "$type": "number",
+      "$value": 83
+    },
+    "84": {
+      "$type": "number",
+      "$value": 84
+    },
+    "85": {
+      "$type": "number",
+      "$value": 85
+    },
+    "86": {
+      "$type": "number",
+      "$value": 86
+    },
+    "87": {
+      "$type": "number",
+      "$value": 87
+    },
+    "88": {
+      "$type": "number",
+      "$value": 88
+    },
+    "89": {
+      "$type": "number",
+      "$value": 89
+    },
+    "90": {
+      "$type": "number",
+      "$value": 90
+    },
+    "91": {
+      "$type": "number",
+      "$value": 91
+    },
+    "92": {
+      "$type": "number",
+      "$value": 92
+    },
+    "93": {
+      "$type": "number",
+      "$value": 93
+    },
+    "94": {
+      "$type": "number",
+      "$value": 94
+    },
+    "95": {
+      "$type": "number",
+      "$value": 95
+    },
+    "96": {
+      "$type": "number",
+      "$value": 96
+    },
+    "97": {
+      "$type": "number",
+      "$value": 97
+    },
+    "99": {
+      "$type": "number",
+      "$value": 99
+    },
+    "100": {
+      "$type": "number",
+      "$value": 100
+    },
+    "101": {
+      "$type": "number",
+      "$value": 101
+    },
+    "102": {
+      "$type": "number",
+      "$value": 102
+    },
+    "103": {
+      "$type": "number",
+      "$value": 103
+    },
+    "104": {
+      "$type": "number",
+      "$value": 104
+    },
+    "105": {
+      "$type": "number",
+      "$value": 105
+    },
+    "106": {
+      "$type": "number",
+      "$value": 106
+    },
+    "107": {
+      "$type": "number",
+      "$value": 107
+    },
+    "108": {
+      "$type": "number",
+      "$value": 108
+    },
+    "109": {
+      "$type": "number",
+      "$value": 109
+    },
+    "110": {
+      "$type": "number",
+      "$value": 110
+    },
+    "111": {
+      "$type": "number",
+      "$value": 111
+    },
+    "112": {
+      "$type": "number",
+      "$value": 112
+    },
+    "113": {
+      "$type": "number",
+      "$value": 113
+    },
+    "114": {
+      "$type": "number",
+      "$value": 114
+    },
+    "116": {
+      "$type": "number",
+      "$value": 116
+    },
+    "117": {
+      "$type": "number",
+      "$value": 117
+    },
+    "118": {
+      "$type": "number",
+      "$value": 118
+    },
+    "119": {
+      "$type": "number",
+      "$value": 119
+    },
+    "120": {
+      "$type": "number",
+      "$value": 120
+    },
+    "121": {
+      "$type": "number",
+      "$value": 121
+    },
+    "122": {
+      "$type": "number",
+      "$value": 122
+    },
+    "123": {
+      "$type": "number",
+      "$value": 123
+    },
+    "124": {
+      "$type": "number",
+      "$value": 124
+    },
+    "125": {
+      "$type": "number",
+      "$value": 125
+    },
+    "126": {
+      "$type": "number",
+      "$value": 126
+    },
+    "127": {
+      "$type": "number",
+      "$value": 127
+    },
+    "128": {
+      "$type": "number",
+      "$value": 128
+    },
+    "129": {
+      "$type": "number",
+      "$value": 129
+    },
+    "131": {
+      "$type": "number",
+      "$value": 131
+    },
+    "132": {
+      "$type": "number",
+      "$value": 132
+    },
+    "133": {
+      "$type": "number",
+      "$value": 133
+    },
+    "134": {
+      "$type": "number",
+      "$value": 134
+    },
+    "135": {
+      "$type": "number",
+      "$value": 135
+    },
+    "136": {
+      "$type": "number",
+      "$value": 136
+    },
+    "137": {
+      "$type": "number",
+      "$value": 137
+    },
+    "138": {
+      "$type": "number",
+      "$value": 138
+    },
+    "139": {
+      "$type": "number",
+      "$value": 139
+    },
+    "140": {
+      "$type": "number",
+      "$value": 140
+    },
+    "142": {
+      "$type": "number",
+      "$value": 142
+    },
+    "143": {
+      "$type": "number",
+      "$value": 143
+    },
+    "144": {
+      "$type": "number",
+      "$value": 144
+    },
+    "145": {
+      "14285278320312": {
+        "$type": "number",
+        "$value": 145.14285278320312
+      },
+      "14283752441406": {
+        "$type": "number",
+        "$value": 145.14283752441406
+      }
+    },
+    "146": {
+      "$type": "number",
+      "$value": 146
+    },
+    "149": {
+      "$type": "number",
+      "$value": 149
+    },
+    "150": {
+      "$type": "number",
+      "$value": 150
+    },
+    "151": {
+      "$type": "number",
+      "$value": 151
+    },
+    "152": {
+      "$type": "number",
+      "$value": 152
+    },
+    "154": {
+      "$type": "number",
+      "$value": 154
+    },
+    "155": {
+      "$type": "number",
+      "$value": 155
+    },
+    "156": {
+      "$type": "number",
+      "$value": 156
+    },
+    "158": {
+      "$type": "number",
+      "$value": 158
+    },
+    "159": {
+      "$type": "number",
+      "$value": 159
+    },
+    "160": {
+      "$type": "number",
+      "$value": 160
+    },
+    "164": {
+      "$type": "number",
+      "$value": 164
+    },
+    "165": {
+      "$type": "number",
+      "$value": 165
+    },
+    "166": {
+      "$type": "number",
+      "$value": 166
+    },
+    "168": {
+      "$type": "number",
+      "$value": 168
+    },
+    "169": {
+      "$type": "number",
+      "$value": 169
+    },
+    "170": {
+      "$type": "number",
+      "$value": 170
+    },
+    "171": {
+      "$type": "number",
+      "$value": 171
+    },
+    "172": {
+      "$type": "number",
+      "$value": 172
+    },
+    "174": {
+      "$type": "number",
+      "$value": 174
+    },
+    "175": {
+      "$type": "number",
+      "$value": 175
+    },
+    "177": {
+      "3333282470703": {
+        "$type": "number",
+        "$value": 177.3333282470703
+      },
+      "33334350585938": {
+        "$type": "number",
+        "$value": 177.33334350585938
+      }
+    },
+    "180": {
+      "$type": "number",
+      "$value": 180
+    },
+    "181": {
+      "$type": "number",
+      "$value": 181
+    },
+    "184": {
+      "$type": "number",
+      "$value": 184
+    },
+    "186": {
+      "$type": "number",
+      "$value": 186
+    },
+    "188": {
+      "$type": "number",
+      "$value": 188
+    },
+    "194": {
+      "$type": "number",
+      "$value": 194
+    },
+    "195": {
+      "$type": "number",
+      "$value": 195
+    },
+    "196": {
+      "$type": "number",
+      "$value": 196
+    },
+    "199": {
+      "$type": "number",
+      "$value": 199
+    },
+    "200": {
+      "$type": "number",
+      "$value": 200
+    },
+    "201": {
+      "$type": "number",
+      "$value": 201
+    },
+    "202": {
+      "$type": "number",
+      "$value": 202
+    },
+    "204": {
+      "$type": "number",
+      "$value": 204
+    },
+    "205": {
+      "$type": "number",
+      "$value": 205
+    },
+    "207": {
+      "$type": "number",
+      "$value": 207
+    },
+    "212": {
+      "$type": "number",
+      "$value": 212
+    },
+    "214": {
+      "$type": "number",
+      "$value": 214
+    },
+    "217": {
+      "$type": "number",
+      "$value": 217
+    },
+    "220": {
+      "$type": "number",
+      "$value": 220
+    },
+    "222": {
+      "$type": "number",
+      "$value": 222
+    },
+    "224": {
+      "$type": "number",
+      "$value": 224
+    },
+    "226": {
+      "$type": "number",
+      "$value": 226
+    },
+    "227": {
+      "$type": "number",
+      "$value": 227
+    },
+    "228": {
+      "$type": "number",
+      "$value": 228
+    },
+    "229": {
+      "$type": "number",
+      "$value": 229
+    },
+    "230": {
+      "$type": "number",
+      "$value": 230
+    },
+    "232": {
+      "$type": "number",
+      "$value": 232
+    },
+    "233": {
+      "$type": "number",
+      "$value": 233
+    },
+    "235": {
+      "$type": "number",
+      "$value": 235
+    },
+    "238": {
+      "$type": "number",
+      "$value": 238
+    },
+    "242": {
+      "$type": "number",
+      "$value": 242
+    },
+    "247": {
+      "$type": "number",
+      "$value": 247
+    },
+    "249": {
+      "$type": "number",
+      "$value": 249
+    },
+    "258": {
+      "$type": "number",
+      "$value": 258
+    },
+    "260": {
+      "$type": "number",
+      "$value": 260
+    },
+    "261": {
+      "$type": "number",
+      "$value": 261
+    },
+    "263": {
+      "$type": "number",
+      "$value": 263
+    },
+    "264": {
+      "$type": "number",
+      "$value": 264
+    },
+    "266": {
+      "$type": "number",
+      "$value": 266
+    },
+    "267": {
+      "$type": "number",
+      "$value": 267
+    },
+    "268": {
+      "$type": "number",
+      "$value": 268
+    },
+    "270": {
+      "$type": "number",
+      "$value": 270
+    },
+    "276": {
+      "$type": "number",
+      "$value": 276
+    },
+    "278": {
+      "$type": "number",
+      "$value": 278
+    },
+    "281": {
+      "$type": "number",
+      "$value": 281
+    },
+    "285": {
+      "$type": "number",
+      "$value": 285
+    },
+    "286": {
+      "$type": "number",
+      "$value": 286
+    },
+    "289": {
+      "$type": "number",
+      "$value": 289
+    },
+    "294": {
+      "$type": "number",
+      "$value": 294
+    },
+    "297": {
+      "$type": "number",
+      "$value": 297
+    },
+    "298": {
+      "$type": "number",
+      "$value": 298
+    },
+    "302": {
+      "$type": "number",
+      "$value": 302
+    },
+    "304": {
+      "$type": "number",
+      "$value": 304
+    },
+    "306": {
+      "$type": "number",
+      "$value": 306
+    },
+    "307": {
+      "$type": "number",
+      "$value": 307
+    },
+    "308": {
+      "$type": "number",
+      "$value": 308
+    },
+    "314": {
+      "$type": "number",
+      "$value": 314
+    },
+    "318": {
+      "$type": "number",
+      "$value": 318,
+      "6666564941406": {
+        "$type": "number",
+        "$value": 318.6666564941406
+      },
+      "66668701171875": {
+        "$type": "number",
+        "$value": 318.66668701171875
+      }
+    },
+    "319": {
+      "$type": "number",
+      "$value": 319
+    },
+    "320": {
+      "$type": "number",
+      "$value": 320
+    },
+    "323": {
+      "$type": "number",
+      "$value": 323
+    },
+    "329": {
+      "3333435058594": {
+        "$type": "number",
+        "$value": 329.3333435058594
+      },
+      "33331298828125": {
+        "$type": "number",
+        "$value": 329.33331298828125
+      }
+    },
+    "332": {
+      "$type": "number",
+      "$value": 332
+    },
+    "338": {
+      "$type": "number",
+      "$value": 338
+    },
+    "340": {
+      "$type": "number",
+      "$value": 340
+    },
+    "341": {
+      "$type": "number",
+      "$value": 341
+    },
+    "342": {
+      "6666564941406": {
+        "$type": "number",
+        "$value": 342.6666564941406
+      },
+      "66668701171875": {
+        "$type": "number",
+        "$value": 342.66668701171875
+      }
+    },
+    "348": {
+      "$type": "number",
+      "$value": 348
+    },
+    "350": {
+      "$type": "number",
+      "$value": 350
+    },
+    "356": {
+      "$type": "number",
+      "$value": 356
+    },
+    "358": {
+      "$type": "number",
+      "$value": 358,
+      "6666564941406": {
+        "$type": "number",
+        "$value": 358.6666564941406
+      },
+      "66668701171875": {
+        "$type": "number",
+        "$value": 358.66668701171875
+      }
+    },
+    "360": {
+      "$type": "number",
+      "$value": 360
+    },
+    "361": {
+      "3333435058594": {
+        "$type": "number",
+        "$value": 361.3333435058594
+      },
+      "33331298828125": {
+        "$type": "number",
+        "$value": 361.33331298828125
+      }
+    },
+    "362": {
+      "$type": "number",
+      "$value": 362
+    },
+    "365": {
+      "$type": "number",
+      "$value": 365
+    },
+    "367": {
+      "$type": "number",
+      "$value": 367
+    },
+    "369": {
+      "$type": "number",
+      "$value": 369
+    },
+    "372": {
+      "$type": "number",
+      "$value": 372
+    },
+    "373": {
+      "$type": "number",
+      "$value": 373
+    },
+    "378": {
+      "$type": "number",
+      "$value": 378
+    },
+    "380": {
+      "$type": "number",
+      "$value": 380
+    },
+    "397": {
+      "$type": "number",
+      "$value": 397
+    },
+    "398": {
+      "$type": "number",
+      "$value": 398
+    },
+    "399": {
+      "$type": "number",
+      "$value": 399
+    },
+    "413": {
+      "$type": "number",
+      "$value": 413
+    },
+    "420": {
+      "$type": "number",
+      "$value": 420
+    },
+    "424": {
+      "$type": "number",
+      "$value": 424
+    },
+    "425": {
+      "$type": "number",
+      "$value": 425
+    },
+    "440": {
+      "$type": "number",
+      "$value": 440
+    },
+    "449": {
+      "$type": "number",
+      "$value": 449
+    },
+    "454": {
+      "$type": "number",
+      "$value": 454
+    },
+    "480": {
+      "$type": "number",
+      "$value": 480
+    },
+    "508": {
+      "$type": "number",
+      "$value": 508
+    },
+    "530": {
+      "$type": "number",
+      "$value": 530
+    },
+    "532": {
+      "$type": "number",
+      "$value": 532
+    },
+    "548": {
+      "$type": "number",
+      "$value": 548
+    },
+    "568": {
+      "$type": "number",
+      "$value": 568
+    },
+    "576": {
+      "$type": "number",
+      "$value": 576
+    },
+    "616": {
+      "$type": "number",
+      "$value": 616
+    },
+    "618": {
+      "$type": "number",
+      "$value": 618
+    },
+    "620": {
+      "$type": "number",
+      "$value": 620
+    },
+    "622": {
+      "$type": "number",
+      "$value": 622
+    },
+    "632": {
+      "$type": "number",
+      "$value": 632
+    },
+    "636": {
+      "$type": "number",
+      "$value": 636
+    },
+    "672": {
+      "$type": "number",
+      "$value": 672
+    },
+    "676": {
+      "$type": "number",
+      "$value": 676
+    },
+    "678": {
+      "$type": "number",
+      "$value": 678
+    },
+    "716": {
+      "$type": "number",
+      "$value": 716
+    },
+    "1060": {
+      "$type": "number",
+      "$value": 1060
+    },
+    "1076": {
+      "$type": "number",
+      "$value": 1076
+    },
+    "1116": {
+      "$type": "number",
+      "$value": 1116
+    },
+    "1180": {
+      "$type": "number",
+      "$value": 1180
+    },
+    "1440": {
+      "$type": "number",
+      "$value": 1440
+    }
+  },
+  "height": {
+    "0": {
+      "$type": "number",
+      "$value": 0
+    },
+    "3": {
+      "5": {
+        "$type": "number",
+        "$value": 3.5
+      }
+    },
+    "4": {
+      "$type": "number",
+      "$value": 4
+    },
+    "6": {
+      "$type": "number",
+      "$value": 6
+    },
+    "7": {
+      "498799800872803": {
+        "$type": "number",
+        "$value": 7.498799800872803
+      }
+    },
+    "8": {
+      "$type": "number",
+      "$value": 8,
+      "167600631713867": {
+        "$type": "number",
+        "$value": 8.167600631713867
+      }
+    },
+    "10": {
+      "5": {
+        "$type": "number",
+        "$value": 10.5
+      },
+      "$type": "number",
+      "$value": 10,
+      "500091552734375": {
+        "$type": "number",
+        "$value": 10.500091552734375
+      }
+    },
+    "11": {
+      "66759967803955": {
+        "$type": "number",
+        "$value": 11.66759967803955
+      },
+      "664274215698242": {
+        "$type": "number",
+        "$value": 11.664274215698242
+      }
+    },
+    "12": {
+      "$type": "number",
+      "$value": 12
+    },
+    "13": {
+      "$type": "number",
+      "$value": 13
+    },
+    "14": {
+      "$type": "number",
+      "$value": 14
+    },
+    "15": {
+      "$type": "number",
+      "$value": 15,
+      "004798889160156": {
+        "$type": "number",
+        "$value": 15.004798889160156
+      },
+      "119999885559082": {
+        "$type": "number",
+        "$value": 15.119999885559082
+      },
+      "001199722290039": {
+        "$type": "number",
+        "$value": 15.001199722290039
+      }
+    },
+    "16": {
+      "$type": "number",
+      "$value": 16
+    },
+    "17": {
+      "$type": "number",
+      "$value": 17
+    },
+    "18": {
+      "$type": "number",
+      "$value": 18
+    },
+    "19": {
+      "$type": "number",
+      "$value": 19
+    },
+    "20": {
+      "$type": "number",
+      "$value": 20
+    },
+    "21": {
+      "$type": "number",
+      "$value": 21
+    },
+    "22": {
+      "$type": "number",
+      "$value": 22
+    },
+    "23": {
+      "$type": "number",
+      "$value": 23
+    },
+    "24": {
+      "$type": "number",
+      "$value": 24
+    },
+    "25": {
+      "$type": "number",
+      "$value": 25
+    },
+    "26": {
+      "$type": "number",
+      "$value": 26
+    },
+    "28": {
+      "$type": "number",
+      "$value": 28
+    },
+    "29": {
+      "$type": "number",
+      "$value": 29
+    },
+    "30": {
+      "$type": "number",
+      "$value": 30
+    },
+    "31": {
+      "$type": "number",
+      "$value": 31
+    },
+    "32": {
+      "$type": "number",
+      "$value": 32
+    },
+    "33": {
+      "$type": "number",
+      "$value": 33
+    },
+    "34": {
+      "$type": "number",
+      "$value": 34
+    },
+    "35": {
+      "$type": "number",
+      "$value": 35
+    },
+    "36": {
+      "$type": "number",
+      "$value": 36
+    },
+    "37": {
+      "$type": "number",
+      "$value": 37
+    },
+    "38": {
+      "$type": "number",
+      "$value": 38
+    },
+    "40": {
+      "$type": "number",
+      "$value": 40
+    },
+    "41": {
+      "$type": "number",
+      "$value": 41
+    },
+    "42": {
+      "$type": "number",
+      "$value": 42
+    },
+    "44": {
+      "$type": "number",
+      "$value": 44
+    },
+    "45": {
+      "$type": "number",
+      "$value": 45
+    },
+    "49": {
+      "$type": "number",
+      "$value": 49
+    },
+    "50": {
+      "$type": "number",
+      "$value": 50
+    },
+    "51": {
+      "$type": "number",
+      "$value": 51
+    },
+    "52": {
+      "$type": "number",
+      "$value": 52
+    },
+    "54": {
+      "$type": "number",
+      "$value": 54
+    },
+    "56": {
+      "$type": "number",
+      "$value": 56
+    },
+    "58": {
+      "$type": "number",
+      "$value": 58
+    },
+    "60": {
+      "$type": "number",
+      "$value": 60
+    },
+    "62": {
+      "$type": "number",
+      "$value": 62
+    },
+    "63": {
+      "$type": "number",
+      "$value": 63
+    },
+    "64": {
+      "$type": "number",
+      "$value": 64
+    },
+    "65": {
+      "$type": "number",
+      "$value": 65
+    },
+    "66": {
+      "$type": "number",
+      "$value": 66
+    },
+    "67": {
+      "$type": "number",
+      "$value": 67
+    },
+    "68": {
+      "$type": "number",
+      "$value": 68
+    },
+    "69": {
+      "$type": "number",
+      "$value": 69
+    },
+    "70": {
+      "$type": "number",
+      "$value": 70
+    },
+    "71": {
+      "$type": "number",
+      "$value": 71
+    },
+    "74": {
+      "$type": "number",
+      "$value": 74
+    },
+    "78": {
+      "$type": "number",
+      "$value": 78
+    },
+    "79": {
+      "$type": "number",
+      "$value": 79
+    },
+    "80": {
+      "$type": "number",
+      "$value": 80
+    },
+    "82": {
+      "$type": "number",
+      "$value": 82
+    },
+    "85": {
+      "$type": "number",
+      "$value": 85
+    },
+    "86": {
+      "$type": "number",
+      "$value": 86
+    },
+    "90": {
+      "$type": "number",
+      "$value": 90
+    },
+    "91": {
+      "$type": "number",
+      "$value": 91
+    },
+    "92": {
+      "$type": "number",
+      "$value": 92
+    },
+    "95": {
+      "$type": "number",
+      "$value": 95
+    },
+    "96": {
+      "$type": "number",
+      "$value": 96
+    },
+    "98": {
+      "$type": "number",
+      "$value": 98
+    },
+    "100": {
+      "$type": "number",
+      "$value": 100
+    },
+    "104": {
+      "$type": "number",
+      "$value": 104
+    },
+    "107": {
+      "$type": "number",
+      "$value": 107
+    },
+    "110": {
+      "$type": "number",
+      "$value": 110
+    },
+    "112": {
+      "$type": "number",
+      "$value": 112
+    },
+    "113": {
+      "$type": "number",
+      "$value": 113
+    },
+    "115": {
+      "$type": "number",
+      "$value": 115
+    },
+    "116": {
+      "$type": "number",
+      "$value": 116
+    },
+    "117": {
+      "$type": "number",
+      "$value": 117
+    },
+    "120": {
+      "$type": "number",
+      "$value": 120
+    },
+    "121": {
+      "$type": "number",
+      "$value": 121
+    },
+    "126": {
+      "$type": "number",
+      "$value": 126
+    },
+    "128": {
+      "$type": "number",
+      "$value": 128
+    },
+    "134": {
+      "$type": "number",
+      "$value": 134
+    },
+    "137": {
+      "$type": "number",
+      "$value": 137
+    },
+    "138": {
+      "$type": "number",
+      "$value": 138
+    },
+    "140": {
+      "$type": "number",
+      "$value": 140
+    },
+    "141": {
+      "$type": "number",
+      "$value": 141
+    },
+    "142": {
+      "$type": "number",
+      "$value": 142
+    },
+    "143": {
+      "$type": "number",
+      "$value": 143
+    },
+    "146": {
+      "$type": "number",
+      "$value": 146
+    },
+    "147": {
+      "$type": "number",
+      "$value": 147
+    },
+    "151": {
+      "$type": "number",
+      "$value": 151
+    },
+    "152": {
+      "$type": "number",
+      "$value": 152
+    },
+    "156": {
+      "$type": "number",
+      "$value": 156
+    },
+    "159": {
+      "$type": "number",
+      "$value": 159
+    },
+    "160": {
+      "$type": "number",
+      "$value": 160
+    },
+    "166": {
+      "$type": "number",
+      "$value": 166
+    },
+    "169": {
+      "$type": "number",
+      "$value": 169
+    },
+    "176": {
+      "$type": "number",
+      "$value": 176
+    },
+    "180": {
+      "$type": "number",
+      "$value": 180
+    },
+    "186": {
+      "$type": "number",
+      "$value": 186
+    },
+    "189": {
+      "$type": "number",
+      "$value": 189
+    },
+    "190": {
+      "$type": "number",
+      "$value": 190
+    },
+    "191": {
+      "$type": "number",
+      "$value": 191
+    },
+    "194": {
+      "$type": "number",
+      "$value": 194
+    },
+    "196": {
+      "$type": "number",
+      "$value": 196
+    },
+    "197": {
+      "$type": "number",
+      "$value": 197
+    },
+    "200": {
+      "$type": "number",
+      "$value": 200
+    },
+    "204": {
+      "$type": "number",
+      "$value": 204
+    },
+    "205": {
+      "$type": "number",
+      "$value": 205
+    },
+    "210": {
+      "$type": "number",
+      "$value": 210
+    },
+    "212": {
+      "$type": "number",
+      "$value": 212
+    },
+    "213": {
+      "$type": "number",
+      "$value": 213
+    },
+    "217": {
+      "$type": "number",
+      "$value": 217
+    },
+    "218": {
+      "$type": "number",
+      "$value": 218
+    },
+    "219": {
+      "$type": "number",
+      "$value": 219
+    },
+    "223": {
+      "$type": "number",
+      "$value": 223
+    },
+    "228": {
+      "$type": "number",
+      "$value": 228
+    },
+    "237": {
+      "$type": "number",
+      "$value": 237
+    },
+    "238": {
+      "$type": "number",
+      "$value": 238
+    },
+    "240": {
+      "$type": "number",
+      "$value": 240
+    },
+    "244": {
+      "$type": "number",
+      "$value": 244
+    },
+    "247": {
+      "$type": "number",
+      "$value": 247
+    },
+    "250": {
+      "$type": "number",
+      "$value": 250
+    },
+    "252": {
+      "$type": "number",
+      "$value": 252
+    },
+    "260": {
+      "$type": "number",
+      "$value": 260
+    },
+    "270": {
+      "$type": "number",
+      "$value": 270
+    },
+    "274": {
+      "$type": "number",
+      "$value": 274
+    },
+    "281": {
+      "$type": "number",
+      "$value": 281
+    },
+    "283": {
+      "$type": "number",
+      "$value": 283
+    },
+    "284": {
+      "$type": "number",
+      "$value": 284
+    },
+    "286": {
+      "$type": "number",
+      "$value": 286
+    },
+    "297": {
+      "$type": "number",
+      "$value": 297
+    },
+    "321": {
+      "$type": "number",
+      "$value": 321
+    },
+    "329": {
+      "$type": "number",
+      "$value": 329
+    },
+    "336": {
+      "$type": "number",
+      "$value": 336
+    },
+    "350": {
+      "$type": "number",
+      "$value": 350
+    },
+    "357": {
+      "$type": "number",
+      "$value": 357
+    },
+    "384": {
+      "$type": "number",
+      "$value": 384
+    },
+    "402": {
+      "$type": "number",
+      "$value": 402
+    },
+    "416": {
+      "$type": "number",
+      "$value": 416
+    },
+    "441": {
+      "$type": "number",
+      "$value": 441
+    },
+    "458": {
+      "$type": "number",
+      "$value": 458
+    },
+    "471": {
+      "$type": "number",
+      "$value": 471
+    },
+    "476": {
+      "$type": "number",
+      "$value": 476
+    },
+    "480": {
+      "$type": "number",
+      "$value": 480
+    },
+    "505": {
+      "$type": "number",
+      "$value": 505
+    },
+    "550": {
+      "$type": "number",
+      "$value": 550
+    },
+    "583": {
+      "$type": "number",
+      "$value": 583
+    },
+    "629": {
+      "$type": "number",
+      "$value": 629
+    },
+    "674": {
+      "$type": "number",
+      "$value": 674
+    },
+    "675": {
+      "$type": "number",
+      "$value": 675
+    },
+    "687": {
+      "$type": "number",
+      "$value": 687
+    },
+    "707": {
+      "$type": "number",
+      "$value": 707
+    },
+    "781": {
+      "$type": "number",
+      "$value": 781
+    },
+    "803": {
+      "$type": "number",
+      "$value": 803
+    },
+    "830": {
+      "$type": "number",
+      "$value": 830
+    },
+    "878": {
+      "$type": "number",
+      "$value": 878
+    },
+    "942": {
+      "$type": "number",
+      "$value": 942
+    },
+    "981": {
+      "$type": "number",
+      "$value": 981
+    },
+    "1024": {
+      "$type": "number",
+      "$value": 1024
+    },
+    "1063": {
+      "$type": "number",
+      "$value": 1063
+    }
+  }
+}
