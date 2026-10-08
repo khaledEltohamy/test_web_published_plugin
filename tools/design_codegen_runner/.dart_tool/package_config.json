@@ -1,0 +1,20 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "design_codegen",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/design_codegen-0.0.12",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    },
+    {
+      "name": "design_codegen_runner",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    }
+  ],
+  "generator": "pub",
+  "generatorVersion": "3.13.5",
+  "pubCache": "file:///home/runner/.pub-cache"
+}
