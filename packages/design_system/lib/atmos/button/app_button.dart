@@ -11,7 +11,7 @@ class DsButton extends StatelessWidget {
     required this.label,
     this.onPressed,
     this.variant =
-        DsButtonVariant.primary,
+        DsButtonVariant.$extensions,
     this.icon,
     this.enabled = true,
   });
@@ -120,22 +120,22 @@ class DsButton extends StatelessWidget {
     DsButtonVariant variant,
   ) {
     switch (variant) {
-      case DsButtonVariant.primary:
+      case DsButtonVariant.$extensions:
         return _ButtonStyle(
           background:
-              tokens.buttonPrimaryBackground,
+              tokens.button$extensionsBackground,
           foreground:
-              tokens.buttonPrimaryText,
+              tokens.button$extensionsText,
           border:
-              tokens.buttonPrimaryBorder,
+              tokens.button$extensionsBorder,
           radius:
-              tokens.buttonComponentPrimaryRadius,
+              tokens.buttonComponent$extensionsRadius,
           hoverBackground:
-              tokens.buttonPrimaryBackground,
+              tokens.button$extensionsBackground,
           pressedBackground:
-              tokens.buttonPrimaryBackground,
+              tokens.button$extensionsBackground,
           disabledBackground:
-              tokens.buttonPrimaryBackground,
+              tokens.button$extensionsBackground,
           disabledForeground:
               tokens.textDisabled,
         );
