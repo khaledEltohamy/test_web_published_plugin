@@ -4,6 +4,28 @@
 class AppRouter {
   const AppRouter._();
 
-  static const String initialRoute = '/';
+  static const String initialRoute = '/diet_plan';
+
+  static const String dietPlanRoute = '/diet_plan';
+
+  static const String workoutsProgramsRoute = '/workouts_programs';
+
+  static const String progressSharingRoute = '/progress_sharing';
+
+  static const String clientManagementRoute = '/client_management';
+
+  static const String subscriptionRoute = '/subscription';
+
+  static const String clientProfileRoute = '/client_profile';
+
+  static const String leadsManagementRoute = '/leads_management';
+
+  static const String businessGrowthRoute = '/business_growth';
+
+  static const String unlimitedCoworkersRoute = '/unlimited_coworkers';
+
+  static const String customBrandingRoute = '/custom_branding';
+
+  static const String reportsRoute = '/reports';
 
 }

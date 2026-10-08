@@ -4,6 +4,17 @@
 import 'package:flutter/cupertino.dart';
 
 import 'app_router.dart';
+import '../../src/modules/Common/presentation/pages/diet_plan.dart';
+import '../../src/modules/Common/presentation/pages/workouts_programs.dart';
+import '../../src/modules/Common/presentation/pages/progress_sharing.dart';
+import '../../src/modules/Common/presentation/pages/client_management.dart';
+import '../../src/modules/Common/presentation/pages/subscription.dart';
+import '../../src/modules/Common/presentation/pages/client_profile.dart';
+import '../../src/modules/Common/presentation/pages/leads_management.dart';
+import '../../src/modules/Common/presentation/pages/business_growth.dart';
+import '../../src/modules/Common/presentation/pages/unlimited_coworkers.dart';
+import '../../src/modules/Common/presentation/pages/custom_branding.dart';
+import '../../src/modules/Common/presentation/pages/reports.dart';
 
 class AppRouteGenerator {
   const AppRouteGenerator._();
@@ -12,6 +23,94 @@ class AppRouteGenerator {
     RouteSettings settings,
   ) {
     switch (settings.name) {
+      case AppRouter.dietPlanRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.dietPlanRoute,
+          ),
+          builder: (context) =>
+              const DietPlan(),
+        );
+      case AppRouter.workoutsProgramsRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.workoutsProgramsRoute,
+          ),
+          builder: (context) =>
+              const WorkoutsPrograms(),
+        );
+      case AppRouter.progressSharingRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.progressSharingRoute,
+          ),
+          builder: (context) =>
+              const ProgressSharing(),
+        );
+      case AppRouter.clientManagementRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.clientManagementRoute,
+          ),
+          builder: (context) =>
+              const ClientManagement(),
+        );
+      case AppRouter.subscriptionRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.subscriptionRoute,
+          ),
+          builder: (context) =>
+              const Subscription(),
+        );
+      case AppRouter.clientProfileRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.clientProfileRoute,
+          ),
+          builder: (context) =>
+              const ClientProfile(),
+        );
+      case AppRouter.leadsManagementRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.leadsManagementRoute,
+          ),
+          builder: (context) =>
+              const LeadsManagement(),
+        );
+      case AppRouter.businessGrowthRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.businessGrowthRoute,
+          ),
+          builder: (context) =>
+              const BusinessGrowth(),
+        );
+      case AppRouter.unlimitedCoworkersRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.unlimitedCoworkersRoute,
+          ),
+          builder: (context) =>
+              const UnlimitedCoworkers(),
+        );
+      case AppRouter.customBrandingRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.customBrandingRoute,
+          ),
+          builder: (context) =>
+              const CustomBranding(),
+        );
+      case AppRouter.reportsRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.reportsRoute,
+          ),
+          builder: (context) =>
+              const Reports(),
+        );
       default:
         return null;
     }
