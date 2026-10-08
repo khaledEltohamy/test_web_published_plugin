@@ -1,1 +1,17 @@
-{}
+{
+  "buttonComponent": {
+    "$type": "color",
+    "$value": "#FFFFFF",
+    "$extensions": {
+      "figma": {
+        "variableId": "VariableID:65:32",
+        "variableKey": "a7a6f29c6adaa03eea47b6c136fb1eba2c0ee7e1",
+        "variableName": "buttonComponent",
+        "variableType": "color",
+        "collectionId": "VariableCollectionId:65:31",
+        "collectionName": "components",
+        "designId": null
+      }
+    }
+  }
+}

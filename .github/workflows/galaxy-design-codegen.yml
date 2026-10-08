@@ -3,9 +3,9 @@ name: Galaxy Design Codegen
 
 on:
   push:
-    paths:
-      - "token_pipeline/token.json"
-      - ".github/workflows/galaxy-design-codegen.yml"
+    paths-ignore:
+      - "packages/design_system/lib/**"
+      - "apps/fit_web_app/lib/generated/**"
   workflow_dispatch:
 
 permissions:
@@ -32,8 +32,14 @@ jobs:
         run: |
           git config user.name "galaxy-bot"
           git config user.email "galaxy-bot@users.noreply.github.com"
-          git add -A -- "packages/design_system/lib"
-          if [ -d "apps/fit_web_app/lib/generated/pages" ]; then git add -A -- "apps/fit_web_app/lib/generated"; fi
+          # Generation can modify:
+          # - design system
+          # - generated pages
+          # - generated routes
+          # - assets
+          # - assets_path.dart
+          # - pubspec/lock files
+          git add -A
           if git diff --cached --quiet; then
             echo "No generated changes."
             exit 0

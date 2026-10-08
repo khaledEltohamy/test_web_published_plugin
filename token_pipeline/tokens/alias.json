@@ -1,1 +1,154 @@
-{}
+{
+  "background": {
+    "primary": {
+      "$type": "color",
+      "$value": "{base.black}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:65:30",
+          "variableKey": "1e3e900720c55094c34f538b75ba3e320de80575",
+          "variableName": "background/primary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:65:29",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "secoundry": {
+      "$type": "color",
+      "$value": "{blue.900}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:65:39",
+          "variableKey": "150453f7ccb3aa8716f2e194751662fd847b3352",
+          "variableName": "background/secoundry",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:65:29",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "button": {
+    "$type": "color",
+    "$value": "{green.500}",
+    "$extensions": {
+      "figma": {
+        "variableId": "VariableID:65:36",
+        "variableKey": "c043e7e6c7aa4e849f5cd5d950eca1cef4925fa6",
+        "variableName": "button",
+        "variableType": "color",
+        "collectionId": "VariableCollectionId:65:29",
+        "collectionName": "alias",
+        "designId": null
+      }
+    }
+  },
+  "background-4": {
+    "$type": "color",
+    "$value": "{base.black}",
+    "$extensions": {
+      "figma": {
+        "variableId": "VariableID:65:42",
+        "variableKey": "7b71cce2251d62e0aac00a974a5fe3097f6aa35e",
+        "variableName": "background 4",
+        "variableType": "color",
+        "collectionId": "VariableCollectionId:65:29",
+        "collectionName": "alias",
+        "designId": null
+      }
+    }
+  },
+  "background-5": {
+    "$type": "color",
+    "$value": "{base.black}",
+    "$extensions": {
+      "figma": {
+        "variableId": "VariableID:65:45",
+        "variableKey": "37da4ee773be94fb5f7bb176bb162c4d7dbea081",
+        "variableName": "background 5",
+        "variableType": "color",
+        "collectionId": "VariableCollectionId:65:29",
+        "collectionName": "alias",
+        "designId": null
+      }
+    }
+  },
+  "background-6": {
+    "$type": "color",
+    "$value": "{base.black}",
+    "$extensions": {
+      "figma": {
+        "variableId": "VariableID:65:48",
+        "variableKey": "4b9a34cedb2e7cf90622af3b077ee470715ef390",
+        "variableName": "background 6",
+        "variableType": "color",
+        "collectionId": "VariableCollectionId:65:29",
+        "collectionName": "alias",
+        "designId": null
+      }
+    }
+  },
+  "background-7": {
+    "$type": "color",
+    "$value": "{base.black}",
+    "$extensions": {
+      "figma": {
+        "variableId": "VariableID:65:51",
+        "variableKey": "b26d4a79f274e24df4c4c61a9ef14061a36b0cfa",
+        "variableName": "background 7",
+        "variableType": "color",
+        "collectionId": "VariableCollectionId:65:29",
+        "collectionName": "alias",
+        "designId": null
+      }
+    }
+  },
+  "background-8": {
+    "$type": "color",
+    "$value": "{base.black}",
+    "$extensions": {
+      "figma": {
+        "variableId": "VariableID:65:54",
+        "variableKey": "c27065e2477dec76a1c78b8ca7fd7237a539dc28",
+        "variableName": "background 8",
+        "variableType": "color",
+        "collectionId": "VariableCollectionId:65:29",
+        "collectionName": "alias",
+        "designId": null
+      }
+    }
+  },
+  "background-9": {
+    "$type": "color",
+    "$value": "{base.black}",
+    "$extensions": {
+      "figma": {
+        "variableId": "VariableID:65:57",
+        "variableKey": "eafc561c97257c66e9333604cd188251dff41f50",
+        "variableName": "background 9",
+        "variableType": "color",
+        "collectionId": "VariableCollectionId:65:29",
+        "collectionName": "alias",
+        "designId": null
+      }
+    }
+  },
+  "background-10": {
+    "$type": "color",
+    "$value": "{base.black}",
+    "$extensions": {
+      "figma": {
+        "variableId": "VariableID:65:60",
+        "variableKey": "7f036593c722701549d42e841889bbdafb3764ed",
+        "variableName": "background 10",
+        "variableType": "color",
+        "collectionId": "VariableCollectionId:65:29",
+        "collectionName": "alias",
+        "designId": null
+      }
+    }
+  }
+}
