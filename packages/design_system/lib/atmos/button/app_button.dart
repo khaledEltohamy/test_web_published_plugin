@@ -11,7 +11,7 @@ class DsButton extends StatelessWidget {
     required this.label,
     this.onPressed,
     this.variant =
-        DsButtonVariant.$extensions,
+        DsButtonVariant.primary,
     this.icon,
     this.enabled = true,
   });
@@ -120,22 +120,98 @@ class DsButton extends StatelessWidget {
     DsButtonVariant variant,
   ) {
     switch (variant) {
-      case DsButtonVariant.$extensions:
+      case DsButtonVariant.primary:
         return _ButtonStyle(
           background:
-              tokens.button$extensionsBackground,
+              tokens.buttonPrimaryBackground,
           foreground:
-              tokens.button$extensionsText,
+              tokens.buttonPrimaryText,
           border:
-              tokens.button$extensionsBorder,
+              tokens.buttonPrimaryBorder,
           radius:
-              tokens.buttonComponent$extensionsRadius,
+              tokens.buttonComponentPrimaryRadius,
           hoverBackground:
-              tokens.button$extensionsBackground,
+              tokens.buttonPrimaryHover,
           pressedBackground:
-              tokens.button$extensionsBackground,
+              tokens.buttonPrimaryPressed,
           disabledBackground:
-              tokens.button$extensionsBackground,
+              tokens.buttonPrimaryDisabled,
+          disabledForeground:
+              tokens.textDisabled,
+        );
+      case DsButtonVariant.secondary:
+        return _ButtonStyle(
+          background:
+              tokens.buttonSecondaryBackground,
+          foreground:
+              tokens.buttonSecondaryText,
+          border:
+              tokens.buttonSecondaryBorder,
+          radius:
+              tokens.buttonComponentSecondaryRadius,
+          hoverBackground:
+              tokens.buttonSecondaryBackground,
+          pressedBackground:
+              tokens.buttonSecondaryBackground,
+          disabledBackground:
+              tokens.buttonSecondaryBackground,
+          disabledForeground:
+              tokens.textDisabled,
+        );
+      case DsButtonVariant.tertiary:
+        return _ButtonStyle(
+          background:
+              tokens.buttonTertiaryBackground,
+          foreground:
+              tokens.buttonTertiaryText,
+          border:
+              tokens.buttonTertiaryBorder,
+          radius:
+              tokens.buttonComponentTertiaryRadius,
+          hoverBackground:
+              tokens.buttonTertiaryBackground,
+          pressedBackground:
+              tokens.buttonTertiaryBackground,
+          disabledBackground:
+              tokens.buttonTertiaryBackground,
+          disabledForeground:
+              tokens.textDisabled,
+        );
+      case DsButtonVariant.success:
+        return _ButtonStyle(
+          background:
+              tokens.buttonSuccessBackground,
+          foreground:
+              tokens.buttonSuccessText,
+          border:
+              tokens.buttonSuccessBorder,
+          radius:
+              tokens.buttonComponentSuccessRadius,
+          hoverBackground:
+              tokens.buttonSuccessBackground,
+          pressedBackground:
+              tokens.buttonSuccessBackground,
+          disabledBackground:
+              tokens.buttonSuccessBackground,
+          disabledForeground:
+              tokens.textDisabled,
+        );
+      case DsButtonVariant.error:
+        return _ButtonStyle(
+          background:
+              tokens.buttonErrorBackground,
+          foreground:
+              tokens.buttonErrorText,
+          border:
+              tokens.buttonErrorBorder,
+          radius:
+              tokens.buttonComponentErrorRadius,
+          hoverBackground:
+              tokens.buttonErrorBackground,
+          pressedBackground:
+              tokens.buttonErrorBackground,
+          disabledBackground:
+              tokens.buttonErrorBackground,
           disabledForeground:
               tokens.textDisabled,
         );

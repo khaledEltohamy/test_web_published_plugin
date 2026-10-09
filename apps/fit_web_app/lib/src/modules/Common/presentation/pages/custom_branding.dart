@@ -68,7 +68,7 @@ class CustomBranding extends StatelessWidget {
                     const SizedBox(width: 8.0),
                     AppText(
                       'FitPro',
-                      style: TextStyle(color: AliasTokens.textPrimary, fontFamily: 'Outfit', fontSize: 20.0, letterSpacing: -1.0),
+                      style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Outfit', fontSize: 20.0, letterSpacing: -1.0),
                       textAlign: TextAlign.left,
                     ),
                     const SizedBox(width: 8.0),

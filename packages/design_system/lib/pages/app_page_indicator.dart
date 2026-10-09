@@ -13,8 +13,8 @@ class AppPageIndicator extends StatelessWidget {
     required this.index,
     this.onTap,
     this.duration = const Duration(milliseconds: 250),
-    required this.activeColor,
-    required this.inactiveColor,
+    this.activeColor,
+    this.inactiveColor,
     this.dotSize,
     this.activeDotWidth,
     this.gap,
@@ -24,10 +24,10 @@ class AppPageIndicator extends StatelessWidget {
   final int index;
   final ValueChanged<int>? onTap;
   final Duration duration;
-  /// Current page dot. Required: no matching token exists in the Figma collections.
-  final Color activeColor;
-  /// Other page dots. Required: no matching token exists in the Figma collections.
-  final Color inactiveColor;
+  /// Current page dot. Defaults to `tokens.buttonPrimaryBackground`.
+  final Color? activeColor;
+  /// Other page dots. Defaults to `tokens.borderPrimary`.
+  final Color? inactiveColor;
   /// Dot diameter. Defaults to `SpacingTokens.spacing8`.
   final double? dotSize;
   /// Width of the current dot. Defaults to `SpacingTokens.spacing24`.
@@ -38,8 +38,8 @@ class AppPageIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final tokens = context.ds;
-    final Color on = activeColor;
-    final Color off = inactiveColor;
+    final Color on = (activeColor ?? tokens.buttonPrimaryBackground);
+    final Color off = (inactiveColor ?? tokens.borderPrimary);
     final double size = (dotSize ?? SpacingTokens.spacing8);
     final double current = (activeDotWidth ?? SpacingTokens.spacing24);
     final double space = (gap ?? SpacingTokens.spacing8);

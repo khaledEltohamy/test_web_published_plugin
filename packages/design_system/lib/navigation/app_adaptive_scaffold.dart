@@ -39,9 +39,9 @@ class AppAdaptiveScaffold extends StatelessWidget {
     this.breakpoints = const DsBreakpoints(),
     this.backgroundColor,
     this.navigationColor,
-    required this.selectedColor,
-    required this.unselectedColor,
-    required this.indicatorColor,
+    this.selectedColor,
+    this.unselectedColor,
+    this.indicatorColor,
     this.dividerColor,
   });
 
@@ -57,15 +57,15 @@ class AppAdaptiveScaffold extends StatelessWidget {
   final DsBreakpoints breakpoints;
   /// Scaffold background. Defaults to `tokens.backgroundPrimary`.
   final Color? backgroundColor;
-  /// Bottom bar / rail background. Defaults to `tokens.backgroundPrimary`.
+  /// Bottom bar / rail background. Defaults to `tokens.surfacePrimary`.
   final Color? navigationColor;
-  /// Selected destination icon and label. Required: no matching token exists in the Figma collections.
-  final Color selectedColor;
-  /// Unselected destination icon and label. Required: no matching token exists in the Figma collections.
-  final Color unselectedColor;
-  /// Pill behind the selected destination. Required: no matching token exists in the Figma collections.
-  final Color indicatorColor;
-  /// Line between the rail and the body. Optional.
+  /// Selected destination icon and label. Defaults to `tokens.buttonPrimaryBackground`.
+  final Color? selectedColor;
+  /// Unselected destination icon and label. Defaults to `tokens.iconSecondary`.
+  final Color? unselectedColor;
+  /// Pill behind the selected destination. Defaults to `tokens.backgroundSecondary`.
+  final Color? indicatorColor;
+  /// Line between the rail and the body. Defaults to `tokens.dividerDefault`.
   final Color? dividerColor;
 
   Widget _icon(BuildContext context, AppDestination item, bool isSelected, Color color) {
@@ -77,11 +77,11 @@ class AppAdaptiveScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     final tokens = context.ds;
     final Color page = (backgroundColor ?? tokens.backgroundPrimary);
-    final Color bar = (navigationColor ?? tokens.backgroundPrimary);
-    final Color on = selectedColor;
-    final Color off = unselectedColor;
-    final Color pill = indicatorColor;
-    final Color? line = dividerColor;
+    final Color bar = (navigationColor ?? tokens.surfacePrimary);
+    final Color on = (selectedColor ?? tokens.buttonPrimaryBackground);
+    final Color off = (unselectedColor ?? tokens.iconSecondary);
+    final Color pill = (indicatorColor ?? tokens.backgroundSecondary);
+    final Color? line = (dividerColor ?? tokens.dividerDefault);
 
     final size = DsResponsive.sizeOf(context, breakpoints: breakpoints);
 
