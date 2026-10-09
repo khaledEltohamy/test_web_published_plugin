@@ -11,7 +11,11 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:79:90",
           "collectionName": "alias",
-          "designId": null
+          "nodeId": "3:349",
+          "nodeName": "Frame",
+          "nodeType": "FRAME",
+          "page": "Pages",
+          "designId": "Frame"
         }
       }
     },
@@ -26,7 +30,11 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:79:90",
           "collectionName": "alias",
-          "designId": null
+          "nodeId": "3:301",
+          "nodeName": "sidebar",
+          "nodeType": "FRAME",
+          "page": "Pages",
+          "designId": "sidebar"
         }
       }
     },

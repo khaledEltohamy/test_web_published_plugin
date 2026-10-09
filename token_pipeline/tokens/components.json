@@ -12,7 +12,11 @@
             "variableType": "color",
             "collectionId": "VariableCollectionId:79:162",
             "collectionName": "components",
-            "designId": null
+            "nodeId": "3:118",
+            "nodeName": "Frame",
+            "nodeType": "FRAME",
+            "page": "Pages",
+            "designId": "Frame"
           }
         }
       },
@@ -27,7 +31,11 @@
             "variableType": "color",
             "collectionId": "VariableCollectionId:79:162",
             "collectionName": "components",
-            "designId": null
+            "nodeId": "3:120",
+            "nodeName": "Quick Assign",
+            "nodeType": "TEXT",
+            "page": "Pages",
+            "designId": "Quick Assign"
           }
         }
       },
