@@ -15,6 +15,10 @@ class CustomBranding extends StatelessWidget {
       backgroundColor: context.ds.backgroundPrimary,
       body: SafeArea(
         child: SingleChildScrollView(
+          child: Container(
+          decoration: BoxDecoration(
+            color: const Color(0xFF08090C),
+          ),
           child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -22,12 +26,11 @@ class CustomBranding extends StatelessWidget {
           children: [
             SizedBox(
               width: 260.0,
-              child: Padding(
-              padding: const EdgeInsets.fromLTRB(
-                16.0,
-                24.0,
-                16.0,
-                24.0,
+              child: Container(
+              padding: const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 24.0),
+              decoration: BoxDecoration(
+                color: const Color(0xFF12141C),
+                border: Border(top: BorderSide.none, right: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0), bottom: BorderSide.none, left: BorderSide.none),
               ),
               child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -35,12 +38,7 @@ class CustomBranding extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    12.0,
-                    0.0,
-                    0.0,
-                    28.0,
-                  ),
+                  padding: const EdgeInsets.fromLTRB(12.0, 0.0, 0.0, 28.0),
                   child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -49,6 +47,11 @@ class CustomBranding extends StatelessWidget {
                     SizedBox(
                       width: 28.0,
                       height: 28.0,
+                      child: Container(
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFD2FF00),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                      ),
                       child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -65,6 +68,7 @@ class CustomBranding extends StatelessWidget {
                       ],
                     ),
                     ),
+                    ),
                     const SizedBox(width: 8.0),
                     AppText(
                       'FitPro',
@@ -72,12 +76,11 @@ class CustomBranding extends StatelessWidget {
                       textAlign: TextAlign.left,
                     ),
                     const SizedBox(width: 8.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        6.0,
-                        2.0,
-                        6.0,
-                        2.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(6.0, 2.0, 6.0, 2.0),
+                      decoration: BoxDecoration(
+                        color: const Color(0x12FFFFFF),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.min,
@@ -100,12 +103,10 @@ class CustomBranding extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -130,12 +131,10 @@ class CustomBranding extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -160,12 +159,10 @@ class CustomBranding extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -190,12 +187,10 @@ class CustomBranding extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -220,12 +215,10 @@ class CustomBranding extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -250,12 +243,10 @@ class CustomBranding extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -280,12 +271,10 @@ class CustomBranding extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -310,12 +299,10 @@ class CustomBranding extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -340,12 +327,10 @@ class CustomBranding extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -370,12 +355,11 @@ class CustomBranding extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        color: const Color(0x1AD2FF00),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -397,17 +381,22 @@ class CustomBranding extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         const SizedBox(width: 12.0),
-                        const SizedBox.shrink(),
+                        Container(
+                          width: 6.0,
+                          height: 6.0,
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFD2FF00),
+                            shape: BoxShape.circle,
+                          ),
+                        ),
                       ],
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -434,12 +423,12 @@ class CustomBranding extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 402.0),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    12.0,
-                    12.0,
-                    12.0,
-                    12.0,
+                Container(
+                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                  decoration: BoxDecoration(
+                    color: const Color(0x05FFFFFF),
+                    borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                   ),
                   child: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -483,12 +472,10 @@ class CustomBranding extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    32.0,
-                    16.0,
-                    32.0,
-                    16.0,
+                Container(
+                  padding: const EdgeInsets.fromLTRB(32.0, 16.0, 32.0, 16.0),
+                  decoration: BoxDecoration(
+                    border: Border(top: BorderSide.none, right: BorderSide.none, bottom: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0), left: BorderSide.none),
                   ),
                   child: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -520,12 +507,12 @@ class CustomBranding extends StatelessWidget {
                       children: [
                         SizedBox(
                           width: 220.0,
-                          child: Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            8.0,
-                            12.0,
-                            8.0,
+                          child: Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0x08FFFFFF),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -554,6 +541,12 @@ class CustomBranding extends StatelessWidget {
                         SizedBox(
                           width: 36.0,
                           height: 36.0,
+                          child: Container(
+                          decoration: BoxDecoration(
+                            color: const Color(0x05FFFFFF),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius18),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                          ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -567,17 +560,25 @@ class CustomBranding extends StatelessWidget {
                                 const AppIcon(Icons.circle),
                               ],
                             ),
-                            const SizedBox.shrink(),
+                            Container(
+                              width: 8.0,
+                              height: 8.0,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFD2FF00),
+                                shape: BoxShape.circle,
+                                border: Border.all(color: const Color(0xFF12141C), width: 1.5),
+                              ),
+                            ),
                           ],
                         ),
                         ),
+                        ),
                         const SizedBox(width: 16.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            16.0,
-                            8.0,
-                            16.0,
-                            8.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFD2FF00),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.min,
@@ -607,12 +608,7 @@ class CustomBranding extends StatelessWidget {
                 ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    32.0,
-                    32.0,
-                    32.0,
-                    32.0,
-                  ),
+                  padding: const EdgeInsets.fromLTRB(32.0, 32.0, 32.0, 32.0),
                   child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -623,12 +619,12 @@ class CustomBranding extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            20.0,
-                            20.0,
-                            20.0,
-                            20.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF12141C),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -649,6 +645,12 @@ class CustomBranding extends StatelessWidget {
                                 SizedBox(
                                   width: 80.0,
                                   height: 80.0,
+                                  child: Container(
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF08090C),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                  ),
                                   child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -660,6 +662,7 @@ class CustomBranding extends StatelessWidget {
                                     color: Colors.transparent,
                                     ),
                                   ],
+                                ),
                                 ),
                                 ),
                                 const SizedBox(width: 20.0),
@@ -679,12 +682,11 @@ class CustomBranding extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            12.0,
-                                            6.0,
-                                            12.0,
-                                            6.0,
+                                        Container(
+                                          padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFD2FF00),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
                                           ),
                                           child: Row(
                                           mainAxisSize: MainAxisSize.min,
@@ -700,12 +702,12 @@ class CustomBranding extends StatelessWidget {
                                         ),
                                         ),
                                         const SizedBox(width: 8.0),
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            12.0,
-                                            6.0,
-                                            12.0,
-                                            6.0,
+                                        Container(
+                                          padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                          decoration: BoxDecoration(
+                                            color: const Color(0x08FFFFFF),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                           ),
                                           child: Row(
                                           mainAxisSize: MainAxisSize.min,
@@ -730,12 +732,12 @@ class CustomBranding extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 24.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            20.0,
-                            20.0,
-                            20.0,
-                            20.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF12141C),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -753,12 +755,12 @@ class CustomBranding extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    12.0,
-                                    12.0,
-                                    12.0,
-                                    12.0,
+                                Container(
+                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF08090C),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                   ),
                                   child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -770,7 +772,15 @@ class CustomBranding extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 32.0,
+                                          height: 32.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF1A1C29),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                            border: Border.all(color: const Color(0x20FFFFFF), width: 1.0),
+                                          ),
+                                        ),
                                         const SizedBox(width: 12.0),
                                         Column(
                                           mainAxisSize: MainAxisSize.min,
@@ -792,12 +802,12 @@ class CustomBranding extends StatelessWidget {
                                         ),
                                       ],
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        12.0,
-                                        6.0,
-                                        12.0,
-                                        6.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0x08FFFFFF),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -816,12 +826,12 @@ class CustomBranding extends StatelessWidget {
                                 ),
                                 ),
                                 const SizedBox(height: 12.0),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    12.0,
-                                    12.0,
-                                    12.0,
-                                    12.0,
+                                Container(
+                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF08090C),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                   ),
                                   child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -833,7 +843,15 @@ class CustomBranding extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 32.0,
+                                          height: 32.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF0B0C10),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                            border: Border.all(color: const Color(0x20FFFFFF), width: 1.0),
+                                          ),
+                                        ),
                                         const SizedBox(width: 12.0),
                                         Column(
                                           mainAxisSize: MainAxisSize.min,
@@ -855,12 +873,12 @@ class CustomBranding extends StatelessWidget {
                                         ),
                                       ],
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        12.0,
-                                        6.0,
-                                        12.0,
-                                        6.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0x08FFFFFF),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -879,12 +897,12 @@ class CustomBranding extends StatelessWidget {
                                 ),
                                 ),
                                 const SizedBox(height: 12.0),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    12.0,
-                                    12.0,
-                                    12.0,
-                                    12.0,
+                                Container(
+                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF08090C),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                   ),
                                   child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -896,7 +914,15 @@ class CustomBranding extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 32.0,
+                                          height: 32.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFFF3E6C),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                            border: Border.all(color: const Color(0x20FFFFFF), width: 1.0),
+                                          ),
+                                        ),
                                         const SizedBox(width: 12.0),
                                         Column(
                                           mainAxisSize: MainAxisSize.min,
@@ -918,12 +944,12 @@ class CustomBranding extends StatelessWidget {
                                         ),
                                       ],
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        12.0,
-                                        6.0,
-                                        12.0,
-                                        6.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0x08FFFFFF),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -947,12 +973,12 @@ class CustomBranding extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 24.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            20.0,
-                            20.0,
-                            20.0,
-                            20.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF12141C),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -981,12 +1007,12 @@ class CustomBranding extends StatelessWidget {
                                       textAlign: TextAlign.left,
                                     ),
                                     const SizedBox(height: 6.0),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        12.0,
-                                        12.0,
-                                        12.0,
-                                        12.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xFF08090C),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -1023,12 +1049,12 @@ class CustomBranding extends StatelessWidget {
                                       textAlign: TextAlign.left,
                                     ),
                                     const SizedBox(height: 6.0),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        12.0,
-                                        12.0,
-                                        12.0,
-                                        12.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xFF08090C),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -1059,12 +1085,12 @@ class CustomBranding extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 24.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            20.0,
-                            20.0,
-                            20.0,
-                            20.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF12141C),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -1106,12 +1132,12 @@ class CustomBranding extends StatelessWidget {
                                       textAlign: TextAlign.left,
                                     ),
                                     const SizedBox(height: 6.0),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        12.0,
-                                        12.0,
-                                        12.0,
-                                        12.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xFF08090C),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -1146,12 +1172,12 @@ class CustomBranding extends StatelessWidget {
                                       textAlign: TextAlign.left,
                                     ),
                                     const SizedBox(height: 6.0),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        12.0,
-                                        12.0,
-                                        12.0,
-                                        12.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xFF08090C),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -1183,12 +1209,12 @@ class CustomBranding extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            24.0,
-                            24.0,
-                            24.0,
-                            24.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 24.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF12141C),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -1205,12 +1231,11 @@ class CustomBranding extends StatelessWidget {
                                   style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 16.0, fontWeight: FontWeight.w700),
                                   textAlign: TextAlign.left,
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    8.0,
-                                    2.0,
-                                    8.0,
-                                    2.0,
+                                Container(
+                                  padding: const EdgeInsets.fromLTRB(8.0, 2.0, 8.0, 2.0),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0x1AFF3E6C),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                                   ),
                                   child: Row(
                                   mainAxisSize: MainAxisSize.min,
@@ -1230,12 +1255,13 @@ class CustomBranding extends StatelessWidget {
                             const SizedBox(height: 20.0),
                             SizedBox(
                               height: 480.0,
-                              child: Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                20.0,
-                                20.0,
-                                20.0,
-                                20.0,
+                              child: Container(
+                              clipBehavior: Clip.antiAlias,
+                              padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFF0B0C10),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius28),
+                                border: Border.all(color: const Color(0x33FF3E6C), width: 2.0),
                               ),
                               child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -1257,9 +1283,23 @@ class CustomBranding extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 14.0,
+                                          height: 8.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFFFFFFF),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 4.0),
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 10.0,
+                                          height: 8.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFFFFFFF),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   ],
@@ -1273,6 +1313,11 @@ class CustomBranding extends StatelessWidget {
                                     SizedBox(
                                       width: 24.0,
                                       height: 24.0,
+                                      child: Container(
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xFFFF3E6C),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                      ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment: MainAxisAlignment.center,
@@ -1289,6 +1334,7 @@ class CustomBranding extends StatelessWidget {
                                       ],
                                     ),
                                     ),
+                                    ),
                                     const SizedBox(width: 8.0),
                                     AppText(
                                       'MarcusFit',
@@ -1298,12 +1344,12 @@ class CustomBranding extends StatelessWidget {
                                   ],
                                 ),
                                 const SizedBox(height: 16.0),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    14.0,
-                                    14.0,
-                                    14.0,
-                                    14.0,
+                                Container(
+                                  padding: const EdgeInsets.fromLTRB(14.0, 14.0, 14.0, 14.0),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF1A1C29),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                    border: Border.all(color: const Color(0x12FFFFFF), width: 1.0),
                                   ),
                                   child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -1339,18 +1385,31 @@ class CustomBranding extends StatelessWidget {
                                           ],
                                         ),
                                         const SizedBox(height: 8.0),
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 304.0,
+                                          height: 4.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0x12FFFFFF),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                          ),
+                                        ),
                                         const SizedBox(height: 8.0),
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 200.0,
+                                          height: 4.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFFF3E6C),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                          ),
+                                        ),
                                       ],
                                     ),
                                     const SizedBox(height: 12.0),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        8.0,
-                                        8.0,
-                                        8.0,
-                                        8.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xFFFF3E6C),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -1369,12 +1428,11 @@ class CustomBranding extends StatelessWidget {
                                 ),
                                 ),
                                 const SizedBox(height: 16.0),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    12.0,
-                                    12.0,
-                                    12.0,
-                                    12.0,
+                                Container(
+                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF1A1C29),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius12),
                                   ),
                                   child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -1404,7 +1462,14 @@ class CustomBranding extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 8.0,
+                                          height: 8.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFFF3E6C),
+                                            shape: BoxShape.circle,
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'Consume 2,600 kcal target',
@@ -1421,12 +1486,11 @@ class CustomBranding extends StatelessWidget {
                             ),
                             ),
                             const SizedBox(height: 20.0),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                12.0,
-                                12.0,
-                                12.0,
-                                12.0,
+                            Container(
+                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFD2FF00),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                               ),
                               child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1453,6 +1517,7 @@ class CustomBranding extends StatelessWidget {
               ],
             )),
           ],
+        ),
         ),
         ),
       ),

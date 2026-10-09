@@ -15,6 +15,10 @@ class Subscription extends StatelessWidget {
       backgroundColor: context.ds.backgroundPrimary,
       body: SafeArea(
         child: SingleChildScrollView(
+          child: Container(
+          decoration: BoxDecoration(
+            color: const Color(0xFF08090C),
+          ),
           child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -27,12 +31,11 @@ class Subscription extends StatelessWidget {
               children: [
                 SizedBox(
                   width: 260.0,
-                  child: Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    16.0,
-                    24.0,
-                    16.0,
-                    24.0,
+                  child: Container(
+                  padding: const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 24.0),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF12141C),
+                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                   ),
                   child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -40,12 +43,7 @@ class Subscription extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        0.0,
-                        0.0,
-                        28.0,
-                      ),
+                      padding: const EdgeInsets.fromLTRB(12.0, 0.0, 0.0, 28.0),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -54,6 +52,11 @@ class Subscription extends StatelessWidget {
                         SizedBox(
                           width: 28.0,
                           height: 28.0,
+                          child: Container(
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFD2FF00),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                          ),
                           child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -70,6 +73,7 @@ class Subscription extends StatelessWidget {
                           ],
                         ),
                         ),
+                        ),
                         const SizedBox(width: 8.0),
                         AppText(
                           'FitPro',
@@ -77,12 +81,11 @@ class Subscription extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         const SizedBox(width: 8.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            6.0,
-                            2.0,
-                            6.0,
-                            2.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(6.0, 2.0, 6.0, 2.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0x12FFFFFF),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.min,
@@ -105,12 +108,10 @@ class Subscription extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -135,12 +136,10 @@ class Subscription extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 4.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -165,12 +164,10 @@ class Subscription extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 4.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -195,12 +192,10 @@ class Subscription extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 4.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -225,12 +220,11 @@ class Subscription extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 4.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0x1AD2FF00),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -252,17 +246,22 @@ class Subscription extends StatelessWidget {
                               textAlign: TextAlign.left,
                             ),
                             const SizedBox(width: 12.0),
-                            const SizedBox.shrink(),
+                            Container(
+                              width: 6.0,
+                              height: 6.0,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFD2FF00),
+                                shape: BoxShape.circle,
+                              ),
+                            ),
                           ],
                         ),
                         ),
                         const SizedBox(height: 4.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -287,12 +286,10 @@ class Subscription extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 4.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -317,12 +314,10 @@ class Subscription extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 4.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -347,12 +342,10 @@ class Subscription extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 4.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -377,12 +370,10 @@ class Subscription extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 4.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -407,12 +398,10 @@ class Subscription extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(height: 4.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            10.0,
-                            12.0,
-                            10.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -439,12 +428,12 @@ class Subscription extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 402.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        12.0,
-                        12.0,
-                        12.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                      decoration: BoxDecoration(
+                        color: const Color(0x05FFFFFF),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -488,12 +477,10 @@ class Subscription extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        32.0,
-                        16.0,
-                        32.0,
-                        16.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(32.0, 16.0, 32.0, 16.0),
+                      decoration: BoxDecoration(
+                        border: Border(top: BorderSide.none, right: BorderSide.none, bottom: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0), left: BorderSide.none),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -525,12 +512,12 @@ class Subscription extends StatelessWidget {
                           children: [
                             SizedBox(
                               width: 220.0,
-                              child: Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                12.0,
-                                8.0,
-                                12.0,
-                                8.0,
+                              child: Container(
+                              padding: const EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0x08FFFFFF),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                               ),
                               child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -559,6 +546,12 @@ class Subscription extends StatelessWidget {
                             SizedBox(
                               width: 36.0,
                               height: 36.0,
+                              child: Container(
+                              decoration: BoxDecoration(
+                                color: const Color(0x05FFFFFF),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius18),
+                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                              ),
                               child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -572,17 +565,25 @@ class Subscription extends StatelessWidget {
                                     const AppIcon(Icons.circle),
                                   ],
                                 ),
-                                const SizedBox.shrink(),
+                                Container(
+                                  width: 8.0,
+                                  height: 8.0,
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 1.5),
+                                  ),
+                                ),
                               ],
                             ),
                             ),
+                            ),
                             const SizedBox(width: 16.0),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                16.0,
-                                8.0,
-                                16.0,
-                                8.0,
+                            Container(
+                              padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFD2FF00),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                               ),
                               child: Row(
                               mainAxisSize: MainAxisSize.min,
@@ -612,12 +613,7 @@ class Subscription extends StatelessWidget {
                     ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        32.0,
-                        32.0,
-                        32.0,
-                        32.0,
-                      ),
+                      padding: const EdgeInsets.fromLTRB(32.0, 32.0, 32.0, 32.0),
                       child: Column(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -628,12 +624,12 @@ class Subscription extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(child: Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                20.0,
-                                20.0,
-                                20.0,
-                                20.0,
+                            Expanded(child: Container(
+                              padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFF12141C),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                               ),
                               child: Column(
                               mainAxisSize: MainAxisSize.min,
@@ -650,12 +646,11 @@ class Subscription extends StatelessWidget {
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
                                       textAlign: TextAlign.left,
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        6.0,
-                                        2.0,
-                                        6.0,
-                                        2.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(6.0, 2.0, 6.0, 2.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0x05FFFFFF),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -679,7 +674,7 @@ class Subscription extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '$49',
+                                      '\$49',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -694,13 +689,8 @@ class Subscription extends StatelessWidget {
                                 const SizedBox(height: 16.0),
                                 Container(
                                   width: 318.0,
-                                  
-                                  decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
-                                  ),
+                                  height: 1.0,
+                                  color: const Color(0xFF1C1F2B),
                                 ),
                                 const SizedBox(height: 16.0),
                                 Column(
@@ -713,7 +703,14 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 6.0,
+                                          height: 6.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF9296A8),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'Access to Diet Templates',
@@ -728,7 +725,14 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 6.0,
+                                          height: 6.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF9296A8),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'Basic workout trackers',
@@ -743,7 +747,14 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 6.0,
+                                          height: 6.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF9296A8),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'Community Support channel',
@@ -758,12 +769,12 @@ class Subscription extends StatelessWidget {
                             ),
                             )),
                             const SizedBox(width: 20.0),
-                            Expanded(child: Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                20.0,
-                                20.0,
-                                20.0,
-                                20.0,
+                            Expanded(child: Container(
+                              padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFF12141C),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                border: Border.all(color: const Color(0xFFD2FF00), width: 2.0),
                               ),
                               child: Column(
                               mainAxisSize: MainAxisSize.min,
@@ -780,12 +791,11 @@ class Subscription extends StatelessWidget {
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
                                       textAlign: TextAlign.left,
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        6.0,
-                                        2.0,
-                                        6.0,
-                                        2.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(6.0, 2.0, 6.0, 2.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0x1AD2FF00),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -809,7 +819,7 @@ class Subscription extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '$99',
+                                      '\$99',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -824,13 +834,8 @@ class Subscription extends StatelessWidget {
                                 const SizedBox(height: 16.0),
                                 Container(
                                   width: 320.0,
-                                  
-                                  decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
-                                  ),
+                                  height: 1.0,
+                                  color: const Color(0xFF1C1F2B),
                                 ),
                                 const SizedBox(height: 16.0),
                                 Column(
@@ -843,7 +848,14 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 6.0,
+                                          height: 6.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFD2FF00),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'All Basic features',
@@ -858,7 +870,14 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 6.0,
+                                          height: 6.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFD2FF00),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'Workout Prescriptions Pro',
@@ -873,7 +892,14 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 6.0,
+                                          height: 6.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFD2FF00),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'Direct Coach Messaging',
@@ -888,12 +914,12 @@ class Subscription extends StatelessWidget {
                             ),
                             )),
                             const SizedBox(width: 20.0),
-                            Expanded(child: Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                20.0,
-                                20.0,
-                                20.0,
-                                20.0,
+                            Expanded(child: Container(
+                              padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFF12141C),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                               ),
                               child: Column(
                               mainAxisSize: MainAxisSize.min,
@@ -910,12 +936,11 @@ class Subscription extends StatelessWidget {
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
                                       textAlign: TextAlign.left,
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        6.0,
-                                        2.0,
-                                        6.0,
-                                        2.0,
+                                    Container(
+                                      padding: const EdgeInsets.fromLTRB(6.0, 2.0, 6.0, 2.0),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0x05FFFFFF),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                                       ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -939,7 +964,7 @@ class Subscription extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '$149',
+                                      '\$149',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -954,13 +979,8 @@ class Subscription extends StatelessWidget {
                                 const SizedBox(height: 16.0),
                                 Container(
                                   width: 318.0,
-                                  
-                                  decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
-                                  ),
+                                  height: 1.0,
+                                  color: const Color(0xFF1C1F2B),
                                 ),
                                 const SizedBox(height: 16.0),
                                 Column(
@@ -973,7 +993,14 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 6.0,
+                                          height: 6.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF9296A8),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'All Pro features',
@@ -988,7 +1015,14 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 6.0,
+                                          height: 6.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF9296A8),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'Daily calorie audits',
@@ -1003,7 +1037,14 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 6.0,
+                                          height: 6.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF9296A8),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'Video progress sharing',
@@ -1018,7 +1059,14 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 6.0,
+                                          height: 6.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF9296A8),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                          ),
+                                        ),
                                         const SizedBox(width: 8.0),
                                         AppText(
                                           'Dedicated coach hotlines',
@@ -1045,12 +1093,12 @@ class Subscription extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    20.0,
-                                    20.0,
-                                    20.0,
-                                    20.0,
+                                Container(
+                                  padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF12141C),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                   ),
                                   child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -1084,7 +1132,7 @@ class Subscription extends StatelessWidget {
                                                   textAlign: TextAlign.left,
                                                 ),
                                                 AppText(
-                                                  '$18,450',
+                                                  '\$18,450',
                                                   style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 14.0, fontWeight: FontWeight.w700),
                                                   textAlign: TextAlign.left,
                                                 ),
@@ -1093,13 +1141,26 @@ class Subscription extends StatelessWidget {
                                             const SizedBox(height: 8.0),
                                             SizedBox(
                                               height: 8.0,
+                                              child: Container(
+                                              clipBehavior: Clip.antiAlias,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x05FFFFFF),
+                                                borderRadius: BorderRadius.circular(RadiusTokens.radius4),
+                                              ),
                                               child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment: MainAxisAlignment.start,
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                const SizedBox.shrink(),
+                                                Container(
+                                                  width: 306.0,
+                                                  height: 8.0,
+                                                  decoration: BoxDecoration(
+                                                    color: const Color(0xFFD2FF00),
+                                                  ),
+                                                ),
                                               ],
+                                            ),
                                             ),
                                             ),
                                           ],
@@ -1121,7 +1182,7 @@ class Subscription extends StatelessWidget {
                                                   textAlign: TextAlign.left,
                                                 ),
                                                 AppText(
-                                                  '$1,240',
+                                                  '\$1,240',
                                                   style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 14.0, fontWeight: FontWeight.w700),
                                                   textAlign: TextAlign.left,
                                                 ),
@@ -1130,13 +1191,26 @@ class Subscription extends StatelessWidget {
                                             const SizedBox(height: 8.0),
                                             SizedBox(
                                               height: 8.0,
+                                              child: Container(
+                                              clipBehavior: Clip.antiAlias,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x05FFFFFF),
+                                                borderRadius: BorderRadius.circular(RadiusTokens.radius4),
+                                              ),
                                               child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment: MainAxisAlignment.start,
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                const SizedBox.shrink(),
+                                                Container(
+                                                  width: 238.0,
+                                                  height: 8.0,
+                                                  decoration: BoxDecoration(
+                                                    color: const Color(0xFF007AFF),
+                                                  ),
+                                                ),
                                               ],
+                                            ),
                                             ),
                                             ),
                                           ],
@@ -1167,13 +1241,26 @@ class Subscription extends StatelessWidget {
                                             const SizedBox(height: 8.0),
                                             SizedBox(
                                               height: 8.0,
+                                              child: Container(
+                                              clipBehavior: Clip.antiAlias,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x05FFFFFF),
+                                                borderRadius: BorderRadius.circular(RadiusTokens.radius4),
+                                              ),
                                               child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment: MainAxisAlignment.start,
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                const SizedBox.shrink(),
+                                                Container(
+                                                  width: 68.0,
+                                                  height: 8.0,
+                                                  decoration: BoxDecoration(
+                                                    color: const Color(0xFFFF3B30),
+                                                  ),
+                                                ),
                                               ],
+                                            ),
                                             ),
                                             ),
                                           ],
@@ -1184,12 +1271,12 @@ class Subscription extends StatelessWidget {
                                 ),
                                 ),
                                 const SizedBox(height: 20.0),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    20.0,
-                                    20.0,
-                                    20.0,
-                                    20.0,
+                                Container(
+                                  padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF12141C),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                   ),
                                   child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -1215,12 +1302,54 @@ class Subscription extends StatelessWidget {
                                           mainAxisAlignment: MainAxisAlignment.start,
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            const SizedBox.shrink(),
-                                            const SizedBox.shrink(),
-                                            const SizedBox.shrink(),
-                                            const SizedBox.shrink(),
-                                            const SizedBox.shrink(),
-                                            const SizedBox.shrink(),
+                                            Container(
+                                              width: 110.0,
+                                              height: 110.0,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x10FFFFFF),
+                                                shape: BoxShape.circle,
+                                              ),
+                                            ),
+                                            Container(
+                                              width: 110.0,
+                                              height: 110.0,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0xFFD2FF00),
+                                                shape: BoxShape.circle,
+                                              ),
+                                            ),
+                                            Container(
+                                              width: 86.0,
+                                              height: 86.0,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x10FFFFFF),
+                                                shape: BoxShape.circle,
+                                              ),
+                                            ),
+                                            Container(
+                                              width: 86.0,
+                                              height: 86.0,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0xFF007AFF),
+                                                shape: BoxShape.circle,
+                                              ),
+                                            ),
+                                            Container(
+                                              width: 62.0,
+                                              height: 62.0,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x10FFFFFF),
+                                                shape: BoxShape.circle,
+                                              ),
+                                            ),
+                                            Container(
+                                              width: 62.0,
+                                              height: 62.0,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0xFFFF3B30),
+                                                shape: BoxShape.circle,
+                                              ),
+                                            ),
                                           ],
                                         ),
                                         ),
@@ -1235,7 +1364,14 @@ class Subscription extends StatelessWidget {
                                               mainAxisAlignment: MainAxisAlignment.start,
                                               crossAxisAlignment: CrossAxisAlignment.center,
                                               children: [
-                                                const SizedBox.shrink(),
+                                                Container(
+                                                  width: 8.0,
+                                                  height: 8.0,
+                                                  decoration: BoxDecoration(
+                                                    color: const Color(0xFFD2FF00),
+                                                    borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                                  ),
+                                                ),
                                                 const SizedBox(width: 8.0),
                                                 AppText(
                                                   'Pro tier (51.6%)',
@@ -1250,7 +1386,14 @@ class Subscription extends StatelessWidget {
                                               mainAxisAlignment: MainAxisAlignment.start,
                                               crossAxisAlignment: CrossAxisAlignment.center,
                                               children: [
-                                                const SizedBox.shrink(),
+                                                Container(
+                                                  width: 8.0,
+                                                  height: 8.0,
+                                                  decoration: BoxDecoration(
+                                                    color: const Color(0xFF007AFF),
+                                                    borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                                  ),
+                                                ),
                                                 const SizedBox(width: 8.0),
                                                 AppText(
                                                   'Basic tier (33.8%)',
@@ -1265,7 +1408,14 @@ class Subscription extends StatelessWidget {
                                               mainAxisAlignment: MainAxisAlignment.start,
                                               crossAxisAlignment: CrossAxisAlignment.center,
                                               children: [
-                                                const SizedBox.shrink(),
+                                                Container(
+                                                  width: 8.0,
+                                                  height: 8.0,
+                                                  decoration: BoxDecoration(
+                                                    color: const Color(0xFFFF3B30),
+                                                    borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                                  ),
+                                                ),
                                                 const SizedBox(width: 8.0),
                                                 AppText(
                                                   'Elite tier (14.6%)',
@@ -1289,12 +1439,12 @@ class Subscription extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    20.0,
-                                    20.0,
-                                    20.0,
-                                    20.0,
+                                Container(
+                                  padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF12141C),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                   ),
                                   child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -1312,12 +1462,10 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.stretch,
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            0.0,
-                                            10.0,
-                                            0.0,
-                                            10.0,
+                                        Container(
+                                          padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                                          decoration: BoxDecoration(
+                                            border: Border(top: BorderSide.none, right: BorderSide.none, bottom: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0), left: BorderSide.none),
                                           ),
                                           child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1340,16 +1488,15 @@ class Subscription extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '$149.00',
+                                              '\$149.00',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 13.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
-                                            Padding(
-                                              padding: const EdgeInsets.fromLTRB(
-                                                6.0,
-                                                2.0,
-                                                6.0,
-                                                2.0,
+                                            Container(
+                                              padding: const EdgeInsets.fromLTRB(6.0, 2.0, 6.0, 2.0),
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x1AD2FF00),
+                                                borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                                               ),
                                               child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -1367,12 +1514,10 @@ class Subscription extends StatelessWidget {
                                           ],
                                         ),
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            0.0,
-                                            10.0,
-                                            0.0,
-                                            10.0,
+                                        Container(
+                                          padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                                          decoration: BoxDecoration(
+                                            border: Border(top: BorderSide.none, right: BorderSide.none, bottom: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0), left: BorderSide.none),
                                           ),
                                           child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1395,16 +1540,15 @@ class Subscription extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '$49.00',
+                                              '\$49.00',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 13.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
-                                            Padding(
-                                              padding: const EdgeInsets.fromLTRB(
-                                                6.0,
-                                                2.0,
-                                                6.0,
-                                                2.0,
+                                            Container(
+                                              padding: const EdgeInsets.fromLTRB(6.0, 2.0, 6.0, 2.0),
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x1AD2FF00),
+                                                borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                                               ),
                                               child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -1422,12 +1566,10 @@ class Subscription extends StatelessWidget {
                                           ],
                                         ),
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            0.0,
-                                            10.0,
-                                            0.0,
-                                            10.0,
+                                        Container(
+                                          padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                                          decoration: BoxDecoration(
+                                            border: Border(top: BorderSide.none, right: BorderSide.none, bottom: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0), left: BorderSide.none),
                                           ),
                                           child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1450,16 +1592,15 @@ class Subscription extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '$99.00',
+                                              '\$99.00',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 13.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
-                                            Padding(
-                                              padding: const EdgeInsets.fromLTRB(
-                                                6.0,
-                                                2.0,
-                                                6.0,
-                                                2.0,
+                                            Container(
+                                              padding: const EdgeInsets.fromLTRB(6.0, 2.0, 6.0, 2.0),
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x1AD2FF00),
+                                                borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                                               ),
                                               child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -1477,12 +1618,10 @@ class Subscription extends StatelessWidget {
                                           ],
                                         ),
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            0.0,
-                                            10.0,
-                                            0.0,
-                                            10.0,
+                                        Container(
+                                          padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                                          decoration: BoxDecoration(
+                                            border: Border(top: BorderSide.none, right: BorderSide.none, bottom: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0), left: BorderSide.none),
                                           ),
                                           child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1505,16 +1644,15 @@ class Subscription extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '$99.00',
+                                              '\$99.00',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 13.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
-                                            Padding(
-                                              padding: const EdgeInsets.fromLTRB(
-                                                6.0,
-                                                2.0,
-                                                6.0,
-                                                2.0,
+                                            Container(
+                                              padding: const EdgeInsets.fromLTRB(6.0, 2.0, 6.0, 2.0),
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x1AFF3B30),
+                                                borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                                               ),
                                               child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -1538,12 +1676,12 @@ class Subscription extends StatelessWidget {
                                 ),
                                 ),
                                 const SizedBox(height: 20.0),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    20.0,
-                                    20.0,
-                                    20.0,
-                                    20.0,
+                                Container(
+                                  padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF12141C),
+                                    borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                   ),
                                   child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -1561,12 +1699,12 @@ class Subscription extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.stretch,
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            12.0,
-                                            12.0,
-                                            12.0,
-                                            12.0,
+                                        Container(
+                                          padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF08090C),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                           ),
                                           child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1590,12 +1728,12 @@ class Subscription extends StatelessWidget {
                                         ),
                                         ),
                                         const SizedBox(height: 12.0),
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            12.0,
-                                            12.0,
-                                            12.0,
-                                            12.0,
+                                        Container(
+                                          padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF08090C),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                           ),
                                           child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1619,12 +1757,11 @@ class Subscription extends StatelessWidget {
                                         ),
                                         ),
                                         const SizedBox(height: 12.0),
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            12.0,
-                                            12.0,
-                                            12.0,
-                                            12.0,
+                                        Container(
+                                          padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFD2FF00),
+                                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                                           ),
                                           child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1656,6 +1793,7 @@ class Subscription extends StatelessWidget {
               ],
             ),
           ],
+        ),
         ),
         ),
       ),

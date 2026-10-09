@@ -15,6 +15,10 @@ class BusinessGrowth extends StatelessWidget {
       backgroundColor: context.ds.backgroundPrimary,
       body: SafeArea(
         child: SingleChildScrollView(
+          child: Container(
+          decoration: BoxDecoration(
+            color: const Color(0xFF08090C),
+          ),
           child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -22,12 +26,11 @@ class BusinessGrowth extends StatelessWidget {
           children: [
             SizedBox(
               width: 260.0,
-              child: Padding(
-              padding: const EdgeInsets.fromLTRB(
-                24.0,
-                24.0,
-                24.0,
-                24.0,
+              child: Container(
+              padding: const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 24.0),
+              decoration: BoxDecoration(
+                color: const Color(0xFF12141C),
+                border: Border(top: BorderSide.none, right: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0), bottom: BorderSide.none, left: BorderSide.none),
               ),
               child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -35,12 +38,7 @@ class BusinessGrowth extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    12.0,
-                    0.0,
-                    0.0,
-                    28.0,
-                  ),
+                  padding: const EdgeInsets.fromLTRB(12.0, 0.0, 0.0, 28.0),
                   child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -49,6 +47,11 @@ class BusinessGrowth extends StatelessWidget {
                     SizedBox(
                       width: 28.0,
                       height: 28.0,
+                      child: Container(
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFD2FF00),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                      ),
                       child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -58,6 +61,7 @@ class BusinessGrowth extends StatelessWidget {
                       ],
                     ),
                     ),
+                    ),
                     const SizedBox(width: 8.0),
                     AppText(
                       'FitPro',
@@ -65,12 +69,11 @@ class BusinessGrowth extends StatelessWidget {
                       textAlign: TextAlign.left,
                     ),
                     const SizedBox(width: 8.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        6.0,
-                        2.0,
-                        6.0,
-                        2.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(6.0, 2.0, 6.0, 2.0),
+                      decoration: BoxDecoration(
+                        color: const Color(0x12FFFFFF),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius4),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.min,
@@ -93,12 +96,10 @@ class BusinessGrowth extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -120,12 +121,10 @@ class BusinessGrowth extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -147,12 +146,10 @@ class BusinessGrowth extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -174,12 +171,10 @@ class BusinessGrowth extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -201,12 +196,10 @@ class BusinessGrowth extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -228,12 +221,10 @@ class BusinessGrowth extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -255,12 +246,10 @@ class BusinessGrowth extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -282,12 +271,11 @@ class BusinessGrowth extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        color: const Color(0x1AD2FF00),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -306,17 +294,22 @@ class BusinessGrowth extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         const SizedBox(width: 12.0),
-                        const SizedBox.shrink(),
+                        Container(
+                          width: 6.0,
+                          height: 6.0,
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFD2FF00),
+                            shape: BoxShape.circle,
+                          ),
+                        ),
                       ],
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -338,12 +331,10 @@ class BusinessGrowth extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -365,12 +356,10 @@ class BusinessGrowth extends StatelessWidget {
                     ),
                     ),
                     const SizedBox(height: 4.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        12.0,
-                        10.0,
-                        12.0,
-                        10.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                       ),
                       child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -394,12 +383,12 @@ class BusinessGrowth extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 402.0),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    12.0,
-                    12.0,
-                    12.0,
-                    12.0,
+                Container(
+                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                  decoration: BoxDecoration(
+                    color: const Color(0x05FFFFFF),
+                    borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                   ),
                   child: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -443,12 +432,10 @@ class BusinessGrowth extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    32.0,
-                    16.0,
-                    32.0,
-                    16.0,
+                Container(
+                  padding: const EdgeInsets.fromLTRB(32.0, 16.0, 32.0, 16.0),
+                  decoration: BoxDecoration(
+                    border: Border(top: BorderSide.none, right: BorderSide.none, bottom: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0), left: BorderSide.none),
                   ),
                   child: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -480,12 +467,12 @@ class BusinessGrowth extends StatelessWidget {
                       children: [
                         SizedBox(
                           width: 220.0,
-                          child: Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            12.0,
-                            8.0,
-                            12.0,
-                            8.0,
+                          child: Container(
+                          padding: const EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0x08FFFFFF),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -507,23 +494,37 @@ class BusinessGrowth extends StatelessWidget {
                         SizedBox(
                           width: 36.0,
                           height: 36.0,
+                          child: Container(
+                          decoration: BoxDecoration(
+                            color: const Color(0x05FFFFFF),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius18),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                          ),
                           child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             const AppIcon(Icons.circle),
-                            const SizedBox.shrink(),
+                            Container(
+                              width: 8.0,
+                              height: 8.0,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFD2FF00),
+                                shape: BoxShape.circle,
+                                border: Border.all(color: const Color(0xFF12141C), width: 1.5),
+                              ),
+                            ),
                           ],
                         ),
                         ),
+                        ),
                         const SizedBox(width: 16.0),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            16.0,
-                            8.0,
-                            16.0,
-                            8.0,
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFD2FF00),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                           ),
                           child: Row(
                           mainAxisSize: MainAxisSize.min,
@@ -546,12 +547,7 @@ class BusinessGrowth extends StatelessWidget {
                 ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    32.0,
-                    32.0,
-                    32.0,
-                    32.0,
-                  ),
+                  padding: const EdgeInsets.fromLTRB(32.0, 32.0, 32.0, 32.0),
                   child: Column(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -562,12 +558,12 @@ class BusinessGrowth extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(child: Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            20.0,
-                            20.0,
-                            20.0,
-                            20.0,
+                        Expanded(child: Container(
+                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF12141C),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -591,7 +587,7 @@ class BusinessGrowth extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '$45,800',
+                                      '\$45,800',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -612,64 +608,34 @@ class BusinessGrowth extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      width: 17.71999740600586,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 17.72,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 19.420000076293945,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 19.42,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 24.040006637573242,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 24.04,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 17.71999740600586,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 17.72,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 17.090003967285156,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 17.09,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 17.459999084472656,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 17.46,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                   ],
                                 ),
@@ -680,12 +646,12 @@ class BusinessGrowth extends StatelessWidget {
                         ),
                         )),
                         const SizedBox(width: 20.0),
-                        Expanded(child: Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            20.0,
-                            20.0,
-                            20.0,
-                            20.0,
+                        Expanded(child: Container(
+                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF12141C),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -709,7 +675,7 @@ class BusinessGrowth extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '$210',
+                                      '\$210',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -730,64 +696,34 @@ class BusinessGrowth extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      width: 20.2500057220459,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 20.25,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 18.8700008392334,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 18.87,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 18.030000686645508,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 18.03,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 21.400001525878906,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 21.4,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 16.49000358581543,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 16.49,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
                                       width: 17.0,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                   ],
                                 ),
@@ -798,12 +734,12 @@ class BusinessGrowth extends StatelessWidget {
                         ),
                         )),
                         const SizedBox(width: 20.0),
-                        Expanded(child: Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            20.0,
-                            20.0,
-                            20.0,
-                            20.0,
+                        Expanded(child: Container(
+                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF12141C),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -827,7 +763,7 @@ class BusinessGrowth extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '$1,850',
+                                      '\$1,850',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -848,64 +784,34 @@ class BusinessGrowth extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      width: 18.030000686645508,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 18.03,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 18.360002517700195,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 18.36,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 17.459999084472656,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 17.46,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 18.380002975463867,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 18.38,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 16.120004653930664,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 16.12,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                     Container(
-                                      width: 17.459999084472656,
-                                      
-                                      decoration: BoxDecoration(
-                                        color: Colors.transparent,
-                                        borderRadius: BorderRadius.circular(
-                                          0.0,
-                                        ),
-                                      ),
+                                      width: 17.46,
+                                      height: 2.0,
+                                      color: const Color(0xFFD2FF00),
                                     ),
                                   ],
                                 ),
@@ -923,12 +829,12 @@ class BusinessGrowth extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(child: Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            20.0,
-                            20.0,
-                            20.0,
-                            20.0,
+                        Expanded(child: Container(
+                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF12141C),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -960,166 +866,187 @@ class BusinessGrowth extends StatelessWidget {
                               children: [
                                 Container(
                                   width: 620.0,
-                                  
-                                  decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
-                                  ),
+                                  height: 1.0,
+                                  color: const Color(0xFF1C1F2B),
                                 ),
                                 Container(
                                   width: 620.0,
-                                  
-                                  decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
-                                  ),
+                                  height: 1.0,
+                                  color: const Color(0xFF1C1F2B),
                                 ),
                                 Container(
                                   width: 620.0,
-                                  
-                                  decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
-                                  ),
+                                  height: 1.0,
+                                  color: const Color(0xFF1C1F2B),
                                 ),
                                 Container(
                                   width: 620.0,
-                                  
+                                  height: 1.0,
+                                  color: const Color(0xFF1C1F2B),
+                                ),
+                                Container(
+                                  width: 57.49,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 57.14,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 60.54,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 56.08,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 57.87,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 57.72,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 63.07,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 56.44,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 57.72,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 58.94,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 58.24,
+                                  height: 3.0,
+                                  color: const Color(0xFFD2FF00),
+                                ),
+                                Container(
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 57.4900016784668,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 57.13999938964844,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 60.540000915527344,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 56.08000183105469,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 57.869998931884766,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 57.720001220703125,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 63.06999969482422,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 56.44000244140625,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 57.720001220703125,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 58.939998626708984,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
                                 Container(
-                                  width: 58.2400016784668,
-                                  
+                                  width: 8.0,
+                                  height: 8.0,
                                   decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(
-                                      0.0,
-                                    ),
+                                    color: const Color(0xFFD2FF00),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: const Color(0xFF12141C), width: 2.0),
                                   ),
                                 ),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
-                                const SizedBox.shrink(),
                               ],
                             ),
                             const SizedBox(height: 16.0),
@@ -1196,12 +1123,12 @@ class BusinessGrowth extends StatelessWidget {
                         const SizedBox(width: 20.0),
                         SizedBox(
                           width: 420.0,
-                          child: Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            20.0,
-                            20.0,
-                            20.0,
-                            20.0,
+                          child: Container(
+                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF12141C),
+                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
                           child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -1230,7 +1157,7 @@ class BusinessGrowth extends StatelessWidget {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         AppText(
-                                          'MRR Target ($50K)',
+                                          'MRR Target (\$50K)',
                                           style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
                                           textAlign: TextAlign.left,
                                         ),
@@ -1244,13 +1171,26 @@ class BusinessGrowth extends StatelessWidget {
                                     const SizedBox(height: 6.0),
                                     SizedBox(
                                       height: 8.0,
+                                      child: Container(
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: BoxDecoration(
+                                        color: const Color(0x08FFFFFF),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius4),
+                                      ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 350.0,
+                                          height: 8.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFD2FF00),
+                                          ),
+                                        ),
                                       ],
+                                    ),
                                     ),
                                     ),
                                   ],
@@ -1281,13 +1221,26 @@ class BusinessGrowth extends StatelessWidget {
                                     const SizedBox(height: 6.0),
                                     SizedBox(
                                       height: 8.0,
+                                      child: Container(
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: BoxDecoration(
+                                        color: const Color(0x08FFFFFF),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius4),
+                                      ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 298.0,
+                                          height: 8.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF007AFF),
+                                          ),
+                                        ),
                                       ],
+                                    ),
                                     ),
                                     ),
                                   ],
@@ -1304,7 +1257,7 @@ class BusinessGrowth extends StatelessWidget {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         AppText(
-                                          'LTV Expansion ($2K)',
+                                          'LTV Expansion (\$2K)',
                                           style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
                                           textAlign: TextAlign.left,
                                         ),
@@ -1318,13 +1271,26 @@ class BusinessGrowth extends StatelessWidget {
                                     const SizedBox(height: 6.0),
                                     SizedBox(
                                       height: 8.0,
+                                      child: Container(
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: BoxDecoration(
+                                        color: const Color(0x08FFFFFF),
+                                        borderRadius: BorderRadius.circular(RadiusTokens.radius4),
+                                      ),
                                       child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        const SizedBox.shrink(),
+                                        Container(
+                                          width: 263.0,
+                                          height: 8.0,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFFFF9500),
+                                          ),
+                                        ),
                                       ],
+                                    ),
                                     ),
                                     ),
                                   ],
@@ -1338,12 +1304,12 @@ class BusinessGrowth extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 24.0),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        20.0,
-                        20.0,
-                        20.0,
-                        20.0,
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF12141C),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                       ),
                       child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -1360,12 +1326,12 @@ class BusinessGrowth extends StatelessWidget {
                               style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 16.0, fontWeight: FontWeight.w700),
                               textAlign: TextAlign.left,
                             ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                10.0,
-                                4.0,
-                                10.0,
-                                4.0,
+                            Container(
+                              padding: const EdgeInsets.fromLTRB(10.0, 4.0, 10.0, 4.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0x12D2FF00),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                border: Border.all(color: const Color(0xFFD2FF00), width: 1.0),
                               ),
                               child: Row(
                               mainAxisSize: MainAxisSize.min,
@@ -1388,12 +1354,12 @@ class BusinessGrowth extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(child: Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                12.0,
-                                12.0,
-                                12.0,
-                                12.0,
+                            Expanded(child: Container(
+                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFF08090C),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                               ),
                               child: Column(
                               mainAxisSize: MainAxisSize.min,
@@ -1421,12 +1387,12 @@ class BusinessGrowth extends StatelessWidget {
                             ),
                             )),
                             const SizedBox(width: 24.0),
-                            Expanded(child: Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                12.0,
-                                12.0,
-                                12.0,
-                                12.0,
+                            Expanded(child: Container(
+                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFF08090C),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                               ),
                               child: Column(
                               mainAxisSize: MainAxisSize.min,
@@ -1454,12 +1420,12 @@ class BusinessGrowth extends StatelessWidget {
                             ),
                             )),
                             const SizedBox(width: 24.0),
-                            Expanded(child: Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                12.0,
-                                12.0,
-                                12.0,
-                                12.0,
+                            Expanded(child: Container(
+                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFF08090C),
+                                borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                               ),
                               child: Column(
                               mainAxisSize: MainAxisSize.min,
@@ -1497,6 +1463,7 @@ class BusinessGrowth extends StatelessWidget {
               ],
             )),
           ],
+        ),
         ),
         ),
       ),
