@@ -96,8 +96,8 @@ class _AppPagedViewState extends State<AppPagedView> {
   @override
   Widget build(BuildContext context) {
     final tokens = context.ds;
-    final double space = (widget.indicatorPadding ?? SpacingTokens.spacing16);
-    final Color arrows = (widget.arrowColor ?? tokens.iconPrimary);
+    final double space = (indicatorPadding ?? SpacingTokens.spacing16);
+    final Color arrows = (arrowColor ?? tokens.iconPrimary);
 
     final size = DsResponsive.sizeOf(context, breakpoints: widget.breakpoints);
     final withArrows =

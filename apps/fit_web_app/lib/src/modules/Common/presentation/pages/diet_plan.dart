@@ -592,7 +592,7 @@ class DietPlan extends StatelessWidget {
                             const SizedBox(width: 6.0),
                             AppText(
                               'Quick Assign',
-                              style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w700),
+                              style: TextStyle(color: context.ds.buttonComponentPrimaryForeground, fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w700),
                               textAlign: TextAlign.left,
                             ),
                           ],

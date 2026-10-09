@@ -679,7 +679,7 @@ class Subscription extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '49',
+                                      '$49',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -809,7 +809,7 @@ class Subscription extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '99',
+                                      '$99',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -939,7 +939,7 @@ class Subscription extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '149',
+                                      '$149',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -1084,7 +1084,7 @@ class Subscription extends StatelessWidget {
                                                   textAlign: TextAlign.left,
                                                 ),
                                                 AppText(
-                                                  '18,450',
+                                                  '$18,450',
                                                   style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 14.0, fontWeight: FontWeight.w700),
                                                   textAlign: TextAlign.left,
                                                 ),
@@ -1121,7 +1121,7 @@ class Subscription extends StatelessWidget {
                                                   textAlign: TextAlign.left,
                                                 ),
                                                 AppText(
-                                                  '1,240',
+                                                  '$1,240',
                                                   style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 14.0, fontWeight: FontWeight.w700),
                                                   textAlign: TextAlign.left,
                                                 ),
@@ -1340,7 +1340,7 @@ class Subscription extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '149.00',
+                                              '$149.00',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 13.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
@@ -1395,7 +1395,7 @@ class Subscription extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '49.00',
+                                              '$49.00',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 13.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
@@ -1450,7 +1450,7 @@ class Subscription extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '99.00',
+                                              '$99.00',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 13.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
@@ -1505,7 +1505,7 @@ class Subscription extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '99.00',
+                                              '$99.00',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 13.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),

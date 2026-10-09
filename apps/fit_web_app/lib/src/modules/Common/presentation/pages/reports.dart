@@ -824,7 +824,7 @@ class Reports extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 AppText(
-                                  '14,840',
+                                  '$14,840',
                                   style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                   textAlign: TextAlign.left,
                                 ),
@@ -1041,7 +1041,7 @@ class Reports extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '14,840.00',
+                                      '$14,840.00',
                                       style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 20.0, fontWeight: FontWeight.w700),
                                       textAlign: TextAlign.left,
                                     ),
