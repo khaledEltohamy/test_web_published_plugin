@@ -694,7 +694,7 @@ class LeadsManagement extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 AppText(
-                                  '8,450',
+                                  '$8,450',
                                   style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                   textAlign: TextAlign.left,
                                 ),
@@ -1198,7 +1198,7 @@ class LeadsManagement extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '240/mo',
+                                              '$240/mo',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
@@ -1264,7 +1264,7 @@ class LeadsManagement extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '180/mo',
+                                              '$180/mo',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
@@ -1402,7 +1402,7 @@ class LeadsManagement extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '300/mo',
+                                              '$300/mo',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
@@ -1540,7 +1540,7 @@ class LeadsManagement extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '240/mo',
+                                              '$240/mo',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
@@ -1606,7 +1606,7 @@ class LeadsManagement extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '180/mo',
+                                              '$180/mo',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
@@ -1744,7 +1744,7 @@ class LeadsManagement extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '450/mo',
+                                              '$450/mo',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),
@@ -1882,7 +1882,7 @@ class LeadsManagement extends StatelessWidget {
                                               textAlign: TextAlign.left,
                                             ),
                                             AppText(
-                                              '240/mo',
+                                              '$240/mo',
                                               style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
                                               textAlign: TextAlign.left,
                                             ),

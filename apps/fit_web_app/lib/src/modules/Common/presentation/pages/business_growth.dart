@@ -591,7 +591,7 @@ class BusinessGrowth extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '45,800',
+                                      '$45,800',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -709,7 +709,7 @@ class BusinessGrowth extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '210',
+                                      '$210',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -827,7 +827,7 @@ class BusinessGrowth extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     AppText(
-                                      '1,850',
+                                      '$1,850',
                                       style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 28.0),
                                       textAlign: TextAlign.left,
                                     ),
@@ -1230,7 +1230,7 @@ class BusinessGrowth extends StatelessWidget {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         AppText(
-                                          'MRR Target (50K)',
+                                          'MRR Target ($50K)',
                                           style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
                                           textAlign: TextAlign.left,
                                         ),
@@ -1304,7 +1304,7 @@ class BusinessGrowth extends StatelessWidget {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         AppText(
-                                          'LTV Expansion (2K)',
+                                          'LTV Expansion ($2K)',
                                           style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
                                           textAlign: TextAlign.left,
                                         ),

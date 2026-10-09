@@ -76,10 +76,10 @@ class _AppSplashState extends State<AppSplash> {
   @override
   Widget build(BuildContext context) {
     final tokens = context.ds;
-    final Color page = (widget.backgroundColor ?? tokens.backgroundPrimary);
-    final Color titleTint = (widget.titleColor ?? tokens.textPrimary);
-    final Color spinner = (widget.progressColor ?? tokens.buttonPrimaryBackground);
-    final double space = (widget.gap ?? SpacingTokens.spacing16);
+    final Color page = (backgroundColor ?? tokens.backgroundPrimary);
+    final Color titleTint = (titleColor ?? tokens.textPrimary);
+    final Color spinner = (progressColor ?? tokens.buttonPrimaryBackground);
+    final double space = (gap ?? SpacingTokens.spacing16);
 
     Widget column = Column(
       mainAxisSize: MainAxisSize.min,
