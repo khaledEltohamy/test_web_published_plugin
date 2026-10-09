@@ -31,7 +31,7 @@ class AppPagedView extends StatefulWidget {
     this.curve = Curves.easeOut,
     this.breakpoints = const DsBreakpoints(),
     this.indicatorPadding,
-    required this.arrowColor,
+    this.arrowColor,
   });
 
   final int itemCount;
@@ -54,8 +54,8 @@ class AppPagedView extends StatefulWidget {
   final DsBreakpoints breakpoints;
   /// Space around the indicator. Defaults to `SpacingTokens.spacing16`.
   final double? indicatorPadding;
-  /// Previous / next arrow color. Required: no matching token exists in the Figma collections.
-  final Color arrowColor;
+  /// Previous / next arrow color. Defaults to `tokens.iconPrimary`.
+  final Color? arrowColor;
 
   @override
   State<AppPagedView> createState() => _AppPagedViewState();
@@ -97,7 +97,7 @@ class _AppPagedViewState extends State<AppPagedView> {
   Widget build(BuildContext context) {
     final tokens = context.ds;
     final double space = (indicatorPadding ?? SpacingTokens.spacing16);
-    final Color arrows = arrowColor;
+    final Color arrows = (arrowColor ?? tokens.iconPrimary);
 
     final size = DsResponsive.sizeOf(context, breakpoints: widget.breakpoints);
     final withArrows =

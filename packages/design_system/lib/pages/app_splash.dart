@@ -19,8 +19,8 @@ class AppSplash extends StatefulWidget {
     this.onError,
     this.maxContentWidth,
     this.backgroundColor,
-    required this.titleColor,
-    required this.progressColor,
+    this.titleColor,
+    this.progressColor,
     this.gap,
   });
 
@@ -40,10 +40,10 @@ class AppSplash extends StatefulWidget {
   final double? maxContentWidth;
   /// Screen background. Defaults to `tokens.backgroundPrimary`.
   final Color? backgroundColor;
-  /// Title color. Required: no matching token exists in the Figma collections.
-  final Color titleColor;
-  /// Progress indicator color. Required: no matching token exists in the Figma collections.
-  final Color progressColor;
+  /// Title color. Defaults to `tokens.textPrimary`.
+  final Color? titleColor;
+  /// Progress indicator color. Defaults to `tokens.buttonPrimaryBackground`.
+  final Color? progressColor;
   /// Space between logo, title and progress. Defaults to `SpacingTokens.spacing16`.
   final double? gap;
 
@@ -77,8 +77,8 @@ class _AppSplashState extends State<AppSplash> {
   Widget build(BuildContext context) {
     final tokens = context.ds;
     final Color page = (backgroundColor ?? tokens.backgroundPrimary);
-    final Color titleTint = titleColor;
-    final Color spinner = progressColor;
+    final Color titleTint = (titleColor ?? tokens.textPrimary);
+    final Color spinner = (progressColor ?? tokens.buttonPrimaryBackground);
     final double space = (gap ?? SpacingTokens.spacing16);
 
     Widget column = Column(

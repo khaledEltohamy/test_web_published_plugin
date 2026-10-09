@@ -2,29 +2,369 @@
   "background": {
     "primary": {
       "$type": "color",
-      "$value": "{base.black}",
+      "$value": "{gray.0}",
       "$extensions": {
         "figma": {
-          "variableId": "VariableID:65:30",
-          "variableKey": "1e3e900720c55094c34f538b75ba3e320de80575",
+          "variableId": "VariableID:79:91",
+          "variableKey": "781c14f4c40fd9d238c2caf4919f693effd03fde",
           "variableName": "background/primary",
           "variableType": "color",
-          "collectionId": "VariableCollectionId:65:29",
+          "collectionId": "VariableCollectionId:79:90",
           "collectionName": "alias",
           "designId": null
         }
       }
     },
-    "secoundry": {
+    "secondary": {
       "$type": "color",
-      "$value": "{blue.900}",
+      "$value": "{gray.50}",
       "$extensions": {
         "figma": {
-          "variableId": "VariableID:65:39",
-          "variableKey": "150453f7ccb3aa8716f2e194751662fd847b3352",
-          "variableName": "background/secoundry",
+          "variableId": "VariableID:79:92",
+          "variableKey": "455b4a54c9cc964b62e47b384a9c827a3b96440e",
+          "variableName": "background/secondary",
           "variableType": "color",
-          "collectionId": "VariableCollectionId:65:29",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{gray.100}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:93",
+          "variableKey": "abe5f302db1d644ef96c94f8054fac0159955f96",
+          "variableName": "background/tertiary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "inverse": {
+      "$type": "color",
+      "$value": "{gray.900}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:94",
+          "variableKey": "1722d667cafb4235c576617a4396218aebec6781",
+          "variableName": "background/inverse",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "disabled": {
+      "$type": "color",
+      "$value": "{gray.100}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:95",
+          "variableKey": "e9f39c16d5f2b1314ce7432ca9718a9d758c29a6",
+          "variableName": "background/disabled",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "surface": {
+    "primary": {
+      "$type": "color",
+      "$value": "{gray.0}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:96",
+          "variableKey": "d8dc2a3a2227d2dc2aa18f06122e25c1663eeb77",
+          "variableName": "surface/primary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{gray.50}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:97",
+          "variableKey": "d8f44334c5c71e1fca614bf786d3b6bad91cf285",
+          "variableName": "surface/secondary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{gray.100}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:98",
+          "variableKey": "06af3718f7b619645d1bb1bfe07a261a98d39074",
+          "variableName": "surface/tertiary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "text": {
+    "primary": {
+      "$type": "color",
+      "$value": "{gray.900}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:99",
+          "variableKey": "8e9938bf1134a278948b4ff3d3d9858e2851080b",
+          "variableName": "text/primary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{gray.600}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:100",
+          "variableKey": "00cbc2e8bab33f732ea8881cc2c064f9050a588d",
+          "variableName": "text/secondary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{gray.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:101",
+          "variableKey": "2e5d7212d7eb08e45b83dd9467c3d86da168ffde",
+          "variableName": "text/tertiary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "disabled": {
+      "$type": "color",
+      "$value": "{gray.400}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:102",
+          "variableKey": "9064cf19a3194ff407156d5e72ef20991f37dce1",
+          "variableName": "text/disabled",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "inverse": {
+      "$type": "color",
+      "$value": "{gray.0}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:103",
+          "variableKey": "81e34cf8548539847a6e9315c959f70947d67c26",
+          "variableName": "text/inverse",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "placeholder": {
+      "$type": "color",
+      "$value": "{gray.400}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:104",
+          "variableKey": "7423db68b4f8d93ab5efefb75abe7ef8c48f36c3",
+          "variableName": "text/placeholder",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "icon": {
+    "primary": {
+      "$type": "color",
+      "$value": "{gray.900}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:105",
+          "variableKey": "f37fe85c5d41f4a3417597b511c9d2279dd5d54a",
+          "variableName": "icon/primary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{gray.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:106",
+          "variableKey": "db4288883530729eb81cd1ce18ac1e23b5bf468e",
+          "variableName": "icon/secondary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "disabled": {
+      "$type": "color",
+      "$value": "{gray.400}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:107",
+          "variableKey": "ded0b1c71ac0dc192ffac36d3db223f66ab074b6",
+          "variableName": "icon/disabled",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "inverse": {
+      "$type": "color",
+      "$value": "{gray.0}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:108",
+          "variableKey": "045866256286893d5e4a03eac7120661846ba69a",
+          "variableName": "icon/inverse",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "border": {
+    "primary": {
+      "$type": "color",
+      "$value": "{gray.200}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:109",
+          "variableKey": "54e38da674cef45d013256e7c1652489cd302eca",
+          "variableName": "border/primary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{gray.100}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:110",
+          "variableKey": "0d413e3fa8cfb32b44289bc1aa35e8fa8a2684fa",
+          "variableName": "border/secondary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "focus": {
+      "$type": "color",
+      "$value": "{primary.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:111",
+          "variableKey": "5a621daf884460d87192d5eeab70646d67935beb",
+          "variableName": "border/focus",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{gray.300}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:112",
+          "variableKey": "15f53253025905caada0c8c084ed5c5d7ba1d3d2",
+          "variableName": "border/tertiary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "interactive": {
+      "$type": "color",
+      "$value": "{primary.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:113",
+          "variableKey": "6070903d19a87ef9eb98c0f955dea6cd2d48ba0f",
+          "variableName": "border/interactive",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "divider": {
+    "default": {
+      "$type": "color",
+      "$value": "{gray.200}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:114",
+          "variableKey": "f9c34979be2d4adb022ad02c237de39c805d7df3",
+          "variableName": "divider/default",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
           "collectionName": "alias",
           "designId": null
         }
@@ -32,122 +372,737 @@
     }
   },
   "button": {
-    "$type": "color",
-    "$value": "{green.500}",
-    "$extensions": {
-      "figma": {
-        "variableId": "VariableID:65:36",
-        "variableKey": "c043e7e6c7aa4e849f5cd5d950eca1cef4925fa6",
-        "variableName": "button",
-        "variableType": "color",
-        "collectionId": "VariableCollectionId:65:29",
-        "collectionName": "alias",
-        "designId": null
+    "primary": {
+      "background": {
+        "$type": "color",
+        "$value": "{primary.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:115",
+            "variableKey": "b2f1b9acd0f94e60e7c505c1c59a25de42c321be",
+            "variableName": "button/primary/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primary.600}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:116",
+            "variableKey": "deab60e2f31866340439617766b15aaad48a5e77",
+            "variableName": "button/primary/hover",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{primary.700}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:117",
+            "variableKey": "773facc946b112625548f259094c849d03b0d325",
+            "variableName": "button/primary/pressed",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{gray.0}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:118",
+            "variableKey": "99d7b25f04dd263587a317aedda50098d9b0e791",
+            "variableName": "button/primary/text",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{gray.300}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:119",
+            "variableKey": "0adf2033f72e7c77b36273ae235699abf9b65fe1",
+            "variableName": "button/primary/disabled",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{primary.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:120",
+            "variableKey": "8b23094b72e862d0eced68badb9e5e97aba20254",
+            "variableName": "button/primary/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      }
+    },
+    "secondary": {
+      "background": {
+        "$type": "color",
+        "$value": "{gray.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:121",
+            "variableKey": "b6a64935dc94a8645f516da941aad05df80b6636",
+            "variableName": "button/secondary/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{gray.900}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:122",
+            "variableKey": "c1b396bfdf51677e85104c85b940dda0fb35c08a",
+            "variableName": "button/secondary/text",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{green.700}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:123",
+            "variableKey": "d7daf99fe01541476b404cd58bd03bcbb08d25ed",
+            "variableName": "button/secondary/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      }
+    },
+    "tertiary": {
+      "background": {
+        "$type": "color",
+        "$value": "{gray.0}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:124",
+            "variableKey": "dd3319b58b8ea789508319bb62cd6a0a5ccee5b6",
+            "variableName": "button/tertiary/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{green.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:125",
+            "variableKey": "17b6eec334f0a0935628abd628d5340510b97eb8",
+            "variableName": "button/tertiary/text",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{green.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:126",
+            "variableKey": "021a7e9c3f375140207a35eb197428ed7c785834",
+            "variableName": "button/tertiary/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "selected": {
+        "$type": "color",
+        "$value": "{green.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:127",
+            "variableKey": "d32cf8c8729b16b76068e041e00175b6e2315ab4",
+            "variableName": "button/tertiary/selected",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      }
+    },
+    "success": {
+      "background": {
+        "$type": "color",
+        "$value": "{green.100}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:128",
+            "variableKey": "2862f1e00ef8368ae9d5c078abfd1f44b494e2f8",
+            "variableName": "button/success/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{gray.0}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:129",
+            "variableKey": "e5710b50c360fd6cd552956a742a57150b5f2388",
+            "variableName": "button/success/text",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{green.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:130",
+            "variableKey": "d867d16efbf96bd00f19da31356a4f1f315e3a76",
+            "variableName": "button/success/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      }
+    },
+    "error": {
+      "background": {
+        "$type": "color",
+        "$value": "{red.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:131",
+            "variableKey": "d9d8f40aea625e08923ee04a8af0444dc5c9d122",
+            "variableName": "button/error/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{gray.0}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:132",
+            "variableKey": "e4701cff8dde10b74248c500e0be6905c0a9c042",
+            "variableName": "button/error/text",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{red.700}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:133",
+            "variableKey": "64925370d7aff37f53e19beb6ffe487381d52207",
+            "variableName": "button/error/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
       }
     }
   },
-  "background-4": {
-    "$type": "color",
-    "$value": "{base.black}",
-    "$extensions": {
-      "figma": {
-        "variableId": "VariableID:65:42",
-        "variableKey": "7b71cce2251d62e0aac00a974a5fe3097f6aa35e",
-        "variableName": "background 4",
-        "variableType": "color",
-        "collectionId": "VariableCollectionId:65:29",
-        "collectionName": "alias",
-        "designId": null
+  "status": {
+    "success": {
+      "background": {
+        "$type": "color",
+        "$value": "{green.100}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:134",
+            "variableKey": "4eb6a10ec5e3ac741e0dddf4ed90cb68e6512b1e",
+            "variableName": "status/success/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "content": {
+        "$type": "color",
+        "$value": "{green.700}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:135",
+            "variableKey": "7d0c28f94b03b9f10aac1fa1156fa435089cb214",
+            "variableName": "status/success/content",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      }
+    },
+    "error": {
+      "background": {
+        "$type": "color",
+        "$value": "{red.100}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:136",
+            "variableKey": "74c2c05994231460d955820a51eeac576f57c652",
+            "variableName": "status/error/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "content": {
+        "$type": "color",
+        "$value": "{red.700}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:137",
+            "variableKey": "2b5b8183a78b8e00cd7382208c8c0ac3396eaf84",
+            "variableName": "status/error/content",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      }
+    },
+    "warning": {
+      "background": {
+        "$type": "color",
+        "$value": "{yellow.100}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:138",
+            "variableKey": "74d594940277ccd76e096eb768a7261d6a44cbdd",
+            "variableName": "status/warning/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "content": {
+        "$type": "color",
+        "$value": "{yellow.700}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:139",
+            "variableKey": "465d68f2ebe47e9985719303667367381f8532d2",
+            "variableName": "status/warning/content",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      }
+    },
+    "info": {
+      "background": {
+        "$type": "color",
+        "$value": "{blue.100}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:140",
+            "variableKey": "227f75878af71ba77e6745e355e24a240e6c6e75",
+            "variableName": "status/info/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "content": {
+        "$type": "color",
+        "$value": "{blue.700}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:141",
+            "variableKey": "e9a04f321328590495b15e9b1ff6009473fefbea",
+            "variableName": "status/info/content",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:90",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
       }
     }
   },
-  "background-5": {
-    "$type": "color",
-    "$value": "{base.black}",
-    "$extensions": {
-      "figma": {
-        "variableId": "VariableID:65:45",
-        "variableKey": "37da4ee773be94fb5f7bb176bb162c4d7dbea081",
-        "variableName": "background 5",
-        "variableType": "color",
-        "collectionId": "VariableCollectionId:65:29",
-        "collectionName": "alias",
-        "designId": null
+  "input": {
+    "background": {
+      "$type": "color",
+      "$value": "{gray.0}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:142",
+          "variableKey": "343f322a6eef37face98fda9750fc4fc1b7c6a8b",
+          "variableName": "input/background",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "backgroundDisabled": {
+      "$type": "color",
+      "$value": "{gray.100}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:143",
+          "variableKey": "8ca407d53a32448b5f0fbaa04ead3ed2a8bbe65e",
+          "variableName": "input/backgroundDisabled",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{gray.200}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:144",
+          "variableKey": "9ff09502b0df38fe592d8bda17ac9151373a9c92",
+          "variableName": "input/border",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "borderCloudy": {
+      "$type": "color",
+      "$value": "{neutral.300}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:145",
+          "variableKey": "2d6a991e872087d9495f1cba2381cebd7a8434db",
+          "variableName": "input/borderCloudy",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "borderDisabled": {
+      "$type": "color",
+      "$value": "{gray.300}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:146",
+          "variableKey": "3e5acbc3c53a6341a95b6a482726019be96d0641",
+          "variableName": "input/borderDisabled",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "placeholder": {
+      "$type": "color",
+      "$value": "{gray.400}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:147",
+          "variableKey": "8e424df4da37db5d4d41c0f312adebb6eb20d28b",
+          "variableName": "input/placeholder",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{text.primary}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:148",
+          "variableKey": "f0a4f7034e8e6e24282388a241fb70a13876912c",
+          "variableName": "input/text",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
       }
     }
   },
-  "background-6": {
-    "$type": "color",
-    "$value": "{base.black}",
-    "$extensions": {
-      "figma": {
-        "variableId": "VariableID:65:48",
-        "variableKey": "4b9a34cedb2e7cf90622af3b077ee470715ef390",
-        "variableName": "background 6",
-        "variableType": "color",
-        "collectionId": "VariableCollectionId:65:29",
-        "collectionName": "alias",
-        "designId": null
+  "radio": {
+    "background": {
+      "$type": "color",
+      "$value": "{gray.0}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:149",
+          "variableKey": "a370d563790b3eb7e1284e47025056e6f4754e9d",
+          "variableName": "radio/background",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "backgroundCloudy": {
+      "$type": "color",
+      "$value": "{gray.100}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:150",
+          "variableKey": "03b68c13d9833956980128293c273c94d096da3f",
+          "variableName": "radio/backgroundCloudy",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{gray.200}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:151",
+          "variableKey": "68673ebe87ce4dd86d732f3d08664f83e3534323",
+          "variableName": "radio/border",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "borderCloudy": {
+      "$type": "color",
+      "$value": "{gray.300}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:152",
+          "variableKey": "20ce6019f8664d28e36a270c9fb9806ea7b6b1b8",
+          "variableName": "radio/borderCloudy",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "selected": {
+      "$type": "color",
+      "$value": "{primary.800}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:153",
+          "variableKey": "c4c6c2958d44ab5d139fc33391241b23752b3ea7",
+          "variableName": "radio/selected",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "selectedCloudy": {
+      "$type": "color",
+      "$value": "{green.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:154",
+          "variableKey": "beb149deff39ce6992d888332444c9917c37192d",
+          "variableName": "radio/selectedCloudy",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "selectedBorder": {
+      "$type": "color",
+      "$value": "{green.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:155",
+          "variableKey": "438d7c2bae3dd31644b37c85385a506f5c317f5e",
+          "variableName": "radio/selectedBorder",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
       }
     }
   },
-  "background-7": {
-    "$type": "color",
-    "$value": "{base.black}",
-    "$extensions": {
-      "figma": {
-        "variableId": "VariableID:65:51",
-        "variableKey": "b26d4a79f274e24df4c4c61a9ef14061a36b0cfa",
-        "variableName": "background 7",
-        "variableType": "color",
-        "collectionId": "VariableCollectionId:65:29",
-        "collectionName": "alias",
-        "designId": null
+  "focus": {
+    "ring": {
+      "$type": "color",
+      "$value": "{primary.400}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:156",
+          "variableKey": "49bd003e946f99f46ab1a50929bf7c8b892182b3",
+          "variableName": "focus/ring",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{primary.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:157",
+          "variableKey": "f3f7fb3f083f2313752fcd749c3db0b0688bbc9c",
+          "variableName": "focus/border",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
       }
     }
   },
-  "background-8": {
-    "$type": "color",
-    "$value": "{base.black}",
-    "$extensions": {
-      "figma": {
-        "variableId": "VariableID:65:54",
-        "variableKey": "c27065e2477dec76a1c78b8ca7fd7237a539dc28",
-        "variableName": "background 8",
-        "variableType": "color",
-        "collectionId": "VariableCollectionId:65:29",
-        "collectionName": "alias",
-        "designId": null
+  "card": {
+    "background": {
+      "$type": "color",
+      "$value": "{surface.primary}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:158",
+          "variableKey": "94ff0ab67b2cd3e7c22a30dd6fc243f5e95b76a4",
+          "variableName": "card/background",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
       }
-    }
-  },
-  "background-9": {
-    "$type": "color",
-    "$value": "{base.black}",
-    "$extensions": {
-      "figma": {
-        "variableId": "VariableID:65:57",
-        "variableKey": "eafc561c97257c66e9333604cd188251dff41f50",
-        "variableName": "background 9",
-        "variableType": "color",
-        "collectionId": "VariableCollectionId:65:29",
-        "collectionName": "alias",
-        "designId": null
+    },
+    "content": {
+      "$type": "color",
+      "$value": "{text.primary}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:159",
+          "variableKey": "ef02fac3cb9a87ef2ec2e2ffe193ed906e2b4536",
+          "variableName": "card/content",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
       }
-    }
-  },
-  "background-10": {
-    "$type": "color",
-    "$value": "{base.black}",
-    "$extensions": {
-      "figma": {
-        "variableId": "VariableID:65:60",
-        "variableKey": "7f036593c722701549d42e841889bbdafb3764ed",
-        "variableName": "background 10",
-        "variableType": "color",
-        "collectionId": "VariableCollectionId:65:29",
-        "collectionName": "alias",
-        "designId": null
+    },
+    "body": {
+      "$type": "color",
+      "$value": "{text.secondary}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:160",
+          "variableKey": "d8664d0b4fed9237dea18214cc8fe6a12afda3fb",
+          "variableName": "card/body",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{border.primary}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:161",
+          "variableKey": "53109db6e6a22ebd6ea376b25d765bb925427357",
+          "variableName": "card/border",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:90",
+          "collectionName": "alias",
+          "designId": null
+        }
       }
     }
   }

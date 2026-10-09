@@ -39,8 +39,8 @@ class AppOnboarding extends StatefulWidget {
     this.maxContentWidth,
     this.breakpoints = const DsBreakpoints(),
     this.backgroundColor,
-    required this.titleColor,
-    required this.descriptionColor,
+    this.titleColor,
+    this.descriptionColor,
     this.padding,
     this.gap,
   });
@@ -59,10 +59,10 @@ class AppOnboarding extends StatefulWidget {
   final DsBreakpoints breakpoints;
   /// Screen background. Defaults to `tokens.backgroundPrimary`.
   final Color? backgroundColor;
-  /// Page title color. Required: no matching token exists in the Figma collections.
-  final Color titleColor;
-  /// Page description color. Required: no matching token exists in the Figma collections.
-  final Color descriptionColor;
+  /// Page title color. Defaults to `tokens.textPrimary`.
+  final Color? titleColor;
+  /// Page description color. Defaults to `tokens.textSecondary`.
+  final Color? descriptionColor;
   /// Screen padding. Defaults to `SpacingTokens.spacing24`.
   final double? padding;
   /// Space between illustration, text and controls. Defaults to `SpacingTokens.spacing16`.
@@ -97,8 +97,8 @@ class _AppOnboardingState extends State<AppOnboarding> {
 
   Widget _page(BuildContext context, AppOnboardingPage page, bool wide) {
     final tokens = context.ds;
-    final Color titleTint = titleColor;
-    final Color bodyTint = descriptionColor;
+    final Color titleTint = (titleColor ?? tokens.textPrimary);
+    final Color bodyTint = (descriptionColor ?? tokens.textSecondary);
     final double space = (gap ?? SpacingTokens.spacing16);
     final theme = Theme.of(context).textTheme;
 

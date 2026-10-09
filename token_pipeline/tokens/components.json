@@ -1,16 +1,856 @@
 {
   "buttonComponent": {
-    "$type": "color",
-    "$value": "#FFFFFF",
-    "$extensions": {
-      "figma": {
-        "variableId": "VariableID:65:32",
-        "variableKey": "a7a6f29c6adaa03eea47b6c136fb1eba2c0ee7e1",
-        "variableName": "buttonComponent",
-        "variableType": "color",
-        "collectionId": "VariableCollectionId:65:31",
-        "collectionName": "components",
-        "designId": null
+    "primary": {
+      "background": {
+        "$type": "color",
+        "$value": "{button.primary.background}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:163",
+            "variableKey": "a4ff222c73664228916658e24e765081c8e04042",
+            "variableName": "buttonComponent/primary/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "{button.primary.text}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:164",
+            "variableKey": "c613defcb4c36fac9bcd92ae7902efffafbf21fd",
+            "variableName": "buttonComponent/primary/foreground",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{button.primary.border}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:165",
+            "variableKey": "43bc7824ebcc3fd371e8726ccbbf8dad2694c892",
+            "variableName": "buttonComponent/primary/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "radius": {
+        "$type": "number",
+        "$value": 4,
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:166",
+            "variableKey": "a8b0831c194bc9550e3495effeebb7fb1b3b0fd1",
+            "variableName": "buttonComponent/primary/radius",
+            "variableType": "number",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      }
+    },
+    "secondary": {
+      "background": {
+        "$type": "color",
+        "$value": "{button.secondary.background}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:167",
+            "variableKey": "ea67c84196d6e5a7a74bd40afe8888d5520b743b",
+            "variableName": "buttonComponent/secondary/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "{button.secondary.text}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:168",
+            "variableKey": "08d7abf0dcbfddf45b4adbdb6aab740c1c028a6e",
+            "variableName": "buttonComponent/secondary/foreground",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{button.secondary.border}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:169",
+            "variableKey": "191a9d8b7609ae189c3c4caa5fecf6d7c991f598",
+            "variableName": "buttonComponent/secondary/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "radius": {
+        "$type": "number",
+        "$value": 4,
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:170",
+            "variableKey": "c6a82bda1818aeb890cfe222789b61ab7e23928a",
+            "variableName": "buttonComponent/secondary/radius",
+            "variableType": "number",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      }
+    },
+    "tertiary": {
+      "background": {
+        "$type": "color",
+        "$value": "{button.tertiary.background}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:171",
+            "variableKey": "9d1e5472c1f00e06b273c01881002092c337976e",
+            "variableName": "buttonComponent/tertiary/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "{button.tertiary.text}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:172",
+            "variableKey": "e15bceb08be33f2a4fd453f908f5d94fd21aee94",
+            "variableName": "buttonComponent/tertiary/foreground",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{button.tertiary.border}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:173",
+            "variableKey": "5a215b8a43766b6e4115d5d1c1e1c71d1d67220c",
+            "variableName": "buttonComponent/tertiary/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "selected": {
+        "$type": "color",
+        "$value": "{button.tertiary.selected}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:174",
+            "variableKey": "74522d5c591a0dd078d9fec8d537849083c4d558",
+            "variableName": "buttonComponent/tertiary/selected",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "radius": {
+        "$type": "number",
+        "$value": 4,
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:175",
+            "variableKey": "1c7adbdeae21d62b3a5b98d72b58c730dc94af06",
+            "variableName": "buttonComponent/tertiary/radius",
+            "variableType": "number",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      }
+    },
+    "success": {
+      "background": {
+        "$type": "color",
+        "$value": "{button.success.background}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:176",
+            "variableKey": "d55fffdda2596dcf0e1bccf698bee08f54078781",
+            "variableName": "buttonComponent/success/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "{button.success.text}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:177",
+            "variableKey": "6805dc3515c940a2d4b80c2003ed916386b0dd0f",
+            "variableName": "buttonComponent/success/foreground",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{button.success.border}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:178",
+            "variableKey": "e45d6785502832e9ff9b058aa7d15f8df037c0cd",
+            "variableName": "buttonComponent/success/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "radius": {
+        "$type": "number",
+        "$value": 12,
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:179",
+            "variableKey": "2d75f494bedc57cbb6baf91d8f61a4f8bbcbd56c",
+            "variableName": "buttonComponent/success/radius",
+            "variableType": "number",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      }
+    },
+    "error": {
+      "background": {
+        "$type": "color",
+        "$value": "{button.error.background}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:180",
+            "variableKey": "ce63fa11a46d486b89f0247b36fdf1ada352440f",
+            "variableName": "buttonComponent/error/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "{button.error.text}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:181",
+            "variableKey": "8e6062852e153c36ee92cfb8809f46ee87ce5a68",
+            "variableName": "buttonComponent/error/foreground",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{button.error.border}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:182",
+            "variableKey": "b42b4ce093d2fc17285c6648e1e46d224004cfdc",
+            "variableName": "buttonComponent/error/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "radius": {
+        "$type": "number",
+        "$value": 4,
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:183",
+            "variableKey": "f371e4aa6d3102725cf18ec3301b22c5a026069c",
+            "variableName": "buttonComponent/error/radius",
+            "variableType": "number",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      }
+    },
+    "focus": {
+      "ring": {
+        "$type": "color",
+        "$value": "{focus.ring}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:184",
+            "variableKey": "5a4d9ca97eda0650dcaafd9b3fdc36fbfbb61378",
+            "variableName": "buttonComponent/focus/ring",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      }
+    }
+  },
+  "textfieldComponent": {
+    "label": {
+      "$type": "color",
+      "$value": "{text.primary}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:185",
+          "variableKey": "c483a3abb0d26f05a5afb3a66fd1d58166e4313d",
+          "variableName": "textfieldComponent/label",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{input.text}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:186",
+          "variableKey": "b549f25e42f5eb703f28464bb82e2ac430da505a",
+          "variableName": "textfieldComponent/text",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "placeholder": {
+      "$type": "color",
+      "$value": "{input.placeholder}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:187",
+          "variableKey": "c261896b078fb7e189b045fceaffe7dfa8486148",
+          "variableName": "textfieldComponent/placeholder",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "disabled": {
+      "$type": "color",
+      "$value": "{text.disabled}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:188",
+          "variableKey": "acdf985f83a2d9d1c18493384b1cd7fd601e6e46",
+          "variableName": "textfieldComponent/disabled",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "radius": {
+      "$type": "number",
+      "$value": 4,
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:189",
+          "variableKey": "2339de5b0dd4507c9aaaba656688884c3ea5ca40",
+          "variableName": "textfieldComponent/radius",
+          "variableType": "number",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "padding": {
+      "$type": "number",
+      "$value": 16,
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:190",
+          "variableKey": "10a9344ef67fb0e64283b6315a01cc7a098947d9",
+          "variableName": "textfieldComponent/padding",
+          "variableType": "number",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "background": {
+      "default": {
+        "$type": "color",
+        "$value": "{input.background}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:191",
+            "variableKey": "f2b0379f1b2991a27488a6973f733ba27ae625cf",
+            "variableName": "textfieldComponent/background/default",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "cloudy": {
+        "$type": "color",
+        "$value": "{background.secondary}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:192",
+            "variableKey": "b0078a353b9f241b194531f6ac17f5fb088af41f",
+            "variableName": "textfieldComponent/background/cloudy",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{input.border}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:193",
+            "variableKey": "7b15e3c53d518d1162764e361f792a73acfbd5b5",
+            "variableName": "textfieldComponent/border/default",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "cloudy": {
+        "$type": "color",
+        "$value": "{input.borderCloudy}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:194",
+            "variableKey": "d8d4597fe9394640bcb11eb0e05a669cec8f31a7",
+            "variableName": "textfieldComponent/border/cloudy",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{focus.border}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:195",
+            "variableKey": "1701b7b316ba4dbe8fcba774c98646d1f250fcc7",
+            "variableName": "textfieldComponent/border/focus",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      }
+    }
+  },
+  "radioComponent": {
+    "focus": {
+      "$type": "color",
+      "$value": "{focus.ring}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:196",
+          "variableKey": "a5fca63301ccd98c8cf1bbd979f3cf0a1a3fd0ae",
+          "variableName": "radioComponent/focus",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "size": {
+      "$type": "number",
+      "$value": 32,
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:197",
+          "variableKey": "b17ba4adf0c7d7ab3dc62402bf47c0f451a7c348",
+          "variableName": "radioComponent/size",
+          "variableType": "number",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "clear": {
+      "background": {
+        "$type": "color",
+        "$value": "{radio.background}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:198",
+            "variableKey": "5ff7e9c1d9ad8e5ed9eb593fa8e3fded9d05942b",
+            "variableName": "radioComponent/clear/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{radio.border}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:199",
+            "variableKey": "0409c54d703f69679c6be9043b816a37a485c7cf",
+            "variableName": "radioComponent/clear/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "selected": {
+        "$type": "color",
+        "$value": "{radio.selected}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:200",
+            "variableKey": "1eda31f14f267a857bef3cdb46cbe4a1674af303",
+            "variableName": "radioComponent/clear/selected",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "selectedBorder": {
+        "$type": "color",
+        "$value": "{radio.selectedBorder}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:201",
+            "variableKey": "6c5cced905ea19605a3eff517f718c32e2dae122",
+            "variableName": "radioComponent/clear/selectedBorder",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      }
+    },
+    "cloudy": {
+      "background": {
+        "$type": "color",
+        "$value": "{radio.backgroundCloudy}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:202",
+            "variableKey": "853a4037b04d13e7352689546afd9e330506a299",
+            "variableName": "radioComponent/cloudy/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{radio.borderCloudy}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:203",
+            "variableKey": "3e02f691d80af3afdcd410594476a657783c0641",
+            "variableName": "radioComponent/cloudy/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "selected": {
+        "$type": "color",
+        "$value": "{radio.selectedCloudy}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:204",
+            "variableKey": "2524d6cca71daead9214cacac5f21cd96f9e28f5",
+            "variableName": "radioComponent/cloudy/selected",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      },
+      "selectedBorder": {
+        "$type": "color",
+        "$value": "{radio.selectedBorder}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:79:205",
+            "variableKey": "6b4ef0a960a7d4394bf9e9239223f9e8894a6b1a",
+            "variableName": "radioComponent/cloudy/selectedBorder",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:79:162",
+            "collectionName": "components",
+            "designId": null
+          }
+        }
+      }
+    }
+  },
+  "cardComponent": {
+    "background": {
+      "$type": "color",
+      "$value": "{card.background}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:206",
+          "variableKey": "0b0b594720a8a6c5f8d47071e315d19a468f65d6",
+          "variableName": "cardComponent/background",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "backgroundSecondary": {
+      "$type": "color",
+      "$value": "{surface.secondary}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:207",
+          "variableKey": "4e72641521a38ec3814b78a0f2ed44bc2ca03d98",
+          "variableName": "cardComponent/backgroundSecondary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "heading": {
+      "$type": "color",
+      "$value": "{card.content}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:208",
+          "variableKey": "44b132ab4cfad3ebe5f68731dc80be279872278b",
+          "variableName": "cardComponent/heading",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "body": {
+      "$type": "color",
+      "$value": "{card.body}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:209",
+          "variableKey": "8c9e7ee0579f68651b2eaa8a247aeeabab080dcb",
+          "variableName": "cardComponent/body",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{card.border}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:210",
+          "variableKey": "05beb1779ee82b70bafd3f64783ce4b902035d23",
+          "variableName": "cardComponent/border",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "radius": {
+      "$type": "number",
+      "$value": 16,
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:211",
+          "variableKey": "f2b969597e9ffa5ced447420b57f5acfd3a1adb3",
+          "variableName": "cardComponent/radius",
+          "variableType": "number",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "contentPadding": {
+      "$type": "number",
+      "$value": 24,
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:212",
+          "variableKey": "7ec7caafc3682e978beb8624467500d23a6b5b3b",
+          "variableName": "cardComponent/contentPadding",
+          "variableType": "number",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "gap": {
+      "$type": "number",
+      "$value": 16,
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:213",
+          "variableKey": "adaba64b17e9b54439aee9d053ad858151cc9d96",
+          "variableName": "cardComponent/gap",
+          "variableType": "number",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "imageHeight": {
+      "$type": "number",
+      "$value": 180,
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:214",
+          "variableKey": "cc5bfadcce7f92178dabfda430d1a029e231fcd2",
+          "variableName": "cardComponent/imageHeight",
+          "variableType": "number",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    }
+  },
+  "topRightButtonsComponent": {
+    "icon": {
+      "$type": "color",
+      "$value": "{icon.primary}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:215",
+          "variableKey": "60b735f5c361c1c8068f119fb6f6966464c56137",
+          "variableName": "topRightButtonsComponent/icon",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "background": {
+      "$type": "color",
+      "$value": "{background.primary}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:216",
+          "variableKey": "7e8929fcf78fe5a40da6be496c6ae6c0027d4b7c",
+          "variableName": "topRightButtonsComponent/background",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
+      }
+    },
+    "size": {
+      "$type": "number",
+      "$value": 24,
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:79:217",
+          "variableKey": "016b02c7c40b81af817d55bd1ce873fc5f3c596a",
+          "variableName": "topRightButtonsComponent/size",
+          "variableType": "number",
+          "collectionId": "VariableCollectionId:79:162",
+          "collectionName": "components",
+          "designId": null
+        }
       }
     }
   }

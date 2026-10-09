@@ -1,5 +1,9 @@
 // GENERATED FILE - DO NOT EDIT BY HAND.
 
 enum DsButtonVariant {
-  $extensions,
+  primary,
+  secondary,
+  tertiary,
+  success,
+  error,
 }

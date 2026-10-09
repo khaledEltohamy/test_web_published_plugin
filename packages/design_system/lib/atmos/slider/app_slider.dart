@@ -15,9 +15,9 @@ class AppSlider extends StatelessWidget {
     this.max = 1.0,
     this.divisions,
     this.label,
-    required this.activeColor,
-    required this.inactiveColor,
-    required this.thumbColor,
+    this.activeColor,
+    this.inactiveColor,
+    this.thumbColor,
   });
 
   final double value;
@@ -26,12 +26,12 @@ class AppSlider extends StatelessWidget {
   final double max;
   final int? divisions;
   final String? label;
-  /// Filled part of the track. Required: no matching token exists in the Figma collections.
-  final Color activeColor;
-  /// Unfilled part of the track. Required: no matching token exists in the Figma collections.
-  final Color inactiveColor;
-  /// Thumb color. Required: no matching token exists in the Figma collections.
-  final Color thumbColor;
+  /// Filled part of the track. Defaults to `tokens.buttonPrimaryBackground`.
+  final Color? activeColor;
+  /// Unfilled part of the track. Defaults to `tokens.borderPrimary`.
+  final Color? inactiveColor;
+  /// Thumb color. Defaults to `tokens.buttonPrimaryBackground`.
+  final Color? thumbColor;
 
   @override
   Widget build(BuildContext context) {
@@ -44,9 +44,9 @@ class AppSlider extends StatelessWidget {
       max: max,
       divisions: divisions,
       label: label,
-      activeColor: activeColor,
-      inactiveColor: inactiveColor,
-      thumbColor: thumbColor,
+      activeColor: (activeColor ?? tokens.buttonPrimaryBackground),
+      inactiveColor: (inactiveColor ?? tokens.borderPrimary),
+      thumbColor: (thumbColor ?? tokens.buttonPrimaryBackground),
     );
   }
 }
@@ -60,8 +60,8 @@ class AppRangeSlider extends StatelessWidget {
     this.max = 1.0,
     this.divisions,
     this.labels,
-    required this.activeColor,
-    required this.inactiveColor,
+    this.activeColor,
+    this.inactiveColor,
   });
 
   final RangeValues values;
@@ -70,10 +70,10 @@ class AppRangeSlider extends StatelessWidget {
   final double max;
   final int? divisions;
   final RangeLabels? labels;
-  /// Filled part of the track. Required: no matching token exists in the Figma collections.
-  final Color activeColor;
-  /// Unfilled part of the track. Required: no matching token exists in the Figma collections.
-  final Color inactiveColor;
+  /// Filled part of the track. Defaults to `tokens.buttonPrimaryBackground`.
+  final Color? activeColor;
+  /// Unfilled part of the track. Defaults to `tokens.borderPrimary`.
+  final Color? inactiveColor;
 
   @override
   Widget build(BuildContext context) {
@@ -86,8 +86,8 @@ class AppRangeSlider extends StatelessWidget {
       max: max,
       divisions: divisions,
       labels: labels,
-      activeColor: activeColor,
-      inactiveColor: inactiveColor,
+      activeColor: (activeColor ?? tokens.buttonPrimaryBackground),
+      inactiveColor: (inactiveColor ?? tokens.borderPrimary),
     );
   }
 }

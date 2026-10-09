@@ -14,8 +14,8 @@ class AppTabBar extends StatelessWidget implements PreferredSizeWidget {
     this.controller,
     this.onTap,
     this.isScrollable = false,
-    required this.selectedColor,
-    required this.unselectedColor,
+    this.selectedColor,
+    this.unselectedColor,
     this.dividerColor,
   });
 
@@ -23,11 +23,11 @@ class AppTabBar extends StatelessWidget implements PreferredSizeWidget {
   final TabController? controller;
   final ValueChanged<int>? onTap;
   final bool isScrollable;
-  /// Selected tab label and indicator. Required: no matching token exists in the Figma collections.
-  final Color selectedColor;
-  /// Unselected tab labels. Required: no matching token exists in the Figma collections.
-  final Color unselectedColor;
-  /// Line under the tab bar. Optional.
+  /// Selected tab label and indicator. Defaults to `tokens.buttonPrimaryBackground`.
+  final Color? selectedColor;
+  /// Unselected tab labels. Defaults to `tokens.textSecondary`.
+  final Color? unselectedColor;
+  /// Line under the tab bar. Defaults to `tokens.dividerDefault`.
   final Color? dividerColor;
 
   @override
@@ -36,16 +36,16 @@ class AppTabBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     final tokens = context.ds;
-    final Color? line = dividerColor;
+    final Color? line = (dividerColor ?? tokens.dividerDefault);
 
     return TabBar(
       tabs: tabs,
       controller: controller,
       onTap: onTap,
       isScrollable: isScrollable,
-      labelColor: selectedColor,
-      indicatorColor: selectedColor,
-      unselectedLabelColor: unselectedColor,
+      labelColor: (selectedColor ?? tokens.buttonPrimaryBackground),
+      indicatorColor: (selectedColor ?? tokens.buttonPrimaryBackground),
+      unselectedLabelColor: (unselectedColor ?? tokens.textSecondary),
       dividerColor: line,
     );
   }
