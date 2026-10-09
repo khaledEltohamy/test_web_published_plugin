@@ -97,9 +97,9 @@ class _AppOnboardingState extends State<AppOnboarding> {
 
   Widget _page(BuildContext context, AppOnboardingPage page, bool wide) {
     final tokens = context.ds;
-    final Color titleTint = (titleColor ?? tokens.textPrimary);
-    final Color bodyTint = (descriptionColor ?? tokens.textSecondary);
-    final double space = (gap ?? SpacingTokens.spacing16);
+    final Color titleTint = (widget.titleColor ?? tokens.textPrimary);
+    final Color bodyTint = (widget.descriptionColor ?? tokens.textSecondary);
+    final double space = (widget.gap ?? SpacingTokens.spacing16);
     final theme = Theme.of(context).textTheme;
 
     final Widget art = page.illustration ??
@@ -150,9 +150,9 @@ class _AppOnboardingState extends State<AppOnboarding> {
   @override
   Widget build(BuildContext context) {
     final tokens = context.ds;
-    final Color page = (backgroundColor ?? tokens.backgroundPrimary);
-    final double edge = (padding ?? SpacingTokens.spacing24);
-    final double space = (gap ?? SpacingTokens.spacing16);
+    final Color page = (widget.backgroundColor ?? tokens.backgroundPrimary);
+    final double edge = (widget.padding ?? SpacingTokens.spacing24);
+    final double space = (widget.gap ?? SpacingTokens.spacing16);
 
     final wide =
         DsResponsive.sizeOf(context, breakpoints: widget.breakpoints) !=
