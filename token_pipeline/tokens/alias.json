@@ -2,7 +2,7 @@
   "background": {
     "primary": {
       "$type": "color",
-      "$value": "{gray.0}",
+      "$value": "{gray.900}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:91",
@@ -17,7 +17,7 @@
     },
     "secondary": {
       "$type": "color",
-      "$value": "{gray.50}",
+      "$value": "{gray.600}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:92",
@@ -32,7 +32,7 @@
     },
     "tertiary": {
       "$type": "color",
-      "$value": "{gray.100}",
+      "$value": "{gray.500}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:93",
@@ -47,7 +47,7 @@
     },
     "inverse": {
       "$type": "color",
-      "$value": "{gray.900}",
+      "$value": "{gray.400}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:94",
@@ -62,7 +62,7 @@
     },
     "disabled": {
       "$type": "color",
-      "$value": "{gray.100}",
+      "$value": "{gray.300}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:95",
@@ -126,7 +126,7 @@
   "text": {
     "primary": {
       "$type": "color",
-      "$value": "{gray.900}",
+      "$value": "{gray.0}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:99",
@@ -141,7 +141,7 @@
     },
     "secondary": {
       "$type": "color",
-      "$value": "{gray.600}",
+      "$value": "{gray.50}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:100",
@@ -156,7 +156,7 @@
     },
     "tertiary": {
       "$type": "color",
-      "$value": "{gray.500}",
+      "$value": "{gray.200}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:101",
@@ -171,7 +171,7 @@
     },
     "disabled": {
       "$type": "color",
-      "$value": "{gray.400}",
+      "$value": "{gray.300}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:102",
@@ -186,7 +186,7 @@
     },
     "inverse": {
       "$type": "color",
-      "$value": "{gray.0}",
+      "$value": "{gray.400}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:103",
@@ -201,7 +201,7 @@
     },
     "placeholder": {
       "$type": "color",
-      "$value": "{gray.400}",
+      "$value": "{gray.500}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:104",
@@ -218,7 +218,7 @@
   "icon": {
     "primary": {
       "$type": "color",
-      "$value": "{gray.900}",
+      "$value": "{teal.500}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:105",
@@ -233,7 +233,7 @@
     },
     "secondary": {
       "$type": "color",
-      "$value": "{gray.500}",
+      "$value": "{teal.400}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:106",
@@ -248,7 +248,7 @@
     },
     "disabled": {
       "$type": "color",
-      "$value": "{gray.400}",
+      "$value": "{teal.600}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:107",
@@ -263,7 +263,7 @@
     },
     "inverse": {
       "$type": "color",
-      "$value": "{gray.0}",
+      "$value": "{teal.800}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:108",
@@ -280,7 +280,7 @@
   "border": {
     "primary": {
       "$type": "color",
-      "$value": "{gray.200}",
+      "$value": "{indigo.400}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:109",
@@ -295,7 +295,7 @@
     },
     "secondary": {
       "$type": "color",
-      "$value": "{gray.100}",
+      "$value": "{indigo.500}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:110",
@@ -310,7 +310,7 @@
     },
     "focus": {
       "$type": "color",
-      "$value": "{primary.500}",
+      "$value": "{indigo.600}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:111",
@@ -325,7 +325,7 @@
     },
     "tertiary": {
       "$type": "color",
-      "$value": "{gray.300}",
+      "$value": "{neutral.100}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:112",
@@ -340,7 +340,7 @@
     },
     "interactive": {
       "$type": "color",
-      "$value": "{primary.500}",
+      "$value": "{neutral.300}",
       "$extensions": {
         "figma": {
           "variableId": "VariableID:79:113",
@@ -375,7 +375,7 @@
     "primary": {
       "background": {
         "$type": "color",
-        "$value": "{primary.500}",
+        "$value": "{teal.500}",
         "$extensions": {
           "figma": {
             "variableId": "VariableID:79:115",
@@ -390,7 +390,7 @@
       },
       "hover": {
         "$type": "color",
-        "$value": "{primary.600}",
+        "$value": "{teal.400}",
         "$extensions": {
           "figma": {
             "variableId": "VariableID:79:116",
@@ -405,7 +405,7 @@
       },
       "pressed": {
         "$type": "color",
-        "$value": "{primary.700}",
+        "$value": "{teal.400}",
         "$extensions": {
           "figma": {
             "variableId": "VariableID:79:117",
@@ -435,7 +435,7 @@
       },
       "disabled": {
         "$type": "color",
-        "$value": "{gray.300}",
+        "$value": "{neutral.300}",
         "$extensions": {
           "figma": {
             "variableId": "VariableID:79:119",
@@ -450,7 +450,7 @@
       },
       "border": {
         "$type": "color",
-        "$value": "{primary.500}",
+        "$value": "{teal.400}",
         "$extensions": {
           "figma": {
             "variableId": "VariableID:79:120",
@@ -467,7 +467,7 @@
     "secondary": {
       "background": {
         "$type": "color",
-        "$value": "{gray.500}",
+        "$value": "{gray.0}",
         "$extensions": {
           "figma": {
             "variableId": "VariableID:79:121",
@@ -482,7 +482,7 @@
       },
       "text": {
         "$type": "color",
-        "$value": "{gray.900}",
+        "$value": "{teal.700}",
         "$extensions": {
           "figma": {
             "variableId": "VariableID:79:122",
@@ -497,7 +497,7 @@
       },
       "border": {
         "$type": "color",
-        "$value": "{green.700}",
+        "$value": "{teal.400}",
         "$extensions": {
           "figma": {
             "variableId": "VariableID:79:123",

@@ -7,15 +7,15 @@ import '../global/global_tokens.dart';
 class AliasTokens {
   AliasTokens._();
 
-  static const Color backgroundPrimary = GlobalTokens.gray0;
+  static const Color backgroundPrimary = GlobalTokens.gray900;
 
-  static const Color backgroundSecondary = GlobalTokens.gray50;
+  static const Color backgroundSecondary = GlobalTokens.gray600;
 
-  static const Color backgroundTertiary = GlobalTokens.gray100;
+  static const Color backgroundTertiary = GlobalTokens.gray500;
 
-  static const Color backgroundInverse = GlobalTokens.gray900;
+  static const Color backgroundInverse = GlobalTokens.gray400;
 
-  static const Color backgroundDisabled = GlobalTokens.gray100;
+  static const Color backgroundDisabled = GlobalTokens.gray300;
 
   static const Color surfacePrimary = GlobalTokens.gray0;
 
@@ -23,55 +23,55 @@ class AliasTokens {
 
   static const Color surfaceTertiary = GlobalTokens.gray100;
 
-  static const Color textPrimary = GlobalTokens.gray900;
+  static const Color textPrimary = GlobalTokens.gray0;
 
-  static const Color textSecondary = GlobalTokens.gray600;
+  static const Color textSecondary = GlobalTokens.gray50;
 
-  static const Color textTertiary = GlobalTokens.gray500;
+  static const Color textTertiary = GlobalTokens.gray200;
 
-  static const Color textDisabled = GlobalTokens.gray400;
+  static const Color textDisabled = GlobalTokens.gray300;
 
-  static const Color textInverse = GlobalTokens.gray0;
+  static const Color textInverse = GlobalTokens.gray400;
 
-  static const Color textPlaceholder = GlobalTokens.gray400;
+  static const Color textPlaceholder = GlobalTokens.gray500;
 
-  static const Color iconPrimary = GlobalTokens.gray900;
+  static const Color iconPrimary = GlobalTokens.teal500;
 
-  static const Color iconSecondary = GlobalTokens.gray500;
+  static const Color iconSecondary = GlobalTokens.teal400;
 
-  static const Color iconDisabled = GlobalTokens.gray400;
+  static const Color iconDisabled = GlobalTokens.teal600;
 
-  static const Color iconInverse = GlobalTokens.gray0;
+  static const Color iconInverse = GlobalTokens.teal800;
 
-  static const Color borderPrimary = GlobalTokens.gray200;
+  static const Color borderPrimary = GlobalTokens.indigo400;
 
-  static const Color borderSecondary = GlobalTokens.gray100;
+  static const Color borderSecondary = GlobalTokens.indigo500;
 
-  static const Color borderFocus = GlobalTokens.primary500;
+  static const Color borderFocus = GlobalTokens.indigo600;
 
-  static const Color borderTertiary = GlobalTokens.gray300;
+  static const Color borderTertiary = GlobalTokens.neutral100;
 
-  static const Color borderInteractive = GlobalTokens.primary500;
+  static const Color borderInteractive = GlobalTokens.neutral300;
 
   static const Color dividerDefault = GlobalTokens.gray200;
 
-  static const Color buttonPrimaryBackground = GlobalTokens.primary500;
+  static const Color buttonPrimaryBackground = GlobalTokens.teal500;
 
-  static const Color buttonPrimaryHover = GlobalTokens.primary600;
+  static const Color buttonPrimaryHover = GlobalTokens.teal400;
 
-  static const Color buttonPrimaryPressed = GlobalTokens.primary700;
+  static const Color buttonPrimaryPressed = GlobalTokens.teal400;
 
   static const Color buttonPrimaryText = GlobalTokens.gray0;
 
-  static const Color buttonPrimaryDisabled = GlobalTokens.gray300;
+  static const Color buttonPrimaryDisabled = GlobalTokens.neutral300;
 
-  static const Color buttonPrimaryBorder = GlobalTokens.primary500;
+  static const Color buttonPrimaryBorder = GlobalTokens.teal400;
 
-  static const Color buttonSecondaryBackground = GlobalTokens.gray500;
+  static const Color buttonSecondaryBackground = GlobalTokens.gray0;
 
-  static const Color buttonSecondaryText = GlobalTokens.gray900;
+  static const Color buttonSecondaryText = GlobalTokens.teal700;
 
-  static const Color buttonSecondaryBorder = GlobalTokens.green700;
+  static const Color buttonSecondaryBorder = GlobalTokens.teal400;
 
   static const Color buttonTertiaryBackground = GlobalTokens.gray0;
 
@@ -121,7 +121,7 @@ class AliasTokens {
 
   static const Color inputPlaceholder = GlobalTokens.gray400;
 
-  static const Color inputText = Color(0xFF111827);
+  static const Color inputText = Color(0xFFFFFFFF);
 
   static const Color radioBackground = GlobalTokens.gray0;
 
@@ -143,10 +143,10 @@ class AliasTokens {
 
   static const Color cardBackground = Color(0xFFFFFFFF);
 
-  static const Color cardContent = Color(0xFF111827);
+  static const Color cardContent = Color(0xFFFFFFFF);
 
-  static const Color cardBody = Color(0xFF4B5563);
+  static const Color cardBody = Color(0xFFF9FAFB);
 
-  static const Color cardBorder = Color(0xFFE5E7EB);
+  static const Color cardBorder = Color(0xFF8080FF);
 
 }
