@@ -57,3 +57,305 @@ const String rectangle3976 = '$basePath/Rectangle-3_976.png';
 
 const String rectangle3832 = '$basePath/Rectangle-3_832.png';
 
+const String iconFrame31002 = '$basePath/icon-Frame-3_1002.svg';
+
+const String iconFrame31006 = '$basePath/icon-Frame-3_1006.svg';
+
+const String iconFrame31010 = '$basePath/icon-Frame-3_1010.svg';
+
+const String iconFrame31014 = '$basePath/icon-Frame-3_1014.svg';
+
+const String iconFrame31018 = '$basePath/icon-Frame-3_1018.svg';
+
+const String iconFrame31023 = '$basePath/icon-Frame-3_1023.svg';
+
+const String iconFrame31027 = '$basePath/icon-Frame-3_1027.svg';
+
+const String iconFrame31031 = '$basePath/icon-Frame-3_1031.svg';
+
+const String iconFrame31035 = '$basePath/icon-Frame-3_1035.svg';
+
+const String iconFrame31039 = '$basePath/icon-Frame-3_1039.svg';
+
+const String iconFrame31043 = '$basePath/icon-Frame-3_1043.svg';
+
+const String iconFrame31212 = '$basePath/icon-Frame-3_1212.svg';
+
+const String iconFrame31216 = '$basePath/icon-Frame-3_1216.svg';
+
+const String iconFrame31233 = '$basePath/icon-Frame-3_1233.svg';
+
+const String iconFrame31237 = '$basePath/icon-Frame-3_1237.svg';
+
+const String iconFrame31241 = '$basePath/icon-Frame-3_1241.svg';
+
+const String iconFrame31245 = '$basePath/icon-Frame-3_1245.svg';
+
+const String iconFrame31249 = '$basePath/icon-Frame-3_1249.svg';
+
+const String iconFrame31253 = '$basePath/icon-Frame-3_1253.svg';
+
+const String iconFrame31258 = '$basePath/icon-Frame-3_1258.svg';
+
+const String iconFrame31262 = '$basePath/icon-Frame-3_1262.svg';
+
+const String iconFrame31266 = '$basePath/icon-Frame-3_1266.svg';
+
+const String iconFrame31270 = '$basePath/icon-Frame-3_1270.svg';
+
+const String iconFrame31274 = '$basePath/icon-Frame-3_1274.svg';
+
+const String iconFrame3786 = '$basePath/icon-Frame-3_786.svg';
+
+const String iconFrame3790 = '$basePath/icon-Frame-3_790.svg';
+
+const String iconFrame3794 = '$basePath/icon-Frame-3_794.svg';
+
+const String iconFrame3798 = '$basePath/icon-Frame-3_798.svg';
+
+const String iconFrame3803 = '$basePath/icon-Frame-3_803.svg';
+
+const String iconFrame3807 = '$basePath/icon-Frame-3_807.svg';
+
+const String iconFrame3811 = '$basePath/icon-Frame-3_811.svg';
+
+const String iconFrame3815 = '$basePath/icon-Frame-3_815.svg';
+
+const String iconFrame3819 = '$basePath/icon-Frame-3_819.svg';
+
+const String iconFrame3823 = '$basePath/icon-Frame-3_823.svg';
+
+const String iconFrame3827 = '$basePath/icon-Frame-3_827.svg';
+
+const String iconFrame41000 = '$basePath/icon-Frame-4_1000.svg';
+
+const String iconFrame41013 = '$basePath/icon-Frame-4_1013.svg';
+
+const String iconFrame41026 = '$basePath/icon-Frame-4_1026.svg';
+
+const String iconFrame41039 = '$basePath/icon-Frame-4_1039.svg';
+
+const String iconVector4124 = '$basePath/icon-Vector-4_124.svg';
+
+const String iconVector4127 = '$basePath/icon-Vector-4_127.svg';
+
+const String iconVector4130 = '$basePath/icon-Vector-4_130.svg';
+
+const String iconVector4315 = '$basePath/icon-Vector-4_315.svg';
+
+const String iconVector4378 = '$basePath/icon-Vector-4_378.svg';
+
+const String iconVector4381 = '$basePath/icon-Vector-4_381.svg';
+
+const String iconVector4517 = '$basePath/icon-Vector-4_517.svg';
+
+const String iconVector4580 = '$basePath/icon-Vector-4_580.svg';
+
+const String iconVector4583 = '$basePath/icon-Vector-4_583.svg';
+
+const String iconVector461 = '$basePath/icon-Vector-4_61.svg';
+
+const String iconVector4611 = '$basePath/icon-Vector-4_611.svg';
+
+const String iconApple3690 = '$basePath/icon-apple-3_690.svg';
+
+const String iconApple3693 = '$basePath/icon-apple-3_693.svg';
+
+const String iconApple3696 = '$basePath/icon-apple-3_696.svg';
+
+const String iconAward3729 = '$basePath/icon-award-3_729.svg';
+
+const String iconBell3744 = '$basePath/icon-bell-3_744.svg';
+
+const String iconBell3847 = '$basePath/icon-bell-3_847.svg';
+
+const String iconBolt41096 = '$basePath/icon-bolt-4_1096.svg';
+
+const String iconCalendarCheck3741 = '$basePath/icon-calendar-check-3_741.svg';
+
+const String iconChevronDown3765 = '$basePath/icon-chevron-down-3_765.svg';
+
+const String iconDroplet3687 = '$basePath/icon-droplet-3_687.svg';
+
+const String iconDumbbell3660 = '$basePath/icon-dumbbell-3_660.svg';
+
+const String iconDumbbell3663 = '$basePath/icon-dumbbell-3_663.svg';
+
+const String iconDumbbell3666 = '$basePath/icon-dumbbell-3_666.svg';
+
+const String iconExternalLink3762 = '$basePath/icon-external-link-3_762.svg';
+
+const String iconFileText3753 = '$basePath/icon-file-text-3_753.svg';
+
+const String iconFileText3756 = '$basePath/icon-file-text-3_756.svg';
+
+const String iconFlame3708 = '$basePath/icon-flame-3_708.svg';
+
+const String iconFunnel3651 = '$basePath/icon-funnel-3_651.svg';
+
+const String iconFunnel3654 = '$basePath/icon-funnel-3_654.svg';
+
+const String iconIconWrap4100 = '$basePath/icon-icon-wrap-4_100.svg';
+
+const String iconIconWrap4104 = '$basePath/icon-icon-wrap-4_104.svg';
+
+const String iconIconWrap4108 = '$basePath/icon-icon-wrap-4_108.svg';
+
+const String iconIconWrap4321 = '$basePath/icon-icon-wrap-4_321.svg';
+
+const String iconIconWrap4325 = '$basePath/icon-icon-wrap-4_325.svg';
+
+const String iconIconWrap4329 = '$basePath/icon-icon-wrap-4_329.svg';
+
+const String iconIconWrap4333 = '$basePath/icon-icon-wrap-4_333.svg';
+
+const String iconIconWrap4337 = '$basePath/icon-icon-wrap-4_337.svg';
+
+const String iconIconWrap4341 = '$basePath/icon-icon-wrap-4_341.svg';
+
+const String iconIconWrap4345 = '$basePath/icon-icon-wrap-4_345.svg';
+
+const String iconIconWrap4349 = '$basePath/icon-icon-wrap-4_349.svg';
+
+const String iconIconWrap4354 = '$basePath/icon-icon-wrap-4_354.svg';
+
+const String iconIconWrap4358 = '$basePath/icon-icon-wrap-4_358.svg';
+
+const String iconIconWrap4362 = '$basePath/icon-icon-wrap-4_362.svg';
+
+const String iconIconWrap4523 = '$basePath/icon-icon-wrap-4_523.svg';
+
+const String iconIconWrap4527 = '$basePath/icon-icon-wrap-4_527.svg';
+
+const String iconIconWrap4531 = '$basePath/icon-icon-wrap-4_531.svg';
+
+const String iconIconWrap4535 = '$basePath/icon-icon-wrap-4_535.svg';
+
+const String iconIconWrap4539 = '$basePath/icon-icon-wrap-4_539.svg';
+
+const String iconIconWrap4543 = '$basePath/icon-icon-wrap-4_543.svg';
+
+const String iconIconWrap4547 = '$basePath/icon-icon-wrap-4_547.svg';
+
+const String iconIconWrap4551 = '$basePath/icon-icon-wrap-4_551.svg';
+
+const String iconIconWrap4555 = '$basePath/icon-icon-wrap-4_555.svg';
+
+const String iconIconWrap4560 = '$basePath/icon-icon-wrap-4_560.svg';
+
+const String iconIconWrap4564 = '$basePath/icon-icon-wrap-4_564.svg';
+
+const String iconIconWrap467 = '$basePath/icon-icon-wrap-4_67.svg';
+
+const String iconIconWrap471 = '$basePath/icon-icon-wrap-4_71.svg';
+
+const String iconIconWrap475 = '$basePath/icon-icon-wrap-4_75.svg';
+
+const String iconIconWrap479 = '$basePath/icon-icon-wrap-4_79.svg';
+
+const String iconIconWrap483 = '$basePath/icon-icon-wrap-4_83.svg';
+
+const String iconIconWrap487 = '$basePath/icon-icon-wrap-4_87.svg';
+
+const String iconIconWrap491 = '$basePath/icon-icon-wrap-4_91.svg';
+
+const String iconIconWrap496 = '$basePath/icon-icon-wrap-4_96.svg';
+
+const String iconImage3615 = '$basePath/icon-image-3_615.svg';
+
+const String iconImage3621 = '$basePath/icon-image-3_621.svg';
+
+const String iconImageUp41099 = '$basePath/icon-image-up-4_1099.svg';
+
+const String iconNavIcon4709 = '$basePath/icon-nav-icon-4_709.svg';
+
+const String iconNavIcon4713 = '$basePath/icon-nav-icon-4_713.svg';
+
+const String iconNavIcon4717 = '$basePath/icon-nav-icon-4_717.svg';
+
+const String iconNavIcon4721 = '$basePath/icon-nav-icon-4_721.svg';
+
+const String iconNavIcon4725 = '$basePath/icon-nav-icon-4_725.svg';
+
+const String iconNavIcon4729 = '$basePath/icon-nav-icon-4_729.svg';
+
+const String iconNavIcon4733 = '$basePath/icon-nav-icon-4_733.svg';
+
+const String iconNavIcon4737 = '$basePath/icon-nav-icon-4_737.svg';
+
+const String iconNavIcon4741 = '$basePath/icon-nav-icon-4_741.svg';
+
+const String iconNavIcon4745 = '$basePath/icon-nav-icon-4_745.svg';
+
+const String iconNavIcon4750 = '$basePath/icon-nav-icon-4_750.svg';
+
+const String iconNavIcon4894 = '$basePath/icon-nav-icon-4_894.svg';
+
+const String iconNavIcon4898 = '$basePath/icon-nav-icon-4_898.svg';
+
+const String iconNavIcon4902 = '$basePath/icon-nav-icon-4_902.svg';
+
+const String iconNavIcon4906 = '$basePath/icon-nav-icon-4_906.svg';
+
+const String iconNavIcon4910 = '$basePath/icon-nav-icon-4_910.svg';
+
+const String iconNavIcon4914 = '$basePath/icon-nav-icon-4_914.svg';
+
+const String iconNavIcon4918 = '$basePath/icon-nav-icon-4_918.svg';
+
+const String iconNavIcon4922 = '$basePath/icon-nav-icon-4_922.svg';
+
+const String iconNavIcon4926 = '$basePath/icon-nav-icon-4_926.svg';
+
+const String iconNavIcon4930 = '$basePath/icon-nav-icon-4_930.svg';
+
+const String iconNavIcon4934 = '$basePath/icon-nav-icon-4_934.svg';
+
+const String iconPalette3699 = '$basePath/icon-palette-3_699.svg';
+
+const String iconPalette3702 = '$basePath/icon-palette-3_702.svg';
+
+const String iconPalette3705 = '$basePath/icon-palette-3_705.svg';
+
+const String iconPlus3633 = '$basePath/icon-plus-3_633.svg';
+
+const String iconPlus3636 = '$basePath/icon-plus-3_636.svg';
+
+const String iconSearch31059 = '$basePath/icon-search-3_1059.svg';
+
+const String iconSearch31290 = '$basePath/icon-search-3_1290.svg';
+
+const String iconSearch3642 = '$basePath/icon-search-3_642.svg';
+
+const String iconSearch3645 = '$basePath/icon-search-3_645.svg';
+
+const String iconSearch3648 = '$basePath/icon-search-3_648.svg';
+
+const String iconSearch3843 = '$basePath/icon-search-3_843.svg';
+
+const String iconSearch4766 = '$basePath/icon-search-4_766.svg';
+
+const String iconSearch4951 = '$basePath/icon-search-4_951.svg';
+
+const String iconTrendingUp3711 = '$basePath/icon-trending-up-3_711.svg';
+
+const String iconTrendingUp3714 = '$basePath/icon-trending-up-3_714.svg';
+
+const String iconUserRound3678 = '$basePath/icon-user-round-3_678.svg';
+
+const String iconUserRound3681 = '$basePath/icon-user-round-3_681.svg';
+
+const String iconUsers3732 = '$basePath/icon-users-3_732.svg';
+
+const String iconUsers3735 = '$basePath/icon-users-3_735.svg';
+
+const String iconWalletCards3720 = '$basePath/icon-wallet-cards-3_720.svg';
+
+const String iconZap3669 = '$basePath/icon-zap-3_669.svg';
+
+const String iconZap3672 = '$basePath/icon-zap-3_672.svg';
+
+const String iconZap3675 = '$basePath/icon-zap-3_675.svg';
+
+const String iconZap3779 = '$basePath/icon-zap-3_779.svg';
+

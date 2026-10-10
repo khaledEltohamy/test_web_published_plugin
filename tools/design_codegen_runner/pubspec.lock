@@ -5,9 +5,9 @@ packages:
     dependency: "direct main"
     description:
       name: design_codegen
-      sha256: b1e766d0f2394f90a3cc03b1f7d4b65a78f40a361d211dcb04a2ff972be69732
+      sha256: d1e5af92976aec275005a35a94e6c61de59f8c88545e6e38dcbe86350e682861
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.16"
+    version: "0.0.17"
 sdks:
   dart: ">=3.10.1 <4.0.0"

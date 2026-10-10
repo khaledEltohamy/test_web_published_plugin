@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../../generated/routes/app_router.dart';
 import '../../../../../generated/constants/assets_path.dart';
 
@@ -14,15 +15,8 @@ class DietPlan extends StatelessWidget {
     return Scaffold(
       backgroundColor: context.ds.backgroundPrimary,
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Container(
-          decoration: BoxDecoration(
-            color: const Color(0xFF08090C),
-          ),
-          child: Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             SizedBox(
               width: 260.0,
@@ -57,13 +51,10 @@ class DietPlan extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
+                        SvgPicture.asset(
+                          iconZap3669,
+                          width: 18.0,
+                          height: 18.0,
                         ),
                       ],
                     ),
@@ -103,323 +94,370 @@ class DietPlan extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
-                        color: const Color(0x1AD2FF00),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.dietPlanRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Diet Plan',
-                          style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist', fontSize: 14.0),
-                          textAlign: TextAlign.left,
-                        ),
-                        const SizedBox(width: 12.0),
-                        Container(
-                          width: 6.0,
-                          height: 6.0,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFD2FF00),
-                            shape: BoxShape.circle,
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              color: const Color(0x1AD2FF00),
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconApple3690,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Diet Plan',
+                                style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist', fontSize: 14.0),
+                                textAlign: TextAlign.left,
+                              ),
+                              const SizedBox(width: 12.0),
+                              Container(
+                                width: 6.0,
+                                height: 6.0,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFD2FF00),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                            ],
                           ),
-                        ),
-                      ],
-                    ),
+                          ),
+                      ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushNamed(AppRouter.workoutsProgramsRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconDumbbell3660,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Workouts Programs',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Workouts Programs',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.progressSharingRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                              width: 18.0,
+                              height: 18.0,
+                              color: Colors.transparent,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Progress Sharing',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                        width: 18.0,
-                        height: 18.0,
-                        color: Colors.transparent,
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Progress Sharing',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.clientManagementRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconUsers3732,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Client Management',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Client Management',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.subscriptionRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconWalletCards3720,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Subscription',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Subscription',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.clientProfileRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconUserRound3678,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Client Profile',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Client Profile',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.leadsManagementRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconFunnel3651,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Leads Management',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Leads Management',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.businessGrowthRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconTrendingUp3711,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Business Growth',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Business Growth',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () {},
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconUsers3732,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Unlimited Co-workers',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Unlimited Co-workers',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.customBrandingRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconPalette3699,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Custom Branding',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Custom Branding',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.reportsRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconFileText3753,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Reports',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Reports',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 402.0),
+                Expanded(child: const SizedBox(height: 402.0)),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
                   decoration: BoxDecoration(
@@ -464,13 +502,11 @@ class DietPlan extends StatelessWidget {
             ),
             ),
             ),
-            Expanded(child: Container(
+            Expanded(child: DecoratedBox(
               decoration: BoxDecoration(
                 color: context.ds.backgroundPrimary,
               ),
               child: Column(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Container(
@@ -508,33 +544,26 @@ class DietPlan extends StatelessWidget {
                       children: [
                         SizedBox(
                           width: 220.0,
-                          child: Container(
-                          padding: const EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
-                          decoration: BoxDecoration(
-                            color: const Color(0x08FFFFFF),
-                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                          child: SizedBox(
+                          width: 220.0,
+                          child: TextField(
+                          decoration: InputDecoration(
+                            isDense: true,
+                            hintText: 'Search clients...',
+                            hintStyle: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 13.0),
+                            filled: true,
+                            fillColor: const Color(0x08FFFFFF),
+                            prefixIcon: Padding(padding: EdgeInsets.only(left: 12.0, right: 8.0), child: SvgPicture.asset(
+                              iconSearch3642,
+                              width: 14.0,
+                              height: 14.0,
+                            )),
+                            prefixIconConstraints: const BoxConstraints(),
+                            contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 12.0, 8.0),
+                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                            enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                            focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
                           ),
-                          child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const AppIcon(Icons.circle),
-                              ],
-                            ),
-                            const SizedBox(width: 8.0),
-                            AppText(
-                              'Search clients...',
-                              style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
-                              textAlign: TextAlign.left,
-                            ),
-                          ],
                         ),
                         ),
                         ),
@@ -553,13 +582,10 @@ class DietPlan extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const AppIcon(Icons.circle),
-                              ],
+                            SvgPicture.asset(
+                              iconBell3744,
+                              width: 18.0,
+                              height: 18.0,
                             ),
                             Container(
                               width: 8.0,
@@ -575,1535 +601,1528 @@ class DietPlan extends StatelessWidget {
                         ),
                         ),
                         const SizedBox(width: 16.0),
-                        Container(
-                          padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
-                          decoration: BoxDecoration(
-                            color: context.ds.buttonComponentPrimaryBackground,
+                        Material(
+                          type: MaterialType.transparency,
+                          child: InkWell(
+                            onTap: () {},
                             borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            child: Container(
+                                padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
+                                decoration: BoxDecoration(
+                                  color: context.ds.buttonComponentPrimaryBackground,
+                                  borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                ),
+                                child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  SvgPicture.asset(
+                                    iconPlus3633,
+                                    width: 14.0,
+                                    height: 14.0,
+                                  ),
+                                  const SizedBox(width: 6.0),
+                                  AppText(
+                                    'Quick Assign',
+                                    style: TextStyle(color: context.ds.buttonComponentPrimaryForeground, fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w700),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ],
+                              ),
+                              ),
                           ),
-                          child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const AppIcon(Icons.circle),
-                              ],
-                            ),
-                            const SizedBox(width: 6.0),
-                            AppText(
-                              'Quick Assign',
-                              style: TextStyle(color: context.ds.buttonComponentPrimaryForeground, fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w700),
-                              textAlign: TextAlign.left,
-                            ),
-                          ],
-                        ),
                         ),
                       ],
                     ),
                   ],
                 ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(32.0, 32.0, 32.0, 32.0),
-                  child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-                      decoration: BoxDecoration(
-                        color: context.ds.backgroundSecondary,
-                        borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                      ),
-                      child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                AppText(
-                                  'Weekly Meal Calendar',
-                                  style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
-                                  textAlign: TextAlign.left,
-                                ),
-                                const SizedBox(height: 2.0),
-                                AppText(
-                                  'Current assigned template: Active Hypertrophy 2500cals',
-                                  style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
-                                  textAlign: TextAlign.left,
-                                ),
-                              ],
+                Expanded(
+                child: SingleChildScrollView(
+                  child: Padding(
+                        padding: const EdgeInsets.fromLTRB(32.0, 32.0, 32.0, 32.0),
+                        child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                            decoration: BoxDecoration(
+                              color: context.ds.backgroundSecondary,
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                              border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                             ),
-                            Row(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0x08FFFFFF),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                  ),
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'Edit Template',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                const SizedBox(width: 8.0),
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFFD2FF00),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                  ),
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'Assign New',
-                                      style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 16.0),
-                        Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(child: Container(
-                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF08090C),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius12),
-                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                              ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    AppText(
-                                      'Mon',
-                                      style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 10.0),
-                                Opacity(
-                                  opacity: 0.2,
-                                  child: Container(
-                                  width: 121.14,
-                                  height: 1.0,
-                                  color: const Color(0xFF1C1F2B),
-                                ),
-                                ),
-                                const SizedBox(height: 10.0),
-                                Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'P: Beef Stir-fry',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'S: Protein Shake',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'D: Salmon & Rice',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            )),
-                            const SizedBox(width: 10.0),
-                            Expanded(child: Container(
-                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF08090C),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius12),
-                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                              ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    AppText(
-                                      'Tue',
-                                      style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 10.0),
-                                Opacity(
-                                  opacity: 0.2,
-                                  child: Container(
-                                  width: 121.14,
-                                  height: 1.0,
-                                  color: const Color(0xFF1C1F2B),
-                                ),
-                                ),
-                                const SizedBox(height: 10.0),
-                                Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'P: Beef Stir-fry',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'S: Protein Shake',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'D: Salmon & Rice',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            )),
-                            const SizedBox(width: 10.0),
-                            Expanded(child: Container(
-                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                              decoration: BoxDecoration(
-                                color: const Color(0x0BD2FF00),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius12),
-                                border: Border.all(color: const Color(0xFFD2FF00), width: 1.0),
-                              ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    AppText(
-                                      'Wed',
-                                      style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    AppText(
-                                      'TODAY',
-                                      style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 10.0),
-                                Opacity(
-                                  opacity: 0.2,
-                                  child: Container(
-                                  width: 121.14,
-                                  height: 1.0,
-                                  color: const Color(0xFFD2FF00),
-                                ),
-                                ),
-                                const SizedBox(height: 10.0),
-                                Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'P: Beef Stir-fry',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'S: Protein Shake',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'D: Salmon & Rice',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            )),
-                            const SizedBox(width: 10.0),
-                            Expanded(child: Container(
-                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF08090C),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius12),
-                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                              ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    AppText(
-                                      'Thu',
-                                      style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 10.0),
-                                Opacity(
-                                  opacity: 0.2,
-                                  child: Container(
-                                  width: 121.14,
-                                  height: 1.0,
-                                  color: const Color(0xFF1C1F2B),
-                                ),
-                                ),
-                                const SizedBox(height: 10.0),
-                                Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'P: Beef Stir-fry',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'S: Protein Shake',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'D: Salmon & Rice',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            )),
-                            const SizedBox(width: 10.0),
-                            Expanded(child: Container(
-                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF08090C),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius12),
-                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                              ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    AppText(
-                                      'Fri',
-                                      style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 10.0),
-                                Opacity(
-                                  opacity: 0.2,
-                                  child: Container(
-                                  width: 121.14,
-                                  height: 1.0,
-                                  color: const Color(0xFF1C1F2B),
-                                ),
-                                ),
-                                const SizedBox(height: 10.0),
-                                Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'P: Beef Stir-fry',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'S: Protein Shake',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'D: Salmon & Rice',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            )),
-                            const SizedBox(width: 10.0),
-                            Expanded(child: Container(
-                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF08090C),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius12),
-                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                              ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    AppText(
-                                      'Sat',
-                                      style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 10.0),
-                                Opacity(
-                                  opacity: 0.2,
-                                  child: Container(
-                                  width: 121.14,
-                                  height: 1.0,
-                                  color: const Color(0xFF1C1F2B),
-                                ),
-                                ),
-                                const SizedBox(height: 10.0),
-                                Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'P: Beef Stir-fry',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'S: Protein Shake',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'D: Salmon & Rice',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            )),
-                            const SizedBox(width: 10.0),
-                            Expanded(child: Container(
-                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF08090C),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius12),
-                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                              ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    AppText(
-                                      'Sun',
-                                      style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 10.0),
-                                Opacity(
-                                  opacity: 0.2,
-                                  child: Container(
-                                  width: 121.14,
-                                  height: 1.0,
-                                  color: const Color(0xFF1C1F2B),
-                                ),
-                                ),
-                                const SizedBox(height: 10.0),
-                                Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'P: Beef Stir-fry',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'S: Protein Shake',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'D: Salmon & Rice',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            )),
-                          ],
-                        ),
-                      ],
-                    ),
-                    ),
-                    const SizedBox(height: 24.0),
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(child: Container(
-                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF12141C),
-                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                          ),
-                          child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            AppText(
-                              'Macro Nutrient Target',
-                              style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 16.0, fontWeight: FontWeight.w700),
-                              textAlign: TextAlign.left,
-                            ),
-                            const SizedBox(height: 16.0),
-                            Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                SizedBox(
-                                  width: 120.0,
-                                  height: 120.0,
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 120.0,
-                                      height: 120.0,
-                                      decoration: BoxDecoration(
-                                        color: const Color(0x10FFFFFF),
-                                        shape: BoxShape.circle,
+                            child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      AppText(
+                                        'Weekly Meal Calendar',
+                                        style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
+                                        textAlign: TextAlign.left,
                                       ),
+                                      const SizedBox(height: 2.0),
+                                      AppText(
+                                        'Current assigned template: Active Hypertrophy 2500cals',
+                                        style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0x08FFFFFF),
+                                          borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                          border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                        ),
+                                        child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'Edit Template',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      const SizedBox(width: 8.0),
+                                      Container(
+                                        padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xFFD2FF00),
+                                          borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                        ),
+                                        child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'Assign New',
+                                            style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 16.0),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(child: Container(
+                                    padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF08090C),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                      border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                     ),
-                                    Container(
-                                      width: 120.0,
-                                      height: 120.0,
-                                      decoration: BoxDecoration(
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          AppText(
+                                            'Mon',
+                                            style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Opacity(
+                                        opacity: 0.2,
+                                        child: Container(
+                                        width: 121.14,
+                                        height: 1.0,
+                                        color: const Color(0xFF1C1F2B),
+                                      ),
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'P: Beef Stir-fry',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'S: Protein Shake',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'D: Salmon & Rice',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  )),
+                                  const SizedBox(width: 10.0),
+                                  Expanded(child: Container(
+                                    padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF08090C),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                      border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                    ),
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          AppText(
+                                            'Tue',
+                                            style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Opacity(
+                                        opacity: 0.2,
+                                        child: Container(
+                                        width: 121.14,
+                                        height: 1.0,
+                                        color: const Color(0xFF1C1F2B),
+                                      ),
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'P: Beef Stir-fry',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'S: Protein Shake',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'D: Salmon & Rice',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  )),
+                                  const SizedBox(width: 10.0),
+                                  Expanded(child: Container(
+                                    padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0x0BD2FF00),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                      border: Border.all(color: const Color(0xFFD2FF00), width: 1.0),
+                                    ),
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          AppText(
+                                            'Wed',
+                                            style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          AppText(
+                                            'TODAY',
+                                            style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Opacity(
+                                        opacity: 0.2,
+                                        child: Container(
+                                        width: 121.14,
+                                        height: 1.0,
                                         color: const Color(0xFFD2FF00),
-                                        shape: BoxShape.circle,
                                       ),
-                                    ),
-                                    Container(
-                                      width: 92.0,
-                                      height: 92.0,
-                                      decoration: BoxDecoration(
-                                        color: const Color(0x10FFFFFF),
-                                        shape: BoxShape.circle,
                                       ),
-                                    ),
-                                    Container(
-                                      width: 92.0,
-                                      height: 92.0,
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xFF007AFF),
-                                        shape: BoxShape.circle,
-                                      ),
-                                    ),
-                                    Container(
-                                      width: 66.0,
-                                      height: 66.0,
-                                      decoration: BoxDecoration(
-                                        color: const Color(0x10FFFFFF),
-                                        shape: BoxShape.circle,
-                                      ),
-                                    ),
-                                    Container(
-                                      width: 66.0,
-                                      height: 66.0,
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xFFFF3B30),
-                                        shape: BoxShape.circle,
-                                      ),
-                                    ),
-                                    Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        AppText(
-                                          '2,450',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                        AppText(
-                                          'kcal',
-                                          style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 9.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                const SizedBox(width: 20.0),
-                                Expanded(child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: 8.0,
-                                          height: 8.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                      const SizedBox(height: 10.0),
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'P: Beef Stir-fry',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
                                           ),
-                                        ),
-                                        const SizedBox(width: 8.0),
-                                        AppText(
-                                          'Protein (180g / 40%)',
-                                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(height: 10.0),
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: 8.0,
-                                          height: 8.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFF007AFF),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'S: Protein Shake',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
                                           ),
-                                        ),
-                                        const SizedBox(width: 8.0),
-                                        AppText(
-                                          'Carbs (220g / 35%)',
-                                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(height: 10.0),
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: 8.0,
-                                          height: 8.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFFF3B30),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'D: Salmon & Rice',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
                                           ),
-                                        ),
-                                        const SizedBox(width: 8.0),
-                                        AppText(
-                                          'Fats (75g / 25%)',
-                                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  )),
+                                  const SizedBox(width: 10.0),
+                                  Expanded(child: Container(
+                                    padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF08090C),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                      border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                     ),
-                                  ],
-                                )),
-                              ],
-                            ),
-                          ],
-                        ),
-                        )),
-                        const SizedBox(width: 20.0),
-                        Expanded(child: Container(
-                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF12141C),
-                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          AppText(
+                                            'Thu',
+                                            style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Opacity(
+                                        opacity: 0.2,
+                                        child: Container(
+                                        width: 121.14,
+                                        height: 1.0,
+                                        color: const Color(0xFF1C1F2B),
+                                      ),
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'P: Beef Stir-fry',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'S: Protein Shake',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'D: Salmon & Rice',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  )),
+                                  const SizedBox(width: 10.0),
+                                  Expanded(child: Container(
+                                    padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF08090C),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                      border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                    ),
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          AppText(
+                                            'Fri',
+                                            style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Opacity(
+                                        opacity: 0.2,
+                                        child: Container(
+                                        width: 121.14,
+                                        height: 1.0,
+                                        color: const Color(0xFF1C1F2B),
+                                      ),
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'P: Beef Stir-fry',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'S: Protein Shake',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'D: Salmon & Rice',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  )),
+                                  const SizedBox(width: 10.0),
+                                  Expanded(child: Container(
+                                    padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF08090C),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                      border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                    ),
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          AppText(
+                                            'Sat',
+                                            style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Opacity(
+                                        opacity: 0.2,
+                                        child: Container(
+                                        width: 121.14,
+                                        height: 1.0,
+                                        color: const Color(0xFF1C1F2B),
+                                      ),
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'P: Beef Stir-fry',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'S: Protein Shake',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'D: Salmon & Rice',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  )),
+                                  const SizedBox(width: 10.0),
+                                  Expanded(child: Container(
+                                    padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF08090C),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                      border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                    ),
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          AppText(
+                                            'Sun',
+                                            style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Opacity(
+                                        opacity: 0.2,
+                                        child: Container(
+                                        width: 121.14,
+                                        height: 1.0,
+                                        color: const Color(0xFF1C1F2B),
+                                      ),
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'P: Beef Stir-fry',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'S: Protein Shake',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'D: Salmon & Rice',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  )),
+                                ],
+                              ),
+                            ],
                           ),
-                          child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            AppText(
-                              'Daily Calorie Intake (Target vs. Actual)',
-                              style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 16.0, fontWeight: FontWeight.w700),
-                              textAlign: TextAlign.left,
-                            ),
-                            const SizedBox(height: 16.0),
-                            SizedBox(
-                              height: 100.0,
-                              child: Padding(
-                              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 12.0),
-                              child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                SizedBox(
-                                  width: 24.0,
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      height: 60.0,
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.end,
-                                      children: [
-                                        Container(
-                                          width: 6.0,
-                                          height: 80.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFF1C1F2B),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 4.0),
-                                        Container(
-                                          width: 6.0,
-                                          height: 70.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'M',
-                                      style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                SizedBox(
-                                  width: 24.0,
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      height: 60.0,
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.end,
-                                      children: [
-                                        Container(
-                                          width: 6.0,
-                                          height: 80.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFF1C1F2B),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 4.0),
-                                        Container(
-                                          width: 6.0,
-                                          height: 85.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'T',
-                                      style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                SizedBox(
-                                  width: 24.0,
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      height: 60.0,
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.end,
-                                      children: [
-                                        Container(
-                                          width: 6.0,
-                                          height: 80.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFF1C1F2B),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 4.0),
-                                        Container(
-                                          width: 6.0,
-                                          height: 60.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'W',
-                                      style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                SizedBox(
-                                  width: 24.0,
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      height: 60.0,
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.end,
-                                      children: [
-                                        Container(
-                                          width: 6.0,
-                                          height: 80.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFF1C1F2B),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 4.0),
-                                        Container(
-                                          width: 6.0,
-                                          height: 78.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'T',
-                                      style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                SizedBox(
-                                  width: 24.0,
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      height: 60.0,
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.end,
-                                      children: [
-                                        Container(
-                                          width: 6.0,
-                                          height: 80.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFF1C1F2B),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 4.0),
-                                        Container(
-                                          width: 6.0,
-                                          height: 95.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'F',
-                                      style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                SizedBox(
-                                  width: 24.0,
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      height: 60.0,
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.end,
-                                      children: [
-                                        Container(
-                                          width: 6.0,
-                                          height: 80.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFF1C1F2B),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 4.0),
-                                        Container(
-                                          width: 6.0,
-                                          height: 50.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'S',
-                                      style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                SizedBox(
-                                  width: 24.0,
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      height: 60.0,
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.end,
-                                      children: [
-                                        Container(
-                                          width: 6.0,
-                                          height: 80.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFF1C1F2B),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 4.0),
-                                        Container(
-                                          width: 6.0,
-                                          height: 80.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius3),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    AppText(
-                                      'S',
-                                      style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                              ],
-                            ),
-                            ),
-                            ),
-                          ],
-                        ),
-                        )),
-                        const SizedBox(width: 20.0),
-                        SizedBox(
-                          width: 380.0,
-                          child: Container(
-                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF12141C),
-                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                           ),
-                          child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            AppText(
-                              'Assign Active Plan',
-                              style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 16.0, fontWeight: FontWeight.w700),
-                              textAlign: TextAlign.left,
-                            ),
-                            const SizedBox(height: 16.0),
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF08090C),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                          const SizedBox(height: 24.0),
+                          Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(child: Container(
+                                padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF12141C),
+                                  borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                ),
+                                child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  AppText(
+                                    'Macro Nutrient Target',
+                                    style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 16.0, fontWeight: FontWeight.w700),
+                                    textAlign: TextAlign.left,
                                   ),
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    AppText(
-                                      'Select Client...',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        const AppIcon(Icons.circle),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                const SizedBox(height: 10.0),
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF08090C),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                  const SizedBox(height: 16.0),
+                                  Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      SizedBox(
+                                        width: 120.0,
+                                        height: 120.0,
+                                        child: SingleChildScrollView(
+                                        scrollDirection: Axis.horizontal,
+                                        child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Container(
+                                            width: 120.0,
+                                            height: 120.0,
+                                            decoration: BoxDecoration(
+                                              color: const Color(0x10FFFFFF),
+                                              shape: BoxShape.circle,
+                                            ),
+                                          ),
+                                          Container(
+                                            width: 120.0,
+                                            height: 120.0,
+                                            decoration: BoxDecoration(
+                                              color: const Color(0xFFD2FF00),
+                                              shape: BoxShape.circle,
+                                            ),
+                                          ),
+                                          Container(
+                                            width: 92.0,
+                                            height: 92.0,
+                                            decoration: BoxDecoration(
+                                              color: const Color(0x10FFFFFF),
+                                              shape: BoxShape.circle,
+                                            ),
+                                          ),
+                                          Container(
+                                            width: 92.0,
+                                            height: 92.0,
+                                            decoration: BoxDecoration(
+                                              color: const Color(0xFF007AFF),
+                                              shape: BoxShape.circle,
+                                            ),
+                                          ),
+                                          Container(
+                                            width: 66.0,
+                                            height: 66.0,
+                                            decoration: BoxDecoration(
+                                              color: const Color(0x10FFFFFF),
+                                              shape: BoxShape.circle,
+                                            ),
+                                          ),
+                                          Container(
+                                            width: 66.0,
+                                            height: 66.0,
+                                            decoration: BoxDecoration(
+                                              color: const Color(0xFFFF3B30),
+                                              shape: BoxShape.circle,
+                                            ),
+                                          ),
+                                          Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              AppText(
+                                                '2,450',
+                                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                              AppText(
+                                                'kcal',
+                                                style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 9.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      ),
+                                      const SizedBox(width: 20.0),
+                                      Expanded(child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              Container(
+                                                width: 8.0,
+                                                height: 8.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 8.0),
+                                              AppText(
+                                                'Protein (180g / 40%)',
+                                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(height: 10.0),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              Container(
+                                                width: 8.0,
+                                                height: 8.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFF007AFF),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 8.0),
+                                              AppText(
+                                                'Carbs (220g / 35%)',
+                                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(height: 10.0),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              Container(
+                                                width: 8.0,
+                                                height: 8.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFFF3B30),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 8.0),
+                                              AppText(
+                                                'Fats (75g / 25%)',
+                                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      )),
+                                    ],
                                   ),
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    AppText(
-                                      'Select Diet Template...',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        const AppIcon(Icons.circle),
-                                      ],
-                                    ),
-                                  ],
+                                ],
+                              ),
+                              )),
+                              const SizedBox(width: 20.0),
+                              Expanded(child: Container(
+                                padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF12141C),
+                                  borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                 ),
-                                ),
-                                const SizedBox(height: 10.0),
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFFD2FF00),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  AppText(
+                                    'Daily Calorie Intake (Target vs. Actual)',
+                                    style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 16.0, fontWeight: FontWeight.w700),
+                                    textAlign: TextAlign.left,
                                   ),
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'Apply to Client',
-                                      style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 24.0),
-                    Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        AppText(
-                          'Operator Recipe Library',
-                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
-                          textAlign: TextAlign.left,
-                        ),
-                        const SizedBox(height: 16.0),
-                        Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(child: Container(
-                              clipBehavior: Clip.antiAlias,
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF12141C),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                  const SizedBox(height: 16.0),
+                                  SizedBox(
+                                    height: 100.0,
+                                    child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 12.0),
+                                    child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    crossAxisAlignment: CrossAxisAlignment.end,
+                                    children: [
+                                      SizedBox(
+                                        width: 24.0,
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          SizedBox(
+                                            height: 60.0,
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.end,
+                                            children: [
+                                              Container(
+                                                width: 6.0,
+                                                height: 80.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFF1C1F2B),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 4.0),
+                                              Container(
+                                                width: 6.0,
+                                                height: 70.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'M',
+                                            style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      SizedBox(
+                                        width: 24.0,
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          SizedBox(
+                                            height: 60.0,
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.end,
+                                            children: [
+                                              Container(
+                                                width: 6.0,
+                                                height: 80.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFF1C1F2B),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 4.0),
+                                              Container(
+                                                width: 6.0,
+                                                height: 85.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'T',
+                                            style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      SizedBox(
+                                        width: 24.0,
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          SizedBox(
+                                            height: 60.0,
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.end,
+                                            children: [
+                                              Container(
+                                                width: 6.0,
+                                                height: 80.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFF1C1F2B),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 4.0),
+                                              Container(
+                                                width: 6.0,
+                                                height: 60.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'W',
+                                            style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      SizedBox(
+                                        width: 24.0,
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          SizedBox(
+                                            height: 60.0,
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.end,
+                                            children: [
+                                              Container(
+                                                width: 6.0,
+                                                height: 80.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFF1C1F2B),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 4.0),
+                                              Container(
+                                                width: 6.0,
+                                                height: 78.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'T',
+                                            style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      SizedBox(
+                                        width: 24.0,
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          SizedBox(
+                                            height: 60.0,
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.end,
+                                            children: [
+                                              Container(
+                                                width: 6.0,
+                                                height: 80.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFF1C1F2B),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 4.0),
+                                              Container(
+                                                width: 6.0,
+                                                height: 95.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'F',
+                                            style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      SizedBox(
+                                        width: 24.0,
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          SizedBox(
+                                            height: 60.0,
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.end,
+                                            children: [
+                                              Container(
+                                                width: 6.0,
+                                                height: 80.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFF1C1F2B),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 4.0),
+                                              Container(
+                                                width: 6.0,
+                                                height: 50.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'S',
+                                            style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      SizedBox(
+                                        width: 24.0,
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          SizedBox(
+                                            height: 60.0,
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.end,
+                                            children: [
+                                              Container(
+                                                width: 6.0,
+                                                height: 80.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFF1C1F2B),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 4.0),
+                                              Container(
+                                                width: 6.0,
+                                                height: 80.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius3),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          AppText(
+                                            'S',
+                                            style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                  ),
+                                  ),
+                                ],
                               ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Image.asset(
-                                  rectangle3267,
-                                  width: 361.3333435058594,
-                                  height: 140.0,
-                                  fit: BoxFit.fill,
+                              )),
+                              const SizedBox(width: 20.0),
+                              SizedBox(
+                                width: 380.0,
+                                child: Container(
+                                padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF12141C),
+                                  borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        AppText(
-                                          'Sweet Potato Beef Bowl',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 15.0, fontWeight: FontWeight.w700),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                        const SizedBox(height: 4.0),
-                                        AppText(
-                                          '580 kcal  •  42g Protein',
-                                          style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(height: 12.0),
-                                    Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Expanded(child: Container(
-                                          padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
-                                          decoration: BoxDecoration(
-                                            color: const Color(0x08FFFFFF),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  AppText(
+                                    'Assign Active Plan',
+                                    style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 16.0, fontWeight: FontWeight.w700),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                  const SizedBox(height: 16.0),
+                                  Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      DropdownButtonFormField<String>(
+                                        isExpanded: true,
+                                        hint: Text('Select Client...', style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 13.0)),
+                                        icon: SvgPicture.asset(
+                                            iconChevronDown3765,
+                                            width: 14.0,
+                                            height: 14.0,
                                           ),
-                                          child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'View Recipe',
-                                              style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
+                                        decoration: InputDecoration(
+                                          isDense: true,
+                                          filled: true,
+                                          fillColor: const Color(0xFF08090C),
+                                          contentPadding: EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                          border: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                                          enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                                          focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
                                         ),
-                                        )),
-                                        const SizedBox(width: 8.0),
-                                        Expanded(child: Container(
-                                          padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
-                                          decoration: BoxDecoration(
-                                            color: const Color(0x1AD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                            border: Border.all(color: const Color(0xFFD2FF00), width: 1.0),
+                                        items: const <DropdownMenuItem<String>>[],
+                                        onChanged: (_) {},
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      DropdownButtonFormField<String>(
+                                        isExpanded: true,
+                                        hint: Text('Select Diet Template...', style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 13.0)),
+                                        icon: SvgPicture.asset(
+                                            iconChevronDown3765,
+                                            width: 14.0,
+                                            height: 14.0,
                                           ),
-                                          child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'Add to Meal',
-                                              style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w700),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
+                                        decoration: InputDecoration(
+                                          isDense: true,
+                                          filled: true,
+                                          fillColor: const Color(0xFF08090C),
+                                          contentPadding: EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                          border: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                                          enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                                          focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
                                         ),
-                                        )),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                                ),
-                              ],
-                            ),
-                            )),
-                            const SizedBox(width: 16.0),
-                            Expanded(child: Container(
-                              clipBehavior: Clip.antiAlias,
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF12141C),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                        items: const <DropdownMenuItem<String>>[],
+                                        onChanged: (_) {},
+                                      ),
+                                      const SizedBox(height: 10.0),
+                                      Container(
+                                        padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xFFD2FF00),
+                                          borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                        ),
+                                        child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'Apply to Client',
+                                            style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Image.asset(
-                                  rectangle3278,
-                                  width: 361.33331298828125,
-                                  height: 140.0,
-                                  fit: BoxFit.fill,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        AppText(
-                                          'Keto Chia Pudding',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 15.0, fontWeight: FontWeight.w700),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                        const SizedBox(height: 4.0),
-                                        AppText(
-                                          '220 kcal  •  8g Protein',
-                                          style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(height: 12.0),
-                                    Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Expanded(child: Container(
-                                          padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
-                                          decoration: BoxDecoration(
-                                            color: const Color(0x08FFFFFF),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                          ),
-                                          child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'View Recipe',
-                                              style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
-                                        ),
-                                        )),
-                                        const SizedBox(width: 8.0),
-                                        Expanded(child: Container(
-                                          padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
-                                          decoration: BoxDecoration(
-                                            color: const Color(0x1AD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                            border: Border.all(color: const Color(0xFFD2FF00), width: 1.0),
-                                          ),
-                                          child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'Add to Meal',
-                                              style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w700),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
-                                        ),
-                                        )),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                                ),
-                              ],
-                            ),
-                            )),
-                            const SizedBox(width: 16.0),
-                            Expanded(child: Container(
-                              clipBehavior: Clip.antiAlias,
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF12141C),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                                border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                               ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Image.asset(
-                                  rectangle3289,
-                                  width: 361.33331298828125,
-                                  height: 140.0,
-                                  fit: BoxFit.fill,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        AppText(
-                                          'Teriyaki Tofu Stir-Fry',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 15.0, fontWeight: FontWeight.w700),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                        const SizedBox(height: 4.0),
-                                        AppText(
-                                          '390 kcal  •  24g Protein',
-                                          style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 24.0),
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              AppText(
+                                'Operator Recipe Library',
+                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
+                                textAlign: TextAlign.left,
+                              ),
+                              const SizedBox(height: 16.0),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(child: Container(
+                                    clipBehavior: Clip.antiAlias,
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF12141C),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                      border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                     ),
-                                    const SizedBox(height: 12.0),
-                                    Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Expanded(child: Container(
-                                          padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
-                                          decoration: BoxDecoration(
-                                            color: const Color(0x08FFFFFF),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Image.asset(
+                                        rectangle3267,
+                                        width: 361.3333435058594,
+                                        height: 140.0,
+                                        fit: BoxFit.fill,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                                        children: [
+                                          Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              AppText(
+                                                'Sweet Potato Beef Bowl',
+                                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 15.0, fontWeight: FontWeight.w700),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                              const SizedBox(height: 4.0),
+                                              AppText(
+                                                '580 kcal  •  42g Protein',
+                                                style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
                                           ),
-                                          child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'View Recipe',
-                                              style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
-                                        ),
-                                        )),
-                                        const SizedBox(width: 8.0),
-                                        Expanded(child: Container(
-                                          padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
-                                          decoration: BoxDecoration(
-                                            color: const Color(0x1AD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                            border: Border.all(color: const Color(0xFFD2FF00), width: 1.0),
+                                          const SizedBox(height: 12.0),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Expanded(child: Container(
+                                                padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0x08FFFFFF),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                                ),
+                                                child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'View Recipe',
+                                                    style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                              )),
+                                              const SizedBox(width: 8.0),
+                                              Expanded(child: Container(
+                                                padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0x1AD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                  border: Border.all(color: const Color(0xFFD2FF00), width: 1.0),
+                                                ),
+                                                child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'Add to Meal',
+                                                    style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w700),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                              )),
+                                            ],
                                           ),
-                                          child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'Add to Meal',
-                                              style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w700),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
-                                        ),
-                                        )),
-                                      ],
+                                        ],
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                  )),
+                                  const SizedBox(width: 16.0),
+                                  Expanded(child: Container(
+                                    clipBehavior: Clip.antiAlias,
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF12141C),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                      border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                     ),
-                                  ],
-                                ),
-                                ),
-                              ],
-                            ),
-                            )),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Image.asset(
+                                        rectangle3278,
+                                        width: 361.33331298828125,
+                                        height: 140.0,
+                                        fit: BoxFit.fill,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                                        children: [
+                                          Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              AppText(
+                                                'Keto Chia Pudding',
+                                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 15.0, fontWeight: FontWeight.w700),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                              const SizedBox(height: 4.0),
+                                              AppText(
+                                                '220 kcal  •  8g Protein',
+                                                style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(height: 12.0),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Expanded(child: Container(
+                                                padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0x08FFFFFF),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                                ),
+                                                child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'View Recipe',
+                                                    style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                              )),
+                                              const SizedBox(width: 8.0),
+                                              Expanded(child: Container(
+                                                padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0x1AD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                  border: Border.all(color: const Color(0xFFD2FF00), width: 1.0),
+                                                ),
+                                                child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'Add to Meal',
+                                                    style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w700),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                              )),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                  )),
+                                  const SizedBox(width: 16.0),
+                                  Expanded(child: Container(
+                                    clipBehavior: Clip.antiAlias,
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF12141C),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                      border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                    ),
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Image.asset(
+                                        rectangle3289,
+                                        width: 361.33331298828125,
+                                        height: 140.0,
+                                        fit: BoxFit.fill,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                                        children: [
+                                          Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              AppText(
+                                                'Teriyaki Tofu Stir-Fry',
+                                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 15.0, fontWeight: FontWeight.w700),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                              const SizedBox(height: 4.0),
+                                              AppText(
+                                                '390 kcal  •  24g Protein',
+                                                style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist Mono', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(height: 12.0),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Expanded(child: Container(
+                                                padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0x08FFFFFF),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                                ),
+                                                child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'View Recipe',
+                                                    style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                              )),
+                                              const SizedBox(width: 8.0),
+                                              Expanded(child: Container(
+                                                padding: const EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0x1AD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                  border: Border.all(color: const Color(0xFFD2FF00), width: 1.0),
+                                                ),
+                                                child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'Add to Meal',
+                                                    style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w700),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                              )),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                  )),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      ),
                 ),
-                ),
+              ),
               ],
             ),
             )),
           ],
-        ),
-        ),
         ),
       ),
     );

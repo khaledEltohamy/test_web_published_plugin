@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../../generated/routes/app_router.dart';
 import '../../../../../generated/constants/assets_path.dart';
 
@@ -14,15 +15,8 @@ class CustomBranding extends StatelessWidget {
     return Scaffold(
       backgroundColor: context.ds.backgroundPrimary,
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Container(
-          decoration: BoxDecoration(
-            color: const Color(0xFF08090C),
-          ),
-          child: Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             SizedBox(
               width: 260.0,
@@ -57,13 +51,10 @@ class CustomBranding extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
+                        SvgPicture.asset(
+                          iconZap3779,
+                          width: 18.0,
+                          height: 18.0,
                         ),
                       ],
                     ),
@@ -103,326 +94,370 @@ class CustomBranding extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.dietPlanRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Diet Plan',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Workouts Programs',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Progress Sharing',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Client Management',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Subscription',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Client Profile',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Leads Management',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Business Growth',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Unlimited Co-workers',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
-                        color: const Color(0x1AD2FF00),
-                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                      ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Custom Branding',
-                          style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist', fontSize: 14.0),
-                          textAlign: TextAlign.left,
-                        ),
-                        const SizedBox(width: 12.0),
-                        Container(
-                          width: 6.0,
-                          height: 6.0,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFD2FF00),
-                            shape: BoxShape.circle,
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4709,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Diet Plan',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
                           ),
-                        ),
-                      ],
-                    ),
+                          ),
+                      ),
                     ),
                     const SizedBox(height: 4.0),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
-                      decoration: BoxDecoration(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.workoutsProgramsRoute),
                         borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4713,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Workouts Programs',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
                       ),
-                      child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AppIcon(Icons.circle),
-                          ],
-                        ),
-                        const SizedBox(width: 12.0),
-                        AppText(
-                          'Reports',
-                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
                     ),
+                    const SizedBox(height: 4.0),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.progressSharingRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4717,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Progress Sharing',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
+                    ),
+                    const SizedBox(height: 4.0),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.clientManagementRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4721,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Client Management',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
+                    ),
+                    const SizedBox(height: 4.0),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.subscriptionRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4725,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Subscription',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
+                    ),
+                    const SizedBox(height: 4.0),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.clientProfileRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4729,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Client Profile',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
+                    ),
+                    const SizedBox(height: 4.0),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.leadsManagementRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4733,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Leads Management',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
+                    ),
+                    const SizedBox(height: 4.0),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.businessGrowthRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4737,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Business Growth',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
+                    ),
+                    const SizedBox(height: 4.0),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () {},
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4741,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Unlimited Co-workers',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
+                    ),
+                    const SizedBox(height: 4.0),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushReplacementNamed(AppRouter.customBrandingRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              color: const Color(0x1AD2FF00),
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4745,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Custom Branding',
+                                style: TextStyle(color: const Color(0xFFD2FF00), fontFamily: 'Geist', fontSize: 14.0),
+                                textAlign: TextAlign.left,
+                              ),
+                              const SizedBox(width: 12.0),
+                              Container(
+                                width: 6.0,
+                                height: 6.0,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFD2FF00),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
+                    ),
+                    const SizedBox(height: 4.0),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushNamed(AppRouter.reportsRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                        child: Container(
+                            padding: const EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 10.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                            ),
+                            child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                iconNavIcon4750,
+                                width: 18.0,
+                                height: 18.0,
+                              ),
+                              const SizedBox(width: 12.0),
+                              AppText(
+                                'Reports',
+                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 402.0),
+                Expanded(child: const SizedBox(height: 402.0)),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
                   decoration: BoxDecoration(
@@ -468,8 +503,6 @@ class CustomBranding extends StatelessWidget {
             ),
             ),
             Expanded(child: Column(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Container(
@@ -507,33 +540,26 @@ class CustomBranding extends StatelessWidget {
                       children: [
                         SizedBox(
                           width: 220.0,
-                          child: Container(
-                          padding: const EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
-                          decoration: BoxDecoration(
-                            color: const Color(0x08FFFFFF),
-                            borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                          child: SizedBox(
+                          width: 220.0,
+                          child: TextField(
+                          decoration: InputDecoration(
+                            isDense: true,
+                            hintText: 'Search client brandings...',
+                            hintStyle: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 13.0),
+                            filled: true,
+                            fillColor: const Color(0x08FFFFFF),
+                            prefixIcon: Padding(padding: EdgeInsets.only(left: 12.0, right: 8.0), child: SvgPicture.asset(
+                              iconSearch4766,
+                              width: 14.0,
+                              height: 14.0,
+                            )),
+                            prefixIconConstraints: const BoxConstraints(),
+                            contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 12.0, 8.0),
+                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                            enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                            focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
                           ),
-                          child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const AppIcon(Icons.circle),
-                              ],
-                            ),
-                            const SizedBox(width: 8.0),
-                            AppText(
-                              'Search client brandings...',
-                              style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
-                              textAlign: TextAlign.left,
-                            ),
-                          ],
                         ),
                         ),
                         ),
@@ -552,13 +578,10 @@ class CustomBranding extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const AppIcon(Icons.circle),
-                              ],
+                            SvgPicture.asset(
+                              iconBell3847,
+                              width: 18.0,
+                              height: 18.0,
                             ),
                             Container(
                               width: 8.0,
@@ -585,13 +608,10 @@ class CustomBranding extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const AppIcon(Icons.circle),
-                              ],
+                            SvgPicture.asset(
+                              iconPlus3636,
+                              width: 14.0,
+                              height: 14.0,
                             ),
                             const SizedBox(width: 6.0),
                             AppText(
@@ -607,918 +627,901 @@ class CustomBranding extends StatelessWidget {
                   ],
                 ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(32.0, 32.0, 32.0, 32.0),
-                  child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF12141C),
-                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                          ),
-                          child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            AppText(
-                              'Portal Logo & Icon',
-                              style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
-                              textAlign: TextAlign.left,
-                            ),
-                            const SizedBox(height: 16.0),
-                            Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                SizedBox(
-                                  width: 80.0,
-                                  height: 80.0,
-                                  child: Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF08090C),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius12),
-                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                Expanded(
+                child: SingleChildScrollView(
+                  child: Padding(
+                        padding: const EdgeInsets.fromLTRB(32.0, 32.0, 32.0, 32.0),
+                        child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF12141C),
+                                  borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                ),
+                                child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  AppText(
+                                    'Portal Logo & Icon',
+                                    style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
+                                    textAlign: TextAlign.left,
                                   ),
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Container(
-                                    width: 24.0,
-                                    height: 24.0,
-                                    color: Colors.transparent,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                ),
-                                const SizedBox(width: 20.0),
-                                Expanded(child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'Upload your high-resolution PNG or SVG logo. This will replace the FitPro brand on the web app and client login screens.',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 10.0),
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFD2FF00),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                  const SizedBox(height: 16.0),
+                                  Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      SizedBox(
+                                        width: 80.0,
+                                        height: 80.0,
+                                        child: Container(
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xFF08090C),
+                                          borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                          border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                        ),
+                                        child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Container(
+                                          width: 24.0,
+                                          height: 24.0,
+                                          color: Colors.transparent,
                                           ),
-                                          child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'Upload Image',
-                                              style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w700),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
-                                        ),
-                                        ),
-                                        const SizedBox(width: 8.0),
-                                        Container(
-                                          padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
-                                          decoration: BoxDecoration(
-                                            color: const Color(0x08FFFFFF),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                        ],
+                                      ),
+                                      ),
+                                      ),
+                                      const SizedBox(width: 20.0),
+                                      Expanded(child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'Upload your high-resolution PNG or SVG logo. This will replace the FitPro brand on the web app and client login screens.',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 14.0, fontWeight: FontWeight.w400),
+                                            textAlign: TextAlign.left,
                                           ),
-                                          child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'Remove',
-                                              style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
-                                        ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                )),
-                              ],
-                            ),
-                          ],
-                        ),
-                        ),
-                        const SizedBox(height: 24.0),
-                        Container(
-                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF12141C),
-                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                          ),
-                          child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            AppText(
-                              'Theme Palette',
-                              style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
-                              textAlign: TextAlign.left,
-                            ),
-                            const SizedBox(height: 16.0),
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF08090C),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                          const SizedBox(height: 10.0),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFD2FF00),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                ),
+                                                child: Row(
+                                                mainAxisSize: MainAxisSize.min,
+                                                mainAxisAlignment: MainAxisAlignment.start,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'Upload Image',
+                                                    style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w700),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                              ),
+                                              const SizedBox(width: 8.0),
+                                              Container(
+                                                padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0x08FFFFFF),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                                ),
+                                                child: Row(
+                                                mainAxisSize: MainAxisSize.min,
+                                                mainAxisAlignment: MainAxisAlignment.start,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'Remove',
+                                                    style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      )),
+                                    ],
                                   ),
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: 32.0,
-                                          height: 32.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFF1A1C29),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                            border: Border.all(color: const Color(0x20FFFFFF), width: 1.0),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 12.0),
-                                        Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'Primary Brand Color',
-                                              style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                            const SizedBox(height: 2.0),
-                                            AppText(
-                                              'Used for sidebar backgrounds and secondary buttons',
-                                              style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                    Container(
-                                      padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
-                                      decoration: BoxDecoration(
-                                        color: const Color(0x08FFFFFF),
-                                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                      ),
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        AppText(
-                                          '#1A1C29',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                const SizedBox(height: 12.0),
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF08090C),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                  ),
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: 32.0,
-                                          height: 32.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFF0B0C10),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                            border: Border.all(color: const Color(0x20FFFFFF), width: 1.0),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 12.0),
-                                        Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'Secondary Color',
-                                              style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                            const SizedBox(height: 2.0),
-                                            AppText(
-                                              'Main canvas backdrop for the client web portal',
-                                              style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                    Container(
-                                      padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
-                                      decoration: BoxDecoration(
-                                        color: const Color(0x08FFFFFF),
-                                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                      ),
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        AppText(
-                                          '#0B0C10',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                const SizedBox(height: 12.0),
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF08090C),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                                    border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                  ),
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: 32.0,
-                                          height: 32.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFFF3E6C),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                            border: Border.all(color: const Color(0x20FFFFFF), width: 1.0),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 12.0),
-                                        Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            AppText(
-                                              'Highlight Accent',
-                                              style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                            const SizedBox(height: 2.0),
-                                            AppText(
-                                              'Core call-to-actions, active navigation highlights, and progress bars',
-                                              style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                    Container(
-                                      padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
-                                      decoration: BoxDecoration(
-                                        color: const Color(0x08FFFFFF),
-                                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                      ),
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        AppText(
-                                          '#FF3E6C',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                  ],
-                                ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        ),
-                        const SizedBox(height: 24.0),
-                        Container(
-                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF12141C),
-                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                          ),
-                          child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            AppText(
-                              'Portal Typography',
-                              style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
-                              textAlign: TextAlign.left,
-                            ),
-                            const SizedBox(height: 16.0),
-                            Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Expanded(child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    AppText(
-                                      'Heading Font',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    Container(
-                                      padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xFF08090C),
-                                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                      ),
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        AppText(
-                                          'Outfit (Default)',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                        Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            const AppIcon(Icons.circle),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                  ],
-                                )),
-                                const SizedBox(width: 16.0),
-                                Expanded(child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    AppText(
-                                      'Body Text Font',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    Container(
-                                      padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xFF08090C),
-                                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                      ),
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        AppText(
-                                          'Geist Sans',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                        Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            const AppIcon(Icons.circle),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                  ],
-                                )),
-                              ],
-                            ),
-                          ],
-                        ),
-                        ),
-                        const SizedBox(height: 24.0),
-                        Container(
-                          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF12141C),
-                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                          ),
-                          child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                AppText(
-                                  'White-label Custom Domain',
-                                  style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
-                                  textAlign: TextAlign.left,
-                                ),
-                                const SizedBox(height: 4.0),
-                                AppText(
-                                  'Configure the URL where your coaching clients will access their dashboard.',
-                                  style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
-                                  textAlign: TextAlign.left,
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 16.0),
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    AppText(
-                                      'FitPro Subdomain',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    Container(
-                                      padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xFF08090C),
-                                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                      ),
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        AppText(
-                                          'marcusfitness',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                        const SizedBox(width: 10.0),
-                                        AppText(
-                                          '.fitpro.app',
-                                          style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 12.0),
-                                Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    AppText(
-                                      'Custom Domain (Enterprise)',
-                                      style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 6.0),
-                                    Container(
-                                      padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xFF08090C),
-                                        borderRadius: BorderRadius.circular(RadiusTokens.radius8),
-                                        border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                                      ),
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        AppText(
-                                          'e.g. portal.mybrand.com',
-                                          style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        ),
-                      ],
-                    )),
-                    const SizedBox(width: 24.0),
-                    SizedBox(
-                      width: 420.0,
-                      child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 24.0),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF12141C),
-                            borderRadius: BorderRadius.circular(RadiusTokens.radius16),
-                            border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
-                          ),
-                          child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                AppText(
-                                  'Live Client Preview',
-                                  style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 16.0, fontWeight: FontWeight.w700),
-                                  textAlign: TextAlign.left,
-                                ),
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(8.0, 2.0, 8.0, 2.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0x1AFF3E6C),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius4),
-                                  ),
-                                  child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      'ACTIVE THEME',
-                                      style: TextStyle(color: const Color(0xFFFF3E6C), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 20.0),
-                            SizedBox(
-                              height: 480.0,
-                              child: Container(
-                              clipBehavior: Clip.antiAlias,
-                              padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF0B0C10),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius28),
-                                border: Border.all(color: const Color(0x33FF3E6C), width: 2.0),
+                                ],
                               ),
-                              child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    AppText(
-                                      '9:41',
-                                      style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          width: 14.0,
-                                          height: 8.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFFFFFFF),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 4.0),
-                                        Container(
-                                          width: 10.0,
-                                          height: 8.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFFFFFFF),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius1),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 16.0),
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      width: 24.0,
-                                      height: 24.0,
-                                      child: Container(
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xFFFF3E6C),
-                                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                      ),
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            const AppIcon(Icons.circle),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                    ),
-                                    const SizedBox(width: 8.0),
-                                    AppText(
-                                      'MarcusFit',
-                                      style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 16.0),
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(14.0, 14.0, 14.0, 14.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF1A1C29),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius12),
-                                    border: Border.all(color: const Color(0x12FFFFFF), width: 1.0),
-                                  ),
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    AppText(
-                                      'Today\'s Workout Summary',
-                                      style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 13.0, fontWeight: FontWeight.w700),
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    const SizedBox(height: 12.0),
-                                    Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                                      children: [
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                          crossAxisAlignment: CrossAxisAlignment.center,
-                                          children: [
-                                            AppText(
-                                              'Push Day Strength',
-                                              style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                            AppText(
-                                              '45 min',
-                                              style: TextStyle(color: const Color(0xFFFF3E6C), fontFamily: 'Geist Mono', fontSize: 11.0, fontWeight: FontWeight.w700),
-                                              textAlign: TextAlign.left,
-                                            ),
-                                          ],
-                                        ),
-                                        const SizedBox(height: 8.0),
-                                        Container(
-                                          width: 304.0,
-                                          height: 4.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0x12FFFFFF),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius2),
-                                          ),
-                                        ),
-                                        const SizedBox(height: 8.0),
-                                        Container(
-                                          width: 200.0,
-                                          height: 4.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFFF3E6C),
-                                            borderRadius: BorderRadius.circular(RadiusTokens.radius2),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(height: 12.0),
-                                    Container(
-                                      padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xFFFF3E6C),
-                                        borderRadius: BorderRadius.circular(RadiusTokens.radius6),
-                                      ),
-                                      child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        AppText(
-                                          'Start Session',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w700),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    ),
-                                  ],
-                                ),
-                                ),
-                                const SizedBox(height: 16.0),
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF1A1C29),
-                                    borderRadius: BorderRadius.circular(RadiusTokens.radius12),
-                                  ),
-                                  child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        AppText(
-                                          'Personal Goals',
-                                          style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 12.0, fontWeight: FontWeight.w700),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                        AppText(
-                                          '80% Completed',
-                                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 10.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(height: 10.0),
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: 8.0,
-                                          height: 8.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFFF3E6C),
-                                            shape: BoxShape.circle,
-                                          ),
-                                        ),
-                                        const SizedBox(width: 8.0),
-                                        AppText(
-                                          'Consume 2,600 kcal target',
-                                          style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                                ),
-                              ],
-                            ),
-                            ),
-                            ),
-                            const SizedBox(height: 20.0),
-                            Container(
-                              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFFD2FF00),
-                                borderRadius: BorderRadius.circular(RadiusTokens.radius8),
                               ),
-                              child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                AppText(
-                                  'Save & Publish Branding',
-                                  style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w700),
-                                  textAlign: TextAlign.left,
+                              const SizedBox(height: 24.0),
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF12141C),
+                                  borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
                                 ),
-                              ],
-                            ),
-                            ),
-                          ],
-                        ),
-                        ),
-                      ],
-                    ),
-                    ),
-                  ],
+                                child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  AppText(
+                                    'Theme Palette',
+                                    style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                  const SizedBox(height: 16.0),
+                                  Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Container(
+                                        padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xFF08090C),
+                                          borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                          border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                        ),
+                                        child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              Container(
+                                                width: 32.0,
+                                                height: 32.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFF1A1C29),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                  border: Border.all(color: const Color(0x20FFFFFF), width: 1.0),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 12.0),
+                                              Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                mainAxisAlignment: MainAxisAlignment.start,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'Primary Brand Color',
+                                                    style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                  const SizedBox(height: 2.0),
+                                                  AppText(
+                                                    'Used for sidebar backgrounds and secondary buttons',
+                                                    style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                          Container(
+                                            padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                            decoration: BoxDecoration(
+                                              color: const Color(0x08FFFFFF),
+                                              borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                              border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                            ),
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              AppText(
+                                                '#1A1C29',
+                                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      const SizedBox(height: 12.0),
+                                      Container(
+                                        padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xFF08090C),
+                                          borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                          border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                        ),
+                                        child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              Container(
+                                                width: 32.0,
+                                                height: 32.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFF0B0C10),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                  border: Border.all(color: const Color(0x20FFFFFF), width: 1.0),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 12.0),
+                                              Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                mainAxisAlignment: MainAxisAlignment.start,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'Secondary Color',
+                                                    style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                  const SizedBox(height: 2.0),
+                                                  AppText(
+                                                    'Main canvas backdrop for the client web portal',
+                                                    style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                          Container(
+                                            padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                            decoration: BoxDecoration(
+                                              color: const Color(0x08FFFFFF),
+                                              borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                              border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                            ),
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              AppText(
+                                                '#0B0C10',
+                                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      const SizedBox(height: 12.0),
+                                      Container(
+                                        padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xFF08090C),
+                                          borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                          border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                        ),
+                                        child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              Container(
+                                                width: 32.0,
+                                                height: 32.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFFF3E6C),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                                  border: Border.all(color: const Color(0x20FFFFFF), width: 1.0),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 12.0),
+                                              Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                mainAxisAlignment: MainAxisAlignment.start,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  AppText(
+                                                    'Highlight Accent',
+                                                    style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0, fontWeight: FontWeight.w700),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                  const SizedBox(height: 2.0),
+                                                  AppText(
+                                                    'Core call-to-actions, active navigation highlights, and progress bars',
+                                                    style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w400),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                          Container(
+                                            padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
+                                            decoration: BoxDecoration(
+                                              color: const Color(0x08FFFFFF),
+                                              borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                              border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                            ),
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              AppText(
+                                                '#FF3E6C',
+                                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              ),
+                              const SizedBox(height: 24.0),
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF12141C),
+                                  borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                ),
+                                child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  AppText(
+                                    'Portal Typography',
+                                    style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                  const SizedBox(height: 16.0),
+                                  Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                                        children: [
+                                          AppText(
+                                            'Heading Font',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          DropdownButtonFormField<String>(
+                                            isExpanded: true,
+                                            hint: Text('Outfit (Default)', style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist', fontSize: 13.0)),
+                                            icon: SvgPicture.asset(
+                                                iconChevronDown3765,
+                                                width: 14.0,
+                                                height: 14.0,
+                                              ),
+                                            decoration: InputDecoration(
+                                              isDense: true,
+                                              filled: true,
+                                              fillColor: const Color(0xFF08090C),
+                                              contentPadding: EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                                              enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                                              focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                                            ),
+                                            items: const <DropdownMenuItem<String>>[],
+                                            onChanged: (_) {},
+                                          ),
+                                        ],
+                                      )),
+                                      const SizedBox(width: 16.0),
+                                      Expanded(child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                                        children: [
+                                          AppText(
+                                            'Body Text Font',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          DropdownButtonFormField<String>(
+                                            isExpanded: true,
+                                            hint: Text('Geist Sans', style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist', fontSize: 13.0)),
+                                            icon: SvgPicture.asset(
+                                                iconChevronDown3765,
+                                                width: 14.0,
+                                                height: 14.0,
+                                              ),
+                                            decoration: InputDecoration(
+                                              isDense: true,
+                                              filled: true,
+                                              fillColor: const Color(0xFF08090C),
+                                              contentPadding: EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                                              enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                                              focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(RadiusTokens.radius8), borderSide: BorderSide(color: const Color(0xFF1C1F2B), width: 1.0)),
+                                            ),
+                                            items: const <DropdownMenuItem<String>>[],
+                                            onChanged: (_) {},
+                                          ),
+                                        ],
+                                      )),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              ),
+                              const SizedBox(height: 24.0),
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF12141C),
+                                  borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                ),
+                                child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      AppText(
+                                        'White-label Custom Domain',
+                                        style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 18.0, fontWeight: FontWeight.w700),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                      const SizedBox(height: 4.0),
+                                      AppText(
+                                        'Configure the URL where your coaching clients will access their dashboard.',
+                                        style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 16.0),
+                                  Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                                        children: [
+                                          AppText(
+                                            'FitPro Subdomain',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          Container(
+                                            padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                            decoration: BoxDecoration(
+                                              color: const Color(0xFF08090C),
+                                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                              border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                            ),
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              AppText(
+                                                'marcusfitness',
+                                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                              const SizedBox(width: 10.0),
+                                              AppText(
+                                                '.fitpro.app',
+                                                style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 12.0),
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                                        children: [
+                                          AppText(
+                                            'Custom Domain (Enterprise)',
+                                            style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 12.0),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 6.0),
+                                          Container(
+                                            padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                            decoration: BoxDecoration(
+                                              color: const Color(0xFF08090C),
+                                              borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                              border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                            ),
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              AppText(
+                                                'e.g. portal.mybrand.com',
+                                                style: TextStyle(color: const Color(0xFF545766), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              ),
+                            ],
+                          )),
+                          const SizedBox(width: 24.0),
+                          SizedBox(
+                            width: 420.0,
+                            child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 24.0),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF12141C),
+                                  borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                                  border: Border.all(color: const Color(0xFF1C1F2B), width: 1.0),
+                                ),
+                                child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      AppText(
+                                        'Live Client Preview',
+                                        style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 16.0, fontWeight: FontWeight.w700),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                      Container(
+                                        padding: const EdgeInsets.fromLTRB(8.0, 2.0, 8.0, 2.0),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0x1AFF3E6C),
+                                          borderRadius: BorderRadius.circular(RadiusTokens.radius4),
+                                        ),
+                                        child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          AppText(
+                                            'ACTIVE THEME',
+                                            style: TextStyle(color: const Color(0xFFFF3E6C), fontFamily: 'Geist Mono', fontSize: 10.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 20.0),
+                                  SizedBox(
+                                    height: 480.0,
+                                    child: Container(
+                                    clipBehavior: Clip.antiAlias,
+                                    padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF0B0C10),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius28),
+                                      border: Border.all(color: const Color(0x33FF3E6C), width: 2.0),
+                                    ),
+                                    child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          AppText(
+                                            '9:41',
+                                            style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist Mono', fontSize: 12.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                width: 14.0,
+                                                height: 8.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFFFFFFF),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                                ),
+                                              ),
+                                              const SizedBox(width: 4.0),
+                                              Container(
+                                                width: 10.0,
+                                                height: 8.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFFFFFFF),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius1),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 16.0),
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          SizedBox(
+                                            width: 24.0,
+                                            height: 24.0,
+                                            child: Container(
+                                            decoration: BoxDecoration(
+                                              color: const Color(0xFFFF3E6C),
+                                              borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                            ),
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              SvgPicture.asset(
+                                                iconBolt41096,
+                                                width: 14.0,
+                                                height: 14.0,
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                          ),
+                                          const SizedBox(width: 8.0),
+                                          AppText(
+                                            'MarcusFit',
+                                            style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 14.0),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 16.0),
+                                      Container(
+                                        padding: const EdgeInsets.fromLTRB(14.0, 14.0, 14.0, 14.0),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xFF1A1C29),
+                                          borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                          border: Border.all(color: const Color(0x12FFFFFF), width: 1.0),
+                                        ),
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                                        children: [
+                                          AppText(
+                                            'Today\'s Workout Summary',
+                                            style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 13.0, fontWeight: FontWeight.w700),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          const SizedBox(height: 12.0),
+                                          Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                                            children: [
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                crossAxisAlignment: CrossAxisAlignment.center,
+                                                children: [
+                                                  AppText(
+                                                    'Push Day Strength',
+                                                    style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                  AppText(
+                                                    '45 min',
+                                                    style: TextStyle(color: const Color(0xFFFF3E6C), fontFamily: 'Geist Mono', fontSize: 11.0, fontWeight: FontWeight.w700),
+                                                    textAlign: TextAlign.left,
+                                                  ),
+                                                ],
+                                              ),
+                                              const SizedBox(height: 8.0),
+                                              Container(
+                                                width: 304.0,
+                                                height: 4.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0x12FFFFFF),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                                ),
+                                              ),
+                                              const SizedBox(height: 8.0),
+                                              Container(
+                                                width: 200.0,
+                                                height: 4.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFFF3E6C),
+                                                  borderRadius: BorderRadius.circular(RadiusTokens.radius2),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(height: 12.0),
+                                          Container(
+                                            padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
+                                            decoration: BoxDecoration(
+                                              color: const Color(0xFFFF3E6C),
+                                              borderRadius: BorderRadius.circular(RadiusTokens.radius6),
+                                            ),
+                                            child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              AppText(
+                                                'Start Session',
+                                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Geist', fontSize: 12.0, fontWeight: FontWeight.w700),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                      const SizedBox(height: 16.0),
+                                      Container(
+                                        padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xFF1A1C29),
+                                          borderRadius: BorderRadius.circular(RadiusTokens.radius12),
+                                        ),
+                                        child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                                        children: [
+                                          Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              AppText(
+                                                'Personal Goals',
+                                                style: TextStyle(color: const Color(0xFFFFFFFF), fontFamily: 'Outfit', fontSize: 12.0, fontWeight: FontWeight.w700),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                              AppText(
+                                                '80% Completed',
+                                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 10.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(height: 10.0),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              Container(
+                                                width: 8.0,
+                                                height: 8.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFFF3E6C),
+                                                  shape: BoxShape.circle,
+                                                ),
+                                              ),
+                                              const SizedBox(width: 8.0),
+                                              AppText(
+                                                'Consume 2,600 kcal target',
+                                                style: TextStyle(color: const Color(0xFF9296A8), fontFamily: 'Geist', fontSize: 11.0, fontWeight: FontWeight.w400),
+                                                textAlign: TextAlign.left,
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                  ),
+                                  ),
+                                  const SizedBox(height: 20.0),
+                                  Container(
+                                    padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFFD2FF00),
+                                      borderRadius: BorderRadius.circular(RadiusTokens.radius8),
+                                    ),
+                                    child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      AppText(
+                                        'Save & Publish Branding',
+                                        style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Geist', fontSize: 13.0, fontWeight: FontWeight.w700),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                    ],
+                                  ),
+                                  ),
+                                ],
+                              ),
+                              ),
+                            ],
+                          ),
+                          ),
+                        ],
+                      ),
+                      ),
                 ),
-                ),
+              ),
               ],
             )),
           ],
-        ),
-        ),
         ),
       ),
     );
