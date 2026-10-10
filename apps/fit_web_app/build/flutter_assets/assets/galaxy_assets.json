@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "assets": [
     {
       "imageHash": "9064d1a5f822c484a707b7765978f9b2a83bca06",
@@ -108,6 +108,744 @@
     {
       "imageHash": "862862a2b261fcd6b1f75fb678a2d7185af6bdb5",
       "path": "Rectangle-4_940.png"
+    }
+  ],
+  "icons": [
+    {
+      "nodeId": "3:669",
+      "path": "icon-zap-3_669.svg"
+    },
+    {
+      "nodeId": "3:690",
+      "path": "icon-apple-3_690.svg"
+    },
+    {
+      "nodeId": "3:660",
+      "path": "icon-dumbbell-3_660.svg"
+    },
+    {
+      "nodeId": "3:615",
+      "path": "icon-image-3_615.svg"
+    },
+    {
+      "nodeId": "3:732",
+      "path": "icon-users-3_732.svg"
+    },
+    {
+      "nodeId": "3:720",
+      "path": "icon-wallet-cards-3_720.svg"
+    },
+    {
+      "nodeId": "3:678",
+      "path": "icon-user-round-3_678.svg"
+    },
+    {
+      "nodeId": "3:651",
+      "path": "icon-funnel-3_651.svg"
+    },
+    {
+      "nodeId": "3:711",
+      "path": "icon-trending-up-3_711.svg"
+    },
+    {
+      "nodeId": "3:624",
+      "path": "icon-users-3_732.svg"
+    },
+    {
+      "nodeId": "3:699",
+      "path": "icon-palette-3_699.svg"
+    },
+    {
+      "nodeId": "3:753",
+      "path": "icon-file-text-3_753.svg"
+    },
+    {
+      "nodeId": "3:642",
+      "path": "icon-search-3_642.svg"
+    },
+    {
+      "nodeId": "3:744",
+      "path": "icon-bell-3_744.svg"
+    },
+    {
+      "nodeId": "3:633",
+      "path": "icon-plus-3_633.svg"
+    },
+    {
+      "nodeId": "3:765",
+      "path": "icon-chevron-down-3_765.svg"
+    },
+    {
+      "nodeId": "3:768",
+      "path": "icon-chevron-down-3_765.svg"
+    },
+    {
+      "nodeId": "3:672",
+      "path": "icon-zap-3_672.svg"
+    },
+    {
+      "nodeId": "3:693",
+      "path": "icon-apple-3_693.svg"
+    },
+    {
+      "nodeId": "3:663",
+      "path": "icon-dumbbell-3_663.svg"
+    },
+    {
+      "nodeId": "3:618",
+      "path": "icon-image-3_615.svg"
+    },
+    {
+      "nodeId": "3:735",
+      "path": "icon-users-3_735.svg"
+    },
+    {
+      "nodeId": "3:723",
+      "path": "icon-wallet-cards-3_720.svg"
+    },
+    {
+      "nodeId": "3:681",
+      "path": "icon-user-round-3_681.svg"
+    },
+    {
+      "nodeId": "3:654",
+      "path": "icon-funnel-3_654.svg"
+    },
+    {
+      "nodeId": "3:714",
+      "path": "icon-trending-up-3_714.svg"
+    },
+    {
+      "nodeId": "3:627",
+      "path": "icon-users-3_735.svg"
+    },
+    {
+      "nodeId": "3:702",
+      "path": "icon-palette-3_702.svg"
+    },
+    {
+      "nodeId": "3:756",
+      "path": "icon-file-text-3_756.svg"
+    },
+    {
+      "nodeId": "3:645",
+      "path": "icon-search-3_645.svg"
+    },
+    {
+      "nodeId": "3:747",
+      "path": "icon-bell-3_744.svg"
+    },
+    {
+      "nodeId": "3:636",
+      "path": "icon-plus-3_636.svg"
+    },
+    {
+      "nodeId": "3:675",
+      "path": "icon-zap-3_675.svg"
+    },
+    {
+      "nodeId": "3:696",
+      "path": "icon-apple-3_696.svg"
+    },
+    {
+      "nodeId": "3:666",
+      "path": "icon-dumbbell-3_666.svg"
+    },
+    {
+      "nodeId": "3:621",
+      "path": "icon-image-3_621.svg"
+    },
+    {
+      "nodeId": "3:738",
+      "path": "icon-users-3_735.svg"
+    },
+    {
+      "nodeId": "3:726",
+      "path": "icon-wallet-cards-3_720.svg"
+    },
+    {
+      "nodeId": "3:684",
+      "path": "icon-user-round-3_681.svg"
+    },
+    {
+      "nodeId": "3:657",
+      "path": "icon-funnel-3_654.svg"
+    },
+    {
+      "nodeId": "3:717",
+      "path": "icon-trending-up-3_714.svg"
+    },
+    {
+      "nodeId": "3:630",
+      "path": "icon-users-3_735.svg"
+    },
+    {
+      "nodeId": "3:705",
+      "path": "icon-palette-3_705.svg"
+    },
+    {
+      "nodeId": "3:759",
+      "path": "icon-file-text-3_756.svg"
+    },
+    {
+      "nodeId": "3:648",
+      "path": "icon-search-3_648.svg"
+    },
+    {
+      "nodeId": "3:750",
+      "path": "icon-bell-3_744.svg"
+    },
+    {
+      "nodeId": "3:639",
+      "path": "icon-plus-3_636.svg"
+    },
+    {
+      "nodeId": "3:729",
+      "path": "icon-award-3_729.svg"
+    },
+    {
+      "nodeId": "3:708",
+      "path": "icon-flame-3_708.svg"
+    },
+    {
+      "nodeId": "3:687",
+      "path": "icon-droplet-3_687.svg"
+    },
+    {
+      "nodeId": "3:741",
+      "path": "icon-calendar-check-3_741.svg"
+    },
+    {
+      "nodeId": "3:762",
+      "path": "icon-external-link-3_762.svg"
+    },
+    {
+      "nodeId": "3:779",
+      "path": "icon-zap-3_779.svg"
+    },
+    {
+      "nodeId": "3:786",
+      "path": "icon-Frame-3_786.svg"
+    },
+    {
+      "nodeId": "3:790",
+      "path": "icon-Frame-3_790.svg"
+    },
+    {
+      "nodeId": "3:794",
+      "path": "icon-Frame-3_794.svg"
+    },
+    {
+      "nodeId": "3:798",
+      "path": "icon-Frame-3_798.svg"
+    },
+    {
+      "nodeId": "3:803",
+      "path": "icon-Frame-3_803.svg"
+    },
+    {
+      "nodeId": "3:807",
+      "path": "icon-Frame-3_807.svg"
+    },
+    {
+      "nodeId": "3:811",
+      "path": "icon-Frame-3_811.svg"
+    },
+    {
+      "nodeId": "3:815",
+      "path": "icon-Frame-3_815.svg"
+    },
+    {
+      "nodeId": "3:819",
+      "path": "icon-Frame-3_819.svg"
+    },
+    {
+      "nodeId": "3:823",
+      "path": "icon-Frame-3_823.svg"
+    },
+    {
+      "nodeId": "3:827",
+      "path": "icon-Frame-3_827.svg"
+    },
+    {
+      "nodeId": "3:843",
+      "path": "icon-search-3_843.svg"
+    },
+    {
+      "nodeId": "3:847",
+      "path": "icon-bell-3_847.svg"
+    },
+    {
+      "nodeId": "3:851",
+      "path": "icon-plus-3_636.svg"
+    },
+    {
+      "nodeId": "3:995",
+      "path": "icon-zap-3_779.svg"
+    },
+    {
+      "nodeId": "3:1002",
+      "path": "icon-Frame-3_1002.svg"
+    },
+    {
+      "nodeId": "3:1006",
+      "path": "icon-Frame-3_1006.svg"
+    },
+    {
+      "nodeId": "3:1010",
+      "path": "icon-Frame-3_1010.svg"
+    },
+    {
+      "nodeId": "3:1014",
+      "path": "icon-Frame-3_1014.svg"
+    },
+    {
+      "nodeId": "3:1018",
+      "path": "icon-Frame-3_1018.svg"
+    },
+    {
+      "nodeId": "3:1023",
+      "path": "icon-Frame-3_1023.svg"
+    },
+    {
+      "nodeId": "3:1027",
+      "path": "icon-Frame-3_1027.svg"
+    },
+    {
+      "nodeId": "3:1031",
+      "path": "icon-Frame-3_1031.svg"
+    },
+    {
+      "nodeId": "3:1035",
+      "path": "icon-Frame-3_1035.svg"
+    },
+    {
+      "nodeId": "3:1039",
+      "path": "icon-Frame-3_1039.svg"
+    },
+    {
+      "nodeId": "3:1043",
+      "path": "icon-Frame-3_1043.svg"
+    },
+    {
+      "nodeId": "3:1059",
+      "path": "icon-search-3_1059.svg"
+    },
+    {
+      "nodeId": "3:1063",
+      "path": "icon-bell-3_847.svg"
+    },
+    {
+      "nodeId": "3:1067",
+      "path": "icon-plus-3_636.svg"
+    },
+    {
+      "nodeId": "3:1212",
+      "path": "icon-Frame-3_1212.svg"
+    },
+    {
+      "nodeId": "3:1216",
+      "path": "icon-Frame-3_1216.svg"
+    },
+    {
+      "nodeId": "3:1226",
+      "path": "icon-zap-3_779.svg"
+    },
+    {
+      "nodeId": "3:1233",
+      "path": "icon-Frame-3_1233.svg"
+    },
+    {
+      "nodeId": "3:1237",
+      "path": "icon-Frame-3_1237.svg"
+    },
+    {
+      "nodeId": "3:1241",
+      "path": "icon-Frame-3_1241.svg"
+    },
+    {
+      "nodeId": "3:1245",
+      "path": "icon-Frame-3_1245.svg"
+    },
+    {
+      "nodeId": "3:1249",
+      "path": "icon-Frame-3_1249.svg"
+    },
+    {
+      "nodeId": "3:1253",
+      "path": "icon-Frame-3_1253.svg"
+    },
+    {
+      "nodeId": "3:1258",
+      "path": "icon-Frame-3_1258.svg"
+    },
+    {
+      "nodeId": "3:1262",
+      "path": "icon-Frame-3_1262.svg"
+    },
+    {
+      "nodeId": "3:1266",
+      "path": "icon-Frame-3_1266.svg"
+    },
+    {
+      "nodeId": "3:1270",
+      "path": "icon-Frame-3_1270.svg"
+    },
+    {
+      "nodeId": "3:1274",
+      "path": "icon-Frame-3_1274.svg"
+    },
+    {
+      "nodeId": "3:1290",
+      "path": "icon-search-3_1290.svg"
+    },
+    {
+      "nodeId": "3:1294",
+      "path": "icon-bell-3_847.svg"
+    },
+    {
+      "nodeId": "3:1298",
+      "path": "icon-plus-3_636.svg"
+    },
+    {
+      "nodeId": "4:61",
+      "path": "icon-Vector-4_61.svg"
+    },
+    {
+      "nodeId": "4:67",
+      "path": "icon-icon-wrap-4_67.svg"
+    },
+    {
+      "nodeId": "4:71",
+      "path": "icon-icon-wrap-4_71.svg"
+    },
+    {
+      "nodeId": "4:75",
+      "path": "icon-icon-wrap-4_75.svg"
+    },
+    {
+      "nodeId": "4:79",
+      "path": "icon-icon-wrap-4_79.svg"
+    },
+    {
+      "nodeId": "4:83",
+      "path": "icon-icon-wrap-4_83.svg"
+    },
+    {
+      "nodeId": "4:87",
+      "path": "icon-icon-wrap-4_87.svg"
+    },
+    {
+      "nodeId": "4:91",
+      "path": "icon-icon-wrap-4_91.svg"
+    },
+    {
+      "nodeId": "4:96",
+      "path": "icon-icon-wrap-4_96.svg"
+    },
+    {
+      "nodeId": "4:100",
+      "path": "icon-icon-wrap-4_100.svg"
+    },
+    {
+      "nodeId": "4:104",
+      "path": "icon-icon-wrap-4_104.svg"
+    },
+    {
+      "nodeId": "4:108",
+      "path": "icon-icon-wrap-4_108.svg"
+    },
+    {
+      "nodeId": "4:124",
+      "path": "icon-Vector-4_124.svg"
+    },
+    {
+      "nodeId": "4:127",
+      "path": "icon-Vector-4_127.svg"
+    },
+    {
+      "nodeId": "4:130",
+      "path": "icon-Vector-4_130.svg"
+    },
+    {
+      "nodeId": "4:315",
+      "path": "icon-Vector-4_315.svg"
+    },
+    {
+      "nodeId": "4:321",
+      "path": "icon-icon-wrap-4_321.svg"
+    },
+    {
+      "nodeId": "4:325",
+      "path": "icon-icon-wrap-4_325.svg"
+    },
+    {
+      "nodeId": "4:329",
+      "path": "icon-icon-wrap-4_329.svg"
+    },
+    {
+      "nodeId": "4:333",
+      "path": "icon-icon-wrap-4_333.svg"
+    },
+    {
+      "nodeId": "4:337",
+      "path": "icon-icon-wrap-4_337.svg"
+    },
+    {
+      "nodeId": "4:341",
+      "path": "icon-icon-wrap-4_341.svg"
+    },
+    {
+      "nodeId": "4:345",
+      "path": "icon-icon-wrap-4_345.svg"
+    },
+    {
+      "nodeId": "4:349",
+      "path": "icon-icon-wrap-4_349.svg"
+    },
+    {
+      "nodeId": "4:354",
+      "path": "icon-icon-wrap-4_354.svg"
+    },
+    {
+      "nodeId": "4:358",
+      "path": "icon-icon-wrap-4_358.svg"
+    },
+    {
+      "nodeId": "4:362",
+      "path": "icon-icon-wrap-4_362.svg"
+    },
+    {
+      "nodeId": "4:378",
+      "path": "icon-Vector-4_378.svg"
+    },
+    {
+      "nodeId": "4:381",
+      "path": "icon-Vector-4_381.svg"
+    },
+    {
+      "nodeId": "4:384",
+      "path": "icon-Vector-4_130.svg"
+    },
+    {
+      "nodeId": "4:517",
+      "path": "icon-Vector-4_517.svg"
+    },
+    {
+      "nodeId": "4:523",
+      "path": "icon-icon-wrap-4_523.svg"
+    },
+    {
+      "nodeId": "4:527",
+      "path": "icon-icon-wrap-4_527.svg"
+    },
+    {
+      "nodeId": "4:531",
+      "path": "icon-icon-wrap-4_531.svg"
+    },
+    {
+      "nodeId": "4:535",
+      "path": "icon-icon-wrap-4_535.svg"
+    },
+    {
+      "nodeId": "4:539",
+      "path": "icon-icon-wrap-4_539.svg"
+    },
+    {
+      "nodeId": "4:543",
+      "path": "icon-icon-wrap-4_543.svg"
+    },
+    {
+      "nodeId": "4:547",
+      "path": "icon-icon-wrap-4_547.svg"
+    },
+    {
+      "nodeId": "4:551",
+      "path": "icon-icon-wrap-4_551.svg"
+    },
+    {
+      "nodeId": "4:555",
+      "path": "icon-icon-wrap-4_555.svg"
+    },
+    {
+      "nodeId": "4:560",
+      "path": "icon-icon-wrap-4_560.svg"
+    },
+    {
+      "nodeId": "4:564",
+      "path": "icon-icon-wrap-4_564.svg"
+    },
+    {
+      "nodeId": "4:580",
+      "path": "icon-Vector-4_580.svg"
+    },
+    {
+      "nodeId": "4:583",
+      "path": "icon-Vector-4_583.svg"
+    },
+    {
+      "nodeId": "4:586",
+      "path": "icon-Vector-4_130.svg"
+    },
+    {
+      "nodeId": "4:611",
+      "path": "icon-Vector-4_611.svg"
+    },
+    {
+      "nodeId": "4:702",
+      "path": "icon-zap-3_779.svg"
+    },
+    {
+      "nodeId": "4:709",
+      "path": "icon-nav-icon-4_709.svg"
+    },
+    {
+      "nodeId": "4:713",
+      "path": "icon-nav-icon-4_713.svg"
+    },
+    {
+      "nodeId": "4:717",
+      "path": "icon-nav-icon-4_717.svg"
+    },
+    {
+      "nodeId": "4:721",
+      "path": "icon-nav-icon-4_721.svg"
+    },
+    {
+      "nodeId": "4:725",
+      "path": "icon-nav-icon-4_725.svg"
+    },
+    {
+      "nodeId": "4:729",
+      "path": "icon-nav-icon-4_729.svg"
+    },
+    {
+      "nodeId": "4:733",
+      "path": "icon-nav-icon-4_733.svg"
+    },
+    {
+      "nodeId": "4:737",
+      "path": "icon-nav-icon-4_737.svg"
+    },
+    {
+      "nodeId": "4:741",
+      "path": "icon-nav-icon-4_741.svg"
+    },
+    {
+      "nodeId": "4:745",
+      "path": "icon-nav-icon-4_745.svg"
+    },
+    {
+      "nodeId": "4:750",
+      "path": "icon-nav-icon-4_750.svg"
+    },
+    {
+      "nodeId": "4:766",
+      "path": "icon-search-4_766.svg"
+    },
+    {
+      "nodeId": "4:770",
+      "path": "icon-bell-3_847.svg"
+    },
+    {
+      "nodeId": "4:774",
+      "path": "icon-plus-3_636.svg"
+    },
+    {
+      "nodeId": "4:1099",
+      "path": "icon-image-up-4_1099.svg"
+    },
+    {
+      "nodeId": "4:825",
+      "path": "icon-chevron-down-3_765.svg"
+    },
+    {
+      "nodeId": "4:831",
+      "path": "icon-chevron-down-3_765.svg"
+    },
+    {
+      "nodeId": "4:1096",
+      "path": "icon-bolt-4_1096.svg"
+    },
+    {
+      "nodeId": "4:887",
+      "path": "icon-zap-3_779.svg"
+    },
+    {
+      "nodeId": "4:894",
+      "path": "icon-nav-icon-4_894.svg"
+    },
+    {
+      "nodeId": "4:898",
+      "path": "icon-nav-icon-4_898.svg"
+    },
+    {
+      "nodeId": "4:902",
+      "path": "icon-nav-icon-4_902.svg"
+    },
+    {
+      "nodeId": "4:906",
+      "path": "icon-nav-icon-4_906.svg"
+    },
+    {
+      "nodeId": "4:910",
+      "path": "icon-nav-icon-4_910.svg"
+    },
+    {
+      "nodeId": "4:914",
+      "path": "icon-nav-icon-4_914.svg"
+    },
+    {
+      "nodeId": "4:918",
+      "path": "icon-nav-icon-4_918.svg"
+    },
+    {
+      "nodeId": "4:922",
+      "path": "icon-nav-icon-4_922.svg"
+    },
+    {
+      "nodeId": "4:926",
+      "path": "icon-nav-icon-4_926.svg"
+    },
+    {
+      "nodeId": "4:930",
+      "path": "icon-nav-icon-4_930.svg"
+    },
+    {
+      "nodeId": "4:934",
+      "path": "icon-nav-icon-4_934.svg"
+    },
+    {
+      "nodeId": "4:951",
+      "path": "icon-search-4_951.svg"
+    },
+    {
+      "nodeId": "4:955",
+      "path": "icon-bell-3_847.svg"
+    },
+    {
+      "nodeId": "4:959",
+      "path": "icon-plus-3_636.svg"
+    },
+    {
+      "nodeId": "4:1000",
+      "path": "icon-Frame-4_1000.svg"
+    },
+    {
+      "nodeId": "4:1013",
+      "path": "icon-Frame-4_1013.svg"
+    },
+    {
+      "nodeId": "4:1026",
+      "path": "icon-Frame-4_1026.svg"
+    },
+    {
+      "nodeId": "4:1039",
+      "path": "icon-Frame-4_1039.svg"
+    },
+    {
+      "nodeId": "4:1089",
+      "path": "icon-chevron-down-3_765.svg"
     }
   ]
 }
